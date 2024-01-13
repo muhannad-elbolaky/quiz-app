@@ -1,0 +1,27 @@
+[
+  {
+    "question": "What is the capital of India?",
+    "answer": "New Delhi",
+    "options": ["New Delhi", "Mumbai", "Kolkata", "Chennai"]
+  },
+  {
+    "question": "What is the capital of Australia?",
+    "answer": "Canberra",
+    "options": ["Canberra", "Sydney", "Melbourne", "Perth"]
+  },
+  {
+    "question": "What is the capital of USA?",
+    "answer": "Washington DC",
+    "options": ["Washington DC", "New York", "Los Angeles", "Chicago"]
+  },
+  {
+    "question": "What is the capital of China?",
+    "answer": "Beijing",
+    "options": ["Beijing", "Shanghai"]
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "answer": "Tokyo",
+    "options": ["Tokyo", "Osaka"]
+  }
+]

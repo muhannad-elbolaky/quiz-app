@@ -29,6 +29,13 @@ h2 {
   margin-bottom: 4rem;
 }
 
+span,
+p {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
 .container {
   width: 100dvw;
   height: 100dvh;
@@ -85,18 +92,4 @@ h2 {
 .btn[disabled]:hover {
   cursor: not-allowed;
   box-shadow: none;
-}
-
-#highscore-btn {
-  color: var(--text);
-  background-color: var(--secondary);
-}
-
-#highscore-btn:hover {
-  box-shadow: 0.4rem 0.4rem var(--primary);
-}
-
-.fa-crown {
-  font-size: 2.5rem;
-  margin-left: 1rem;
 }

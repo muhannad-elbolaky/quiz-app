@@ -1,7 +1,4 @@
 const question = document.querySelector('#question') as HTMLHeadingElement;
-const choices = document.querySelectorAll(
-  '.choice-text'
-) as NodeListOf<HTMLParagraphElement>;
 const progressText = document.querySelector(
   '#progressText'
 ) as HTMLParagraphElement;
@@ -10,7 +7,113 @@ const progressBarFull = document.querySelector(
 ) as HTMLDivElement;
 const scoreText = document.querySelector('#score') as HTMLHeadingElement;
 
+type Question = {
+  question: string;
+  answer: string;
+  options: string[];
+};
+
+import questions from '../questions.json';
+
 let currentQuestion: Question;
 let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
+let availableQuestions: Question[] = [];
+
+const MAX_QUESTIONS = questions.length;
+
+function startGame() {
+  questionCounter = 0;
+  score = 0;
+  availableQuestions = [...questions];
+  getNewQuestion();
+}
+
+function getNewQuestion() {
+  if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+    localStorage.setItem('currentScore', score.toString());
+    return window.location.assign('/end.html');
+  }
+
+  questionCounter++;
+  progressText.innerText = `سؤال ${questionCounter} من ${MAX_QUESTIONS}`;
+
+  const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+  currentQuestion = availableQuestions[questionIndex];
+  question.innerText = currentQuestion.question;
+
+  const choicesContainer = document.querySelector('.choices') as HTMLDivElement;
+
+  choicesContainer.innerHTML = '';
+
+  shuffle(currentQuestion.options).forEach((choice, index) => {
+    choicesContainer.innerHTML += createChoiceHTML(choice, index);
+  });
+
+  availableQuestions.splice(questionIndex, 1);
+
+  acceptingAnswers = true;
+
+  let choices = document.querySelectorAll(
+    '.choice-container'
+  ) as NodeListOf<HTMLDivElement>;
+
+  choices.forEach((choice) => {
+    choice.addEventListener('click', (event) => {
+      if (!acceptingAnswers) return;
+
+      acceptingAnswers = false;
+      const target = event.target as HTMLElement;
+
+      const choiceContainer = target.closest(
+        '.choice-container'
+      ) as HTMLDivElement;
+      const selectedAnswer = choiceContainer.querySelector(
+        '.choice-text'
+      ) as HTMLParagraphElement;
+
+      const classToApply =
+        selectedAnswer.innerText === currentQuestion.answer
+          ? 'correct'
+          : 'incorrect';
+
+      if (classToApply === 'correct') {
+        score++;
+        scoreText.innerText = String(score);
+      }
+
+      progressBarFull.style.width = `${
+        (questionCounter / MAX_QUESTIONS) * 100
+      }%`;
+
+      selectedAnswer.parentElement!.classList.add(classToApply);
+
+      setTimeout(() => getNewQuestion(), 1000);
+    });
+  });
+}
+
+function createChoiceHTML(choice: string, choiceIndex: number): string {
+  const choicePrefix = String.fromCharCode(65 + choiceIndex);
+  return `
+    <div class="choice-container" data-number="${choiceIndex + 1}">
+      <p class="choice-prefix">${choicePrefix}</p>
+      <p class="choice-text">${choice}</p>
+    </div>
+  `;
+}
+
+function shuffle<T>(array: T[]): T[] {
+  const shuffledArray = array.slice();
+
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+
+  return shuffledArray;
+}
+
+startGame();

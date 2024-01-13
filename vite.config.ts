@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         main: 'index.html',
         game: 'game.html',
+        end: 'end.html',
       },
     },
   },

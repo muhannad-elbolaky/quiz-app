@@ -1,7 +1,8 @@
 {
-  "name": "math-quiz",
+  "name": "mj-psu-exam-2024",
+  "author": "Muhannad Elbolaky",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
