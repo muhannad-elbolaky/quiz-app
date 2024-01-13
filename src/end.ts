@@ -13,7 +13,7 @@ const percentage = `${Math.round(
   (currentScoreNumber / questions.length) * 100
 )}%`;
 
-image.setAttribute('src', isPassed ? 'public/pass.png' : 'public/fail.png');
+image.setAttribute('src', isPassed ? 'pass.png' : 'fail.png');
 
 stats.innerHTML = `\
   ${
