@@ -99,6 +99,7 @@ function getNewQuestion() {
         rightAnswerText.style.transition = 'font-size 2s ease-in-out';
         rightAnswerText.style.textAlign = 'center';
         rightAnswerText.style.fontSize = '4rem';
+        rightAnswerText.scrollIntoView({ behavior: 'smooth' });
 
         const interval = setInterval(() => {
           rightAnswer.classList.toggle('correct');
@@ -107,6 +108,7 @@ function getNewQuestion() {
         setTimeout(() => {
           clearInterval(interval);
           rightAnswer.classList.add('correct');
+          rightAnswerText.scrollIntoView({ behavior: 'smooth' });
         }, 2000);
       }
 

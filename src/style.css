@@ -20,6 +20,10 @@
   font-family: 'Cairo', cursive;
 }
 
+body {
+  height: 100%;
+}
+
 h1 {
   font-size: 5.4rem;
   margin-bottom: 5rem;
@@ -33,7 +37,6 @@ h2 {
 span,
 p {
   font-size: 2.4rem;
-  margin-bottom: 1rem;
   text-align: right;
 }
 

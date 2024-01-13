@@ -29,13 +29,13 @@
 }
 
 .choice-prefix {
-  padding: 2rem 2.5rem;
+  padding: 1.5rem 2.5rem;
   font-weight: bold;
   color: var(--text);
 }
 
 .choice-text {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .correct {
@@ -43,8 +43,11 @@
 }
 
 .incorrect {
-  /* make incorrect gradiant */
   background: linear-gradient(45deg, #c70000 0%, #5c0000 100%);
+}
+
+#game {
+  margin: auto;
 }
 
 #hud {
@@ -62,6 +65,7 @@
 }
 
 #question {
+  text-overflow: ellipsis;
   text-align: center;
   line-height: 1.5;
 }
