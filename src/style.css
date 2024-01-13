@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root {
+  --text: #ededee;
+  --background: #0b0b0e;
+  --primary: #b0adcf;
+  --secondary: #3a3575;
+  --accent: #6c65ca;
+
+  background-color: var(--background);
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: 'Rubik', cursive;
+}
+
+h1 {
+  font-size: 5.4rem;
+  margin-bottom: 5rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+}
+
+.container {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  font-size: 2.4rem;
+  padding: 2rem 0;
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: var(--background);
+  background-color: var(--primary);
+  border-radius: 0.6rem;
+  transition: box-shadow 200ms ease-in-out, translate 200ms ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0.4rem 0.4rem var(--secondary);
+  translate: -0.4rem -0.4rem;
+  transition: box-shadow 200ms ease-in-out, translate 200ms ease-in-out;
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+#highscore-btn {
+  color: var(--text);
+  background-color: var(--secondary);
+}
+
+#highscore-btn:hover {
+  box-shadow: 0.4rem 0.4rem var(--primary);
+}
+
+.fa-crown {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+}
