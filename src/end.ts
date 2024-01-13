@@ -13,7 +13,12 @@ const percentage = `${Math.round(
   (currentScoreNumber / questions.length) * 100
 )}%`;
 
-image.setAttribute('src', isPassed ? 'pass.png' : 'fail.png');
+image.setAttribute(
+  'src',
+  isPassed
+    ? 'https://cdn.discordapp.com/attachments/1161625727523901540/1195677627688702053/vUjwA9A.png'
+    : 'https://cdn.discordapp.com/attachments/1161625727523901540/1195677632667324486/USKs6mU.png'
+);
 
 stats.innerHTML = `\
   ${
