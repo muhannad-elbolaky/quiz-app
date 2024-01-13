@@ -97,3 +97,27 @@ p {
   cursor: not-allowed;
   box-shadow: none;
 }
+
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 55%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  span,
+  p {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 2rem;
+    width: 25rem;
+  }
+}
