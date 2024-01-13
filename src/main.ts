@@ -9,7 +9,6 @@ const scoreText = document.querySelector('#score') as HTMLHeadingElement;
 
 type Question = {
   question: string;
-  answer: string;
   options: string[];
 };
 
@@ -49,7 +48,11 @@ function getNewQuestion() {
   choicesContainer.innerHTML = '';
 
   shuffle(currentQuestion.options).forEach((choice, index) => {
-    choicesContainer.innerHTML += createChoiceHTML(choice, index);
+    choicesContainer.innerHTML += createChoiceHTML(
+      choice,
+      index,
+      choice === currentQuestion.options[0]
+    );
   });
 
   availableQuestions.splice(questionIndex, 1);
@@ -61,7 +64,7 @@ function getNewQuestion() {
   ) as NodeListOf<HTMLDivElement>;
 
   choices.forEach((choice) => {
-    choice.addEventListener('click', (event) => {
+    choice.addEventListener('click', async (event) => {
       if (!acceptingAnswers) return;
 
       acceptingAnswers = false;
@@ -75,13 +78,36 @@ function getNewQuestion() {
       ) as HTMLParagraphElement;
 
       const classToApply =
-        selectedAnswer.innerText === currentQuestion.answer
+        selectedAnswer.innerText === currentQuestion.options[0]
           ? 'correct'
           : 'incorrect';
 
       if (classToApply === 'correct') {
         score++;
         scoreText.innerText = String(score);
+      } else {
+        const rightAnswer = document.querySelector(
+          '.hidden-correct'
+        ) as HTMLDivElement;
+        rightAnswer.classList.remove('hidden-correct');
+        rightAnswer.style.pointerEvents = 'none';
+        rightAnswer.style.transition = 'none';
+
+        const rightAnswerText = rightAnswer.querySelector(
+          '.choice-text'
+        ) as HTMLParagraphElement;
+        rightAnswerText.style.transition = 'font-size 2s ease-in-out';
+        rightAnswerText.style.textAlign = 'center';
+        rightAnswerText.style.fontSize = '4rem';
+
+        const interval = setInterval(() => {
+          rightAnswer.classList.toggle('correct');
+        }, 200);
+
+        setTimeout(() => {
+          clearInterval(interval);
+          rightAnswer.classList.add('correct');
+        }, 2000);
       }
 
       progressBarFull.style.width = `${
@@ -90,15 +116,24 @@ function getNewQuestion() {
 
       selectedAnswer.parentElement!.classList.add(classToApply);
 
-      setTimeout(() => getNewQuestion(), 1000);
+      setTimeout(
+        () => getNewQuestion(),
+        classToApply === 'correct' ? 1000 : 5000
+      );
     });
   });
 }
 
-function createChoiceHTML(choice: string, choiceIndex: number): string {
+function createChoiceHTML(
+  choice: string,
+  choiceIndex: number,
+  correct: boolean = false
+): string {
   const choicePrefix = String.fromCharCode(65 + choiceIndex);
   return `
-    <div class="choice-container" data-number="${choiceIndex + 1}">
+    <div class="choice-container ${
+      correct ? 'hidden-correct' : ''
+    }" data-number="${choiceIndex + 1}">
       <p class="choice-prefix">${choicePrefix}</p>
       <p class="choice-text">${choice}</p>
     </div>

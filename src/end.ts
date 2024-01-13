@@ -8,7 +8,7 @@ const currentScore = localStorage.getItem('currentScore') ?? 0;
 localStorage.setItem('mostRecentScore', currentScore.toString());
 
 const currentScoreNumber = Number(currentScore);
-const isPassed = currentScoreNumber >= questions.length;
+const isPassed = currentScoreNumber >= Math.round(questions.length / 2);
 const percentage = `${Math.round(
   (currentScoreNumber / questions.length) * 100
 )}%`;

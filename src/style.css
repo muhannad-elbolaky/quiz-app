@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
 :root {
   --text: #ededee;
@@ -16,7 +17,7 @@
   margin: 0;
   padding: 0;
   font-size: 62.5%;
-  font-family: 'Rubik', cursive;
+  font-family: 'Cairo', cursive;
 }
 
 h1 {

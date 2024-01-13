@@ -1,27 +1,28 @@
 [
   {
-    "question": "What is the capital of India?",
-    "answer": "New Delhi",
-    "options": ["New Delhi", "Mumbai", "Kolkata", "Chennai"]
+    "question": "البنك الالكتروني يعني ان الخدمات المالية في كل مكان وأي وقت",
+    "options": ["صح", "خطأ"]
   },
   {
-    "question": "What is the capital of Australia?",
-    "answer": "Canberra",
-    "options": ["Canberra", "Sydney", "Melbourne", "Perth"]
+    "question": "تقوم البنوك الإلكترونية بمد يد العون والمساعدة لأصحاب المشروعات الكبيرة بإنشاء وتأسيس مواقع لها علي شبكة الإنترنت",
+    "options": ["خطأ", "صح"]
   },
   {
-    "question": "What is the capital of USA?",
-    "answer": "Washington DC",
-    "options": ["Washington DC", "New York", "Los Angeles", "Chicago"]
+    "question": "منظمات مالية متخصصة في تجميع الأموال وتوظيفها في إطار الشريعة الإسلامية",
+    "options": [
+      "البنوك الاسلامية",
+      "البنوك التجارية",
+      "البنوك الالكترونية",
+      "الصناديق الاستثمارية"
+    ]
   },
   {
-    "question": "What is the capital of China?",
-    "answer": "Beijing",
-    "options": ["Beijing", "Shanghai"]
-  },
-  {
-    "question": "What is the capital of Japan?",
-    "answer": "Tokyo",
-    "options": ["Tokyo", "Osaka"]
+    "question": "تعني قبول البنك لمدخرات العميل كوديعة تخصص لنشاط استثماري معين يقترحه البنك على العميل",
+    "options": [
+      "الوكالة الخاصة",
+      "القروض العقارية المخصصة",
+      "حسابات التوفير التقليدية",
+      "الائتمان الشخصي بدون فوائد"
+    ]
   }
 ]

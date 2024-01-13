@@ -14,6 +14,7 @@
   background-color: var(--secondary);
   font-size: 3rem;
   min-width: 80rem;
+  align-items: center;
   transition: box-shadow 200ms ease-in-out, translate 200ms ease-in-out,
     background-color 200ms ease-in-out;
 }
@@ -58,6 +59,11 @@
 
 .hud-main-text {
   text-align: center;
+}
+
+#question {
+  text-align: center;
+  line-height: 1.5;
 }
 
 #progressBar {
