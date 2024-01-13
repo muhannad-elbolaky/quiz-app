@@ -15,7 +15,9 @@ const percentage = `${Math.round(
 
 image.setAttribute(
   'src',
-  isPassed
+  currentScoreNumber / questions.length >= 0.98
+    ? 'https://cdn.discordapp.com/attachments/1161625727523901540/1195681520975872090/iTkpHhB.gif'
+    : currentScoreNumber / questions.length >= 0.5
     ? 'https://cdn.discordapp.com/attachments/1161625727523901540/1195680809827455096/uXW0B8s.png'
     : 'https://cdn.discordapp.com/attachments/1161625727523901540/1195677632667324486/USKs6mU.png'
 );
