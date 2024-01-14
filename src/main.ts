@@ -41,6 +41,9 @@ function getNewQuestion() {
 
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
+
+  if (currentQuestion.question.length > 100) question.style.fontSize = '3rem';
+
   question.innerText = currentQuestion.question;
 
   const choicesContainer = document.querySelector('.choices') as HTMLDivElement;
