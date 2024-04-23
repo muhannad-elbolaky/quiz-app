@@ -16,10 +16,10 @@ const percentage = `${Math.round(
 image.setAttribute(
   'src',
   currentScoreNumber / questions.length >= 0.98
-    ? 'https://cdn.discordapp.com/attachments/1161625727523901540/1195681520975872090/iTkpHhB.gif'
+    ? 'https://cdn.discordapp.com/attachments/1122243494312939560/1232247471959183410/majoramari_2024-04-23_EPYu.png?ex=6628c363&is=662771e3&hm=62b5afa6b537fc662e1e75441b47212f765b8df43781a733216c163b0b29785d&'
     : currentScoreNumber / questions.length >= 0.5
-    ? 'https://cdn.discordapp.com/attachments/1161625727523901540/1195680809827455096/uXW0B8s.png'
-    : 'https://cdn.discordapp.com/attachments/1161625727523901540/1195677632667324486/USKs6mU.png'
+    ? 'https://cdn.discordapp.com/attachments/1122243494312939560/1232247152252813322/DJIOSAJDIOAJD.jpg?ex=6628c317&is=66277197&hm=956a64b41128739c3c357a93930690cff11a24b3d400d90c599e60c4941fd874&'
+    : 'https://cdn.discordapp.com/attachments/1122243494312939560/1232246408556314695/EYVhGNJX0AIPOUw.jpg?ex=6628c265&is=662770e5&hm=81dc11c3faba79cd19139bd46535d36043a5f86f231e1ec012681fcd8ab71d9c&'
 );
 
 stats.innerHTML = `\

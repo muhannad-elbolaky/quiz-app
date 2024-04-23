@@ -1,122 +1,143 @@
 [
   {
-    "question": "البنك الالكتروني يعني ان الخدمات المالية في كل مكان وأي وقت",
-    "options": ["صح", "خطأ"]
+    "question": "Presentations or talks both usually start out as points captured in ......",
+    "options": ["Writing", "Drawing", "Painting", "Teaching"]
   },
   {
-    "question": "تقوم البنوك الإلكترونية بمد يد العون والمساعدة لأصحاب المشروعات الكبيرة بإنشاء وتأسيس مواقع لها علي شبكة الإنترنت",
-    "options": ["خطأ", "صح"]
+    "question": "In presentations or talks we may use ...... for your audience.",
+    "options": ["Handouts", "Books", "Essays", "Poems"]
   },
   {
-    "question": "منظمات مالية متخصصة في تجميع الأموال وتوظيفها في إطار الشريعة الإسلامية",
+    "question": "Why do any of us give a presentation?",
     "options": [
-      "البنوك الاسلامية",
-      "البنوك التجارية",
-      "البنوك الالكترونية",
-      "الصناديق الاستثمارية"
+      "All of the above.",
+      "It will almost be for a clear business proposal.",
+      "It can be the first step to attract customers.",
+      "It answers a formal request for information."
     ]
   },
   {
-    "question": "تعني قبول البنك لمدخرات العميل كوديعة تخصص لنشاط استثماري معين يقترحه البنك على العميل",
+    "question": "How can you benefit by being a non-native English presenter?",
     "options": [
-      "الوكالة الخاصة",
-      "القروض العقارية المخصصة",
-      "حسابات التوفير التقليدية",
-      "الوكالة العامة"
+      "Asking audience to stop you at any time to explain anything that you may not have made entirely clear.",
+      "Do not answer any explanation from your audience.",
+      "You should be hesitated.",
+      "You can write imperfect English handouts."
     ]
   },
   {
-    "question": "تعني كفالة الحرية الكاملة للبنك في تلقي الودائع مع العملاء والقيام بتوجيهها في مجالات النشاط التي يراها مناسبة",
+    "question": "A slide contains a word audience ......, may be a reason of distractions.",
+    "options": ["Do not understand", "Believe in", "Consider", "Understand"]
+  },
+  {
+    "question": "A slide contains ......, may be a reason of distractions.",
     "options": [
-      "الوكالة العامة",
-      "الوكالة الخاصة",
-      "لاحتكار المصرفي",
-      "الرقابة المصرفية"
+      "Spelling or grammatical mistake",
+      "Photos",
+      "Graphics",
+      "Visuals"
     ]
   },
   {
-    "question": "تتمثل في اشتراك كل من البنك وطالب التمويل في علاقة يشارك البنك فيها بجزء من التمويل الكلي المطلوب كما يشارك العميل أيضا بالجزء الباقي منه",
-    "options": ["المشاركة", "القرض الفردي", "التمويل الذاتي", "التمويل الحصري"]
+    "question": "Presentations can be a new format for business ......",
+    "options": ["Reports", "Accounts", "Process", "Products"]
   },
   {
-    "question": "تعني تقديم البنك لتمويل المشروع بالكامل وبذلك يعتبر البنك صاحب المال المدار أما العميل فإنه يقدم عمله وجهوده",
+    "question": "Explain any ...... and English acronyms that may be in your slides.",
+    "options": ["Technical terms", "Essays", "Movement", "TV shows"]
+  },
+  {
+    "question": "Give your audience a clear written ...... through your presentation.",
+    "options": ["Roadmap", "Verse", "Song", "Rhyme"]
+  },
+  {
+    "question": "Writing must be ...... point of contact.",
+    "options": ["An Effective", "Inadequate", "Weak", "Useless"]
+  },
+  {
+    "question": "You can achieve an effective writing by looking at things as if you are the ...... about to make a purchase.",
+    "options": ["Consumer", "Manager", "Leader", "Foreman"]
+  },
+  {
+    "question": "Writing well is an opportunity to ...... to new customers.",
     "options": [
-      "المضاربة",
-      "التمويل الكامل",
-      "التمويل الجزئي",
-      "التمويل البنكي"
+      "Open the door",
+      "Close the door",
+      "Paint the door",
+      "Change the door"
     ]
   },
   {
-    "question": "من الشروط العامة للتأمين",
+    "question": "According to advertising and promotional literature for a global market, your words should be ......",
+    "options": ["To the point", "Mislead", "Out of the point", "Deceive"]
+  },
+  {
+    "question": "Trading internationally may require a totally ...... mindset.",
+    "options": ["Different", "Typical", "Traditional", "Outdated"]
+  },
+  {
+    "question": "Thank you for your recent ...... and please find our order attached.",
+    "options": ["Quotation", "Party", "Celebration", "Festival"]
+  },
+  {
+    "question": "Thank you for your provisional order. We enclose our ......",
+    "options": ["Invoice", "Employee", "Test", "Essay"]
+  },
+  {
+    "question": "We are pleased to confirm your order. All items are in ...... and we will advise you of the delivery date shortly.",
+    "options": ["Stock", "House", "Home", "School"]
+  },
+  {
+    "question": "Airfreight term means ......",
     "options": [
-      "كل الخيارات صحيحة",
-      "ان يكون الخطر محتمل الوقوع",
-      "ألا يتحقق الخطر بإرادة المؤمن له",
-      "أن يتحقق الخطر في المستقبل"
+      "Carrying goods by plane",
+      "Carrying goods by bus",
+      "Carrying goods by train",
+      "Carrying goods by car"
     ]
   },
   {
-    "question": "من الشروط الفنية للتأمين",
-    "options": [
-      "ان يكون الخطر قابلا للقياس الكمي",
-      "ان يكون الخطر محتمل الوقوع",
-      "تخفيض الحوادث",
-      "كل الخيارات صحيحة"
-    ]
+    "question": "You can impress your audience with perfectly composed slides written in perfect English.",
+    "options": ["True", "False"]
   },
   {
-    "question": "ترجع أهمية شرط ألا يتحقق الخطر بإرادة له إلى",
-    "options": [
-      "كل الخيارات صحيحة",
-      "تعمد وقوع الخطر يتنافى مع شرط احتمالية وقوع الخطر",
-      "التعمد وسيلة للثراء غير المشروع",
-      "الخسائر تصيب المجتمع ككل"
-    ]
+    "question": "According to presentation skills, you need to be hesitant in your ability from the start.",
+    "options": ["False", "True"]
   },
   {
-    "question": "من مبادي التامين",
-    "options": [
-      "مبدا الحلول في الحقوق",
-      "ان يكون الخطر قابلا للقياس الكمي",
-      "تخفيض الحوادث",
-      "كل الخيارات صحيحة"
-    ]
+    "question": "A presentation contains a flaw in logic, may be a reason of distractions.",
+    "options": ["True", "False"]
   },
   {
-    "question": "من الشروط الواجب توافرها لتطبيق مبدأ المشاركة",
-    "options": [
-      "كل الخيارات صحيحة",
-      "ان تكون جميع الوثائق سارية المفعول وقت وقوع الحادث",
-      "ان تغطي جميع الوثائق نفس الشئ موضوع التأمين",
-      "أن يكون الخطر مؤمن عليه"
-    ]
+    "question": "You should prepare your presentation well and plan your words with confidence.",
+    "options": ["True", "False"]
   },
   {
-    "question": "يهدف التأمين إلى تحقيق الآثار المالية لأخطار عن طريق",
-    "options": [
-      "تجميع الوحدات التي تتعرض لنفس الخطر والمشاركة في الخسائر",
-      "مشروعية بموضوع العقد",
-      "الإلزام للطرفين",
-      "كل الخيارات صحيحة"
-    ]
+    "question": "You do not need to be ensure that your slides are in well-written English.",
+    "options": ["False", "True"]
   },
   {
-    "question": "من اهداف التأمين",
-    "options": [
-      "كل الخيارات صحيحة",
-      "تخفيض الاثار الماليه للاخطار",
-      "تعميم نظام التكامل الاجتماعي",
-      "حماية الأسرة"
-    ]
+    "question": "It is preferred to try to create a dialogue in your slides and handouts that will continue after your talk.",
+    "options": ["True", "False"]
   },
   {
-    "question": "من وظائف التأمين",
-    "options": [
-      "دعم ميزان المدفوعات",
-      "حماية الأسرة",
-      "دفع الأفراد والمنشآت لاقتحام مجالات النشاط",
-      "كل الخيارات صحيحة"
-    ]
+    "question": "Can you offer a volume discount?",
+    "options": ["True", "False"]
+  },
+  {
+    "question": "Please confirm that we will not receive the delivery by mid-December.",
+    "options": ["False", "True"]
+  },
+  {
+    "question": "On receipt of your payment, we will be pleased to deliver your order within seven days.",
+    "options": ["True", "False"]
+  },
+  {
+    "question": "We are pleasure that items 1 and 2 are currently out of stock.",
+    "options": ["False", "True"]
+  },
+  {
+    "question": "Our prices are subject to currency fluctuations.",
+    "options": ["True", "False"]
   }
 ]
