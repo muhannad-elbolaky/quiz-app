@@ -97,6 +97,97 @@
     ]
   },
   {
+    "question": "...... is managing profitable customer relationships.",
+    "options": ["Innovation", "Origination", "Marketing", "discount"]
+  },
+  {
+    "question": "The two goals of marketing are to ...... by promising superior quality and grow current customers by delivering satisfaction.",
+    "options": [
+      "attract new customers",
+      "avoid new customers",
+      "avoid old customers",
+      "none of the above"
+    ]
+  },
+  {
+    "question": "...... are often responsible for influencing the level, timing and composition of customer demand.",
+    "options": [
+      "Marketing managers",
+      "Accounting managers",
+      "HR managers",
+      "Store managers"
+    ]
+  },
+  {
+    "question": "The role of a marketing manager can vary based on a ...... and corporate culture.",
+    "options": ["Business size", "Hall size", "Flat size", "Building size"]
+  },
+  {
+    "question": "The quality of the product or service being sold is ...... for customers.",
+    "options": [
+      "An important force",
+      "An unimportant force",
+      "nonsense",
+      "meaninglessness"
+    ]
+  },
+  {
+    "question": "Companies usually prepare annual plans, long-range plans, and ......",
+    "options": [
+      "Strategic plans",
+      "Football plans",
+      "Trip plans",
+      "Building plans"
+    ]
+  },
+  {
+    "question": "...... is the process of developing a strategic fit between the organization's goals and capabilities and its changing marketing opportunities.",
+    "options": [
+      "Strategic planning",
+      "Annual planning",
+      "Long-range planning",
+      "Short term planning"
+    ]
+  },
+  {
+    "question": "Because the purpose of business is to create a customer, any business enterprise has two basic functions: marketing and ......",
+    "options": ["innovation", "planning", "preparation", "organization"]
+  },
+  {
+    "question": "...... is an Austrian management consultant, educator, and author, whose writings contributed the modern business corporation.",
+    "options": [
+      "Peter Drucker",
+      "Henry S. Dennison",
+      "Willard Rockwell",
+      "Walker Lee"
+    ]
+  },
+  {
+    "question": "The ...... model is the foundation of modern marketing and advertising practice.",
+    "options": ["AIDA", "AEDE", "OIDO", "TIDA"]
+  },
+  {
+    "question": "According to the AIDA model, ...... Hold the customer's interest by providing information about the advantages of the product or service and its benefits to the customer.",
+    "options": ["INTEREST", "DESIRE", "ATTENTION", "ACTION"]
+  },
+  {
+    "question": "...... are how organizations make their product or service stand out from the competition.",
+    "options": ["Brands", "Products", "Properties", "Goods"]
+  },
+  {
+    "question": "...... is a promotional activity which aims to sell a product or service to a target audience.",
+    "options": ["Advertising", "Innovation", "Freshness", "Novelty"]
+  },
+  {
+    "question": "...... is an impact of advertising on behaviors and outcomes.",
+    "options": [
+      "announcing the existence of new good.",
+      "connecting a cable to power.",
+      "revealing the disadvantages of the good.",
+      "set a specific brand in a box."
+    ]
+  },
+  {
     "question": "You can impress your audience with perfectly composed slides written in perfect English.",
     "options": ["True", "False"]
   },
@@ -139,5 +230,38 @@
   {
     "question": "Our prices are subject to currency fluctuations.",
     "options": ["True", "False"]
+  },
+
+  {
+    "question": "price must be consistently kept low for constant customer commitment.",
+    "options": ["True", "False"]
+  },
+  {
+    "question": "Accounting is the link between production and profit, providing the best way for selling.",
+    "options": ["False", "True"]
+  },
+  {
+    "question": "The annual and long-range plans deal with the company’s past businesses.",
+    "options": ["False", "True"]
+  },
+  {
+    "question": "EIDA outlines the four basic steps that can be used to persuade potential customers to make a purchase.",
+    "options": ["False", "True"]
+  },
+  {
+    "question": "According to the AIDA model; ACTION, make it as easy as possible for the customer to make the purchase.",
+    "options": ["False", "True"]
+  },
+  {
+    "question": "a brand is more than just a logo or attractive packaging.",
+    "options": ["True", "False"]
+  },
+  {
+    "question": "Advertising is one of the oldest forms of marketing which attempts to influence the actions of its target audience.",
+    "options": ["True", "False"]
+  },
+  {
+    "question": "Placing a specific brand in a box is one of advertising impacts.",
+    "options": ["False", "True"]
   }
 ]

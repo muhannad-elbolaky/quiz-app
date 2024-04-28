@@ -145,12 +145,21 @@ function createChoiceHTML(
   `;
 }
 
-function shuffle<T>(array: T[]): T[] {
+function shuffle<T extends string>(array: T[]): T[] {
   const shuffledArray = array.slice();
 
+  // Shuffle the array
   for (let i = shuffledArray.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+
+  // Ensure 'True' is on top
+  const trueIndex = shuffledArray.indexOf('True' as T);
+  if (trueIndex !== 0 && trueIndex !== -1) {
+    const temp = shuffledArray[0];
+    shuffledArray[0] = shuffledArray[trueIndex];
+    shuffledArray[trueIndex] = temp;
   }
 
   return shuffledArray;
