@@ -1,267 +1,541 @@
 [
-  {
-    "question": "Presentations or talks both usually start out as points captured in ......",
-    "options": ["Writing", "Drawing", "Painting", "Teaching"]
-  },
-  {
-    "question": "In presentations or talks we may use ...... for your audience.",
-    "options": ["Handouts", "Books", "Essays", "Poems"]
-  },
-  {
-    "question": "Why do any of us give a presentation?",
-    "options": [
-      "All of the above.",
-      "It will almost be for a clear business proposal.",
-      "It can be the first step to attract customers.",
-      "It answers a formal request for information."
-    ]
-  },
-  {
-    "question": "How can you benefit by being a non-native English presenter?",
-    "options": [
-      "Asking audience to stop you at any time to explain anything that you may not have made entirely clear.",
-      "Do not answer any explanation from your audience.",
-      "You should be hesitated.",
-      "You can write imperfect English handouts."
-    ]
-  },
-  {
-    "question": "A slide contains a word audience ......, may be a reason of distractions.",
-    "options": ["Do not understand", "Believe in", "Consider", "Understand"]
-  },
-  {
-    "question": "A slide contains ......, may be a reason of distractions.",
-    "options": [
-      "Spelling or grammatical mistake",
-      "Photos",
-      "Graphics",
-      "Visuals"
-    ]
-  },
-  {
-    "question": "Presentations can be a new format for business ......",
-    "options": ["Reports", "Accounts", "Process", "Products"]
-  },
-  {
-    "question": "Explain any ...... and English acronyms that may be in your slides.",
-    "options": ["Technical terms", "Essays", "Movement", "TV shows"]
-  },
-  {
-    "question": "Give your audience a clear written ...... through your presentation.",
-    "options": ["Roadmap", "Verse", "Song", "Rhyme"]
-  },
-  {
-    "question": "Writing must be ...... point of contact.",
-    "options": ["An Effective", "Inadequate", "Weak", "Useless"]
-  },
-  {
-    "question": "You can achieve an effective writing by looking at things as if you are the ...... about to make a purchase.",
-    "options": ["Consumer", "Manager", "Leader", "Foreman"]
-  },
-  {
-    "question": "Writing well is an opportunity to ...... to new customers.",
-    "options": [
-      "Open the door",
-      "Close the door",
-      "Paint the door",
-      "Change the door"
-    ]
-  },
-  {
-    "question": "According to advertising and promotional literature for a global market, your words should be ......",
-    "options": ["To the point", "Mislead", "Out of the point", "Deceive"]
-  },
-  {
-    "question": "Trading internationally may require a totally ...... mindset.",
-    "options": ["Different", "Typical", "Traditional", "Outdated"]
-  },
-  {
-    "question": "Thank you for your recent ...... and please find our order attached.",
-    "options": ["Quotation", "Party", "Celebration", "Festival"]
-  },
-  {
-    "question": "Thank you for your provisional order. We enclose our ......",
-    "options": ["Invoice", "Employee", "Test", "Essay"]
-  },
-  {
-    "question": "We are pleased to confirm your order. All items are in ...... and we will advise you of the delivery date shortly.",
-    "options": ["Stock", "House", "Home", "School"]
-  },
-  {
-    "question": "Airfreight term means ......",
-    "options": [
-      "Carrying goods by plane",
-      "Carrying goods by bus",
-      "Carrying goods by train",
-      "Carrying goods by car"
-    ]
-  },
-  {
-    "question": "...... is managing profitable customer relationships.",
-    "options": ["Innovation", "Origination", "Marketing", "discount"]
-  },
-  {
-    "question": "The two goals of marketing are to ...... by promising superior quality and grow current customers by delivering satisfaction.",
-    "options": [
-      "attract new customers",
-      "avoid new customers",
-      "avoid old customers",
-      "none of the above"
-    ]
-  },
-  {
-    "question": "...... are often responsible for influencing the level, timing and composition of customer demand.",
-    "options": [
-      "Marketing managers",
-      "Accounting managers",
-      "HR managers",
-      "Store managers"
-    ]
-  },
-  {
-    "question": "The role of a marketing manager can vary based on a ...... and corporate culture.",
-    "options": ["Business size", "Hall size", "Flat size", "Building size"]
-  },
-  {
-    "question": "The quality of the product or service being sold is ...... for customers.",
-    "options": [
-      "An important force",
-      "An unimportant force",
-      "nonsense",
-      "meaninglessness"
-    ]
-  },
-  {
-    "question": "Companies usually prepare annual plans, long-range plans, and ......",
-    "options": [
-      "Strategic plans",
-      "Football plans",
-      "Trip plans",
-      "Building plans"
-    ]
-  },
-  {
-    "question": "...... is the process of developing a strategic fit between the organization's goals and capabilities and its changing marketing opportunities.",
-    "options": [
-      "Strategic planning",
-      "Annual planning",
-      "Long-range planning",
-      "Short term planning"
-    ]
-  },
-  {
-    "question": "Because the purpose of business is to create a customer, any business enterprise has two basic functions: marketing and ......",
-    "options": ["innovation", "planning", "preparation", "organization"]
-  },
-  {
-    "question": "...... is an Austrian management consultant, educator, and author, whose writings contributed the modern business corporation.",
-    "options": [
-      "Peter Drucker",
-      "Henry S. Dennison",
-      "Willard Rockwell",
-      "Walker Lee"
-    ]
-  },
-  {
-    "question": "The ...... model is the foundation of modern marketing and advertising practice.",
-    "options": ["AIDA", "AEDE", "OIDO", "TIDA"]
-  },
-  {
-    "question": "According to the AIDA model, ...... Hold the customer's interest by providing information about the advantages of the product or service and its benefits to the customer.",
-    "options": ["INTEREST", "DESIRE", "ATTENTION", "ACTION"]
-  },
-  {
-    "question": "...... are how organizations make their product or service stand out from the competition.",
-    "options": ["Brands", "Products", "Properties", "Goods"]
-  },
-  {
-    "question": "...... is a promotional activity which aims to sell a product or service to a target audience.",
-    "options": ["Advertising", "Innovation", "Freshness", "Novelty"]
-  },
-  {
-    "question": "...... is an impact of advertising on behaviors and outcomes.",
-    "options": [
-      "announcing the existence of new good.",
-      "connecting a cable to power.",
-      "revealing the disadvantages of the good.",
-      "set a specific brand in a box."
-    ]
-  },
-  {
-    "question": "You can impress your audience with perfectly composed slides written in perfect English.",
-    "options": ["True", "False"]
-  },
-  {
-    "question": "According to presentation skills, you need to be hesitant in your ability from the start.",
-    "options": ["False", "True"]
-  },
-  {
-    "question": "A presentation contains a flaw in logic, may be a reason of distractions.",
-    "options": ["True", "False"]
-  },
-  {
-    "question": "You should prepare your presentation well and plan your words with confidence.",
-    "options": ["True", "False"]
-  },
-  {
-    "question": "You do not need to be ensure that your slides are in well-written English.",
-    "options": ["False", "True"]
-  },
-  {
-    "question": "It is preferred to try to create a dialogue in your slides and handouts that will continue after your talk.",
-    "options": ["True", "False"]
-  },
-  {
-    "question": "Can you offer a volume discount?",
-    "options": ["True", "False"]
-  },
-  {
-    "question": "Please confirm that we will not receive the delivery by mid-December.",
-    "options": ["False", "True"]
-  },
-  {
-    "question": "On receipt of your payment, we will be pleased to deliver your order within seven days.",
-    "options": ["True", "False"]
-  },
-  {
-    "question": "We are pleasure that items 1 and 2 are currently out of stock.",
-    "options": ["False", "True"]
-  },
-  {
-    "question": "Our prices are subject to currency fluctuations.",
-    "options": ["True", "False"]
-  },
-
-  {
-    "question": "price must be consistently kept low for constant customer commitment.",
-    "options": ["True", "False"]
-  },
-  {
-    "question": "Accounting is the link between production and profit, providing the best way for selling.",
-    "options": ["False", "True"]
-  },
-  {
-    "question": "The annual and long-range plans deal with the company’s past businesses.",
-    "options": ["False", "True"]
-  },
-  {
-    "question": "EIDA outlines the four basic steps that can be used to persuade potential customers to make a purchase.",
-    "options": ["False", "True"]
-  },
-  {
-    "question": "According to the AIDA model; ACTION, make it as easy as possible for the customer to make the purchase.",
-    "options": ["False", "True"]
-  },
-  {
-    "question": "a brand is more than just a logo or attractive packaging.",
-    "options": ["True", "False"]
-  },
-  {
-    "question": "Advertising is one of the oldest forms of marketing which attempts to influence the actions of its target audience.",
-    "options": ["True", "False"]
-  },
-  {
-    "question": "Placing a specific brand in a box is one of advertising impacts.",
-    "options": ["False", "True"]
-  }
+	{
+		"question": "Presentations or talks both usually start out as points captured in ......",
+		"options": ["writing", "painting", "drawing", "teaching"]
+	},
+	{
+		"question": "In presentations or talks we may use ...... for your audience.",
+		"options": ["handouts", "books", "essays", "poems"]
+	},
+	{
+		"question": "Why do any of us give a presentation?",
+		"options": [
+			"All of the above.",
+			"It will almost be for a clear business",
+			"It answers a formal request for proposal.",
+			"It can be the first step to attract customers."
+		]
+	},
+	{
+		"question": "How can you benefit by being a non-native English presenter?",
+		"options": [
+			"Asking audience to stop you at any time to explain anything that you may not have made entirely clear.",
+			"Do not answer any explanation from your audience.",
+			"You should be hesitated.",
+			"you can write imperfect English handouts."
+		]
+	},
+	{
+		"question": "A slide contains a word audience ...... may not understand, may be a reason of distractions.",
+		"options": ["do not understand", "understand", "consider", "Believe in"]
+	},
+	{
+		"question": "A slide contains ...... may be a reason of distractions.",
+		"options": [
+			"spelling or grammatical mistake",
+			"graphics",
+			"photos",
+			"visuals"
+		]
+	},
+	{
+		"question": "Presentations can be a new format for business ......",
+		"options": ["reports", "products", "accounts", "process"]
+	},
+	{
+		"question": "Explain any ...... and English acronyms that may be in your slides.",
+		"options": ["technical terms", "Tv show", "movement", "essay"]
+	},
+	{
+		"question": "Give your audience a clear written ...... through your presentation.",
+		"options": ["roadmap", "song", "verse", "rhyme"]
+	},
+	{
+		"question": "Writing must be ...... point of contact.",
+		"options": ["an effective", "useless", "inadequate", "weak"]
+	},
+	{
+		"question": "You can achieve an effective writing by looking at things as if you are the ...... about to make a purchase.",
+		"options": ["consumer", "manager", "leader", "foreman"]
+	},
+	{
+		"question": "Writing well is an opportunity to ...... to new customers.",
+		"options": [
+			"open the door",
+			"close the door",
+			"change the door",
+			"paint the door"
+		]
+	},
+	{
+		"question": "According to advertising and promotional literature for a global market, your words should be ......",
+		"options": ["to the point.", "out of the point.", "mislead.", "deceive."]
+	},
+	{
+		"question": "Trading internationally may require a totally ...... mindset.",
+		"options": ["different", "typical", "traditional", "outdated"]
+	},
+	{
+		"question": "Thank you for your recent ...... and please find our order attached.",
+		"options": ["quotation", "party", "celebration", "festival"]
+	},
+	{
+		"question": "Thank you for your provisional order. We enclose our ......",
+		"options": ["invoice", "essay", "employee", "test"]
+	},
+	{
+		"question": "We are pleased to confirm your order. All items are in ...... and we will advise you of the delivery date shortly.",
+		"options": ["stock", "home", "house", "school"]
+	},
+	{
+		"question": "Airfreight term means ......",
+		"options": [
+			"carrying goods by plane",
+			"carrying goods by train",
+			"carrying goods by bus",
+			"carrying goods by car"
+		]
+	},
+	{
+		"question": "There are ...... steps help you communicate effectively",
+		"options": ["four", "three", "two", "five"]
+	},
+	{
+		"question": "...... is one of steps help you communicate effectively.",
+		"options": [
+			"Step1: You should be correct",
+			"Step1: you should be nervous",
+			"Step1: you should be worried",
+			"Step1: you should be incorrect"
+		]
+	},
+	{
+		"question": "Your words should be ...... for reader and customer expectations",
+		"options": ["match", "vague", "obscure", "ambiguous"]
+	},
+	{
+		"question": "To communicate effectively you should be ......",
+		"options": ["clear", "redundant", "excessive", "exaggerated"]
+	},
+	{
+		"question": "Your writings should be edited so that your main points are ......",
+		"options": [
+			"easily understood",
+			"difficultly understood",
+			"unexpected",
+			"not understood"
+		]
+	},
+	{
+		"question": "Use ...... to present yourself and your company well.",
+		"options": [
+			"the right style",
+			"complicated style",
+			"strange style",
+			"the right machine"
+		]
+	},
+	{
+		"question": "...... is one of steps help you communicate effectively.",
+		"options": [
+			"Step 4: You should focus on your customers",
+			"Step 4: You should ignore your customers",
+			"Step 4: You should focus on your career",
+			"Step 4: You should avoid your customers"
+		]
+	},
+	{
+		"question": "Use ...... words where possible.",
+		"options": ["Positive", "negative", "harmful", "none of the above"]
+	},
+	{
+		"question": "Avoid words that ......",
+		"options": [
+			"put up barriers",
+			"are clear",
+			"clarify your goal",
+			"are positive"
+		]
+	},
+	{
+		"question": "Points you should identify before you write a report ......",
+		"options": [
+			"All of the above",
+			"Define the objectives of your writing and your readers.",
+			"Define the background of your readers.",
+			"Realize to how extent they need to use the report"
+		]
+	},
+	{
+		"question": "What must you do in the report: ......, persuade, anticipate problems, offer solutions?",
+		"options": ["inform", "buy", "sell", "reduce"]
+	},
+	{
+		"question": "Write the report and ...... how to make the right impact.",
+		"options": ["evaluate", "draw", "avoid", "duck"]
+	},
+	{
+		"question": "Check what you have written in your report for both sense and ......",
+		"options": ["logic", "religion", "belief", "faith"]
+	},
+	{
+		"question": "Check your writing for mistakes in your English, including a ...... and grammar check.",
+		"options": ["spellcheck", "Mind check", "Check up", "self-check"]
+	},
+	{
+		"question": "The agenda must be ...... to the meeting and results focused.",
+		"options": ["Specific", "general", "universal", "common"]
+	},
+	{
+		"question": "A meeting agenda should be distributed well in advance of the ......",
+		"options": ["meeting", "travel", "trip", "journey"]
+	},
+	{
+		"question": "To plan a good agenda, you should ...... with other parties to inform or gain external input.",
+		"options": ["communicate", "disturb", "distract", "interrupt"]
+	},
+	{
+		"question": "...... is managing profitable customer relationships.",
+		"options": ["Marketing", "Innovation", "Origination", "discount"]
+	},
+	{
+		"question": "The two goals of marketing are to ...... by promising superior quality and grow current customers by delivering satisfaction.",
+		"options": [
+			"attract new customers",
+			"avoid new customers",
+			"avoid old customers",
+			"none of the above"
+		]
+	},
+	{
+		"question": "...... are often responsible for influencing the level, timing and composition of customer demand.",
+		"options": [
+			"Marketing managers",
+			"Accounting managers",
+			"HR managers",
+			"Store managers"
+		]
+	},
+	{
+		"question": "The role of a marketing manager can vary based on a ...... and corporate culture.",
+		"options": ["business size", "hall size", "flat size", "building size"]
+	},
+	{
+		"question": "The quality of the product or service being sold is ...... for customers.",
+		"options": [
+			"an important force",
+			"An unimportant force",
+			"nonsense",
+			"meaninglessness"
+		]
+	},
+	{
+		"question": "Companies usually prepare annual plans, long-range plans, and ......",
+		"options": [
+			"strategic plans",
+			"Football plans",
+			"Building plans",
+			"Trip plans"
+		]
+	},
+	{
+		"question": "...... is the process of developing a strategic fit between the organization’s goals and capabilities and its changing marketing opportunities.",
+		"options": [
+			"Strategic planning",
+			"annual planning",
+			"long-range planning",
+			"Short term planning"
+		]
+	},
+	{
+		"question": "Because the purpose of business is to create a customer, any business enterprise has two basic functions: marketing and ......",
+		"options": ["innovation", "planning", "preparation", "organization"]
+	},
+	{
+		"question": "...... is an Austrian management consultant, educator, and author, whose writings contributed the modern business corporation",
+		"options": [
+			"Peter Drucker",
+			"Henry S. Dennison",
+			"Willard Rockwell",
+			"Walker Lee"
+		]
+	},
+	{
+		"question": "The ...... model is the foundation of modern marketing and advertising practice.",
+		"options": ["AIDA", "OIDO", "AEDE", "TIDA"]
+	},
+	{
+		"question": "According to the AIDA model, ...... Hold the customer’s interest by providing information about the advantages of the product or service and its benefits to the customer.",
+		"options": ["INTEREST", "ATTENTION", "DESIRE", "ACTION"]
+	},
+	{
+		"question": "...... are how organizations make their product or service stand out from the competition.",
+		"options": ["Brands", "products", "goods", "properties"]
+	},
+	{
+		"question": "...... is a promotional activity which aims to sell a product or service to a target audience.",
+		"options": ["Advertising", "innovation", "freshness", "novelty"]
+	},
+	{
+		"question": "...... is an impact of advertising on behaviors and outcomes.",
+		"options": [
+			"announcing the existence of new good",
+			"revealing the disadvantages of the good.",
+			"connecting a cable to power.",
+			"set a specific brand in a box."
+		]
+	},
+	{
+		"question": "The impact of advertising on behaviors and outcomes.",
+		"options": [
+			"It connects a good to a need.",
+			"It maintains a good.",
+			"It connects a cable to power.",
+			"It reveals the disadvantages of the good."
+		]
+	},
+	{
+		"question": "While leadership is about vision, management is about process, planning, and ......",
+		"options": ["all of the above", "budgeting", "staffing", "structuring"]
+	},
+	{
+		"question": "There are three management roles: informational, interpersonal and ......",
+		"options": ["decisional", "divisional", "sectional", "educational"]
+	},
+	{
+		"question": "...... is about setting the agenda and empowering people to produce useful change.",
+		"options": ["Leadership", "Management", "marketing", "Accounting"]
+	},
+	{
+		"question": "Effective teams require ...... supervision and less direction than individuals.",
+		"options": ["less", "extra", "more", "widely"]
+	},
+	{
+		"question": "...... is an individual or organization that has employees.",
+		"options": ["An employer", "An accountant", "An administrator", "A manager"]
+	},
+	{
+		"question": "Employee ...... is one of Human Resource Management activities.",
+		"options": ["development", "production", "habits", "traditions"]
+	},
+	{
+		"question": "Employee ...... is one of Human Resource Management activities.",
+		"options": ["maintenance", "production", "traditions", "habits"]
+	},
+	{
+		"question": "Improve levels of employee performance is a principal objective of ...... management.",
+		"options": ["reward", "discount", "deduct", "subtract"]
+	},
+	{
+		"question": "...... is an individual reward.",
+		"options": ["Bonuses", "Profit sharing", "Team bonuses", "Share ownership"]
+	},
+	{
+		"question": "Commissions is ......",
+		"options": [
+			"an individual reward.",
+			"a Team reward.",
+			"an Organizational reward.",
+			"a group reward."
+		]
+	},
+	{
+		"question": "What Is Accounting?",
+		"options": [
+			"Accounting is the language of business.",
+			"Accounting is the language of Art.",
+			"Accounting is a body language.",
+			"Accounting is a new Brand."
+		]
+	},
+	{
+		"question": "...... is the process of recording, classifying, and summarizing economic events through certain documents or financial statements.",
+		"options": ["Accounting", "Advertising", "Education", "Engineering"]
+	},
+	{
+		"question": "Accountants supply information to people both inside and outside the firm by issuing formal reports that are called ......",
+		"options": ["financial statements.", "Tasks", "Charts", "Videos"]
+	},
+	{
+		"question": "The financial statements are usually issued at least ......",
+		"options": [
+			"once a year",
+			"Every two years",
+			"Every three years",
+			"Once a week"
+		]
+	},
+	{
+		"question": "What Is an Employer?",
+		"options": [
+			"It is an individual or organization that has employees.",
+			"It is a Worker.",
+			"It is an actor.",
+			"It is an audience."
+		]
+	},
+	{
+		"question": "You can impress your audience with perfectly composed slides written in perfect English.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "According to presentation skills, you need to be hesitant in your ability from the start.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "A presentation contains a flaw in logic, may be a reason of distractions.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "You should prepare your presentation well and plan your words with confidence.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "You do not need to be ensure that your slides are in well-written English.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "It is preferred to try to create a dialogue in your slides and handouts that will continue after your talk.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Can you offer a volume discount?",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Please confirm that we will not receive the delivery by mid-December.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "On receipt of your payment, we will be pleased to deliver your order within seven days.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "We are pleasure that items 1 and 2 are currently out of stock.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Our prices are subject to currency fluctuations.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "To communicate effectively you should use plain English and express facts as simply as possible.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Confused messages achieve your objectives.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Use the right words and layout to get noticed for the right reasons.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "The wrong impact differentiates you from competitors and helps bring the replies you need.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Write from your customer perspective.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Before writing a report, you should ask yourself: Are the audiences interested in the report or must you create that interest?",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "You should not check the outcomes and the feedback after your audience has received your report.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "To plan for writing a report you should Check and set the relevant background.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "You should prepare people for why the meeting is useless.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "You should consider and enable successful planning throughout the organization.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Price must be consistently kept low for constant customer commitment.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Accounting is the link between production and profit, providing the best way for selling.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "The annual and long-range plans deal with the company’s past businesses.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "EIDA outlines the four basic steps that can be used to persuade potential customers to make a purchase.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "According to the AIDA model; ACTION, make it as easy as possible for the customer to make the purchase.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "A brand is more than just a logo or attractive packaging.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Advertising is one of the oldest forms of marketing which attempts to influence the actions of its target audience.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Placing a specific brand in a box is one of advertising impacts.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Leaders develop a vision for the organization.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Managers support change and new approaches that Leaders then implement to make a new, stable environment.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Individuals perform better in teams; they are more productive and more innovative.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Staffing is the obtaining of people with appropriate skills, abilities, knowledge and experience to fill jobs in the work organization.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Attract suitable employees is a principal objective of reward management.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Basic wage and overtime are a team rewards.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Employers must give their employees the tools, equipment and other things they need to do their work.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Employers shouldn’t pay their employees the salary and benefits.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Employers must make sure that working conditions protect their employees’ physical and psychological health and safety.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Employers must treat their employees with humiliation.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "A meeting agenda should be clearly defined and well set out.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "You should set the worst order possible for meeting agenda items.",
+		"options": ["False", "True"]
+	}
 ]

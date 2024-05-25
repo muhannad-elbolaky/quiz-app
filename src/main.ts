@@ -1,18 +1,18 @@
-const question = document.querySelector('#question') as HTMLHeadingElement;
+const question = document.querySelector("#question") as HTMLHeadingElement;
 const progressText = document.querySelector(
-  '#progressText'
+	"#progressText",
 ) as HTMLParagraphElement;
 const progressBarFull = document.querySelector(
-  '#progressBarFull'
+	"#progressBarFull",
 ) as HTMLDivElement;
-const scoreText = document.querySelector('#score') as HTMLHeadingElement;
+const scoreText = document.querySelector("#score") as HTMLHeadingElement;
 
 type Question = {
-  question: string;
-  options: string[];
+	question: string;
+	options: string[];
 };
 
-import questions from '../questions.json';
+import questions from "../questions.json";
 
 let currentQuestion: Question;
 let acceptingAnswers = true;
@@ -22,123 +22,118 @@ let availableQuestions: Question[] = [];
 
 const MAX_QUESTIONS = questions.length;
 
-function startGame() {
-  questionCounter = 0;
-  score = 0;
-  availableQuestions = [...questions];
-  getNewQuestion();
+function startexam() {
+	questionCounter = 0;
+	score = 0;
+	availableQuestions = [...questions];
+	getNewQuestion();
 }
 
 function getNewQuestion() {
-  if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
-    localStorage.setItem('currentScore', score.toString());
-    return window.location.assign('/end.html');
-  }
+	if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+		progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+		localStorage.setItem("currentScore", score.toString());
+		return window.location.assign("/end.html");
+	}
 
-  questionCounter++;
-  progressText.innerText = `سؤال ${questionCounter} من ${MAX_QUESTIONS}`;
+	questionCounter++;
+	progressText.innerText = `سؤال ${questionCounter} من ${MAX_QUESTIONS}`;
 
-  const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-  currentQuestion = availableQuestions[questionIndex];
+	const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+	currentQuestion = availableQuestions[questionIndex];
 
-  if (currentQuestion.question.length > 90) question.style.fontSize = '3rem';
+	if (currentQuestion.question.length > 90) question.style.fontSize = "3rem";
 
-  question.innerText = currentQuestion.question;
+	question.innerText = currentQuestion.question;
 
-  const choicesContainer = document.querySelector('.choices') as HTMLDivElement;
+	const choicesContainer = document.querySelector(".choices") as HTMLDivElement;
 
-  choicesContainer.innerHTML = '';
+	choicesContainer.innerHTML = "";
 
-  shuffle(currentQuestion.options).forEach((choice, index) => {
-    choicesContainer.innerHTML += createChoiceHTML(
-      choice,
-      index,
-      choice === currentQuestion.options[0]
-    );
-  });
+	shuffle(currentQuestion.options).forEach((choice, index) => {
+		choicesContainer.innerHTML += createChoiceHTML(
+			choice,
+			index,
+			choice === currentQuestion.options[0],
+		);
+	});
 
-  availableQuestions.splice(questionIndex, 1);
+	availableQuestions.splice(questionIndex, 1);
 
-  acceptingAnswers = true;
+	acceptingAnswers = true;
 
-  let choices = document.querySelectorAll(
-    '.choice-container'
-  ) as NodeListOf<HTMLDivElement>;
+	let choices = document.querySelectorAll(
+		".choice-container",
+	) as NodeListOf<HTMLDivElement>;
 
-  choices.forEach((choice) => {
-    choice.addEventListener('click', async (event) => {
-      if (!acceptingAnswers) return;
+	choices.forEach((choice) => {
+		choice.addEventListener("click", async (event) => {
+			if (!acceptingAnswers) return;
 
-      acceptingAnswers = false;
-      const target = event.target as HTMLElement;
+			acceptingAnswers = false;
+			const target = event.target as HTMLElement;
 
-      const choiceContainer = target.closest(
-        '.choice-container'
-      ) as HTMLDivElement;
-      const selectedAnswer = choiceContainer.querySelector(
-        '.choice-text'
-      ) as HTMLParagraphElement;
+			const choiceContainer = target.closest(
+				".choice-container",
+			) as HTMLDivElement;
+			const selectedAnswer = choiceContainer.querySelector(
+				".choice-text",
+			) as HTMLParagraphElement;
 
-      const classToApply =
-        selectedAnswer.innerText === currentQuestion.options[0]
-          ? 'correct'
-          : 'incorrect';
+			const classToApply =
+				selectedAnswer.innerText === currentQuestion.options[0]
+					? "correct"
+					: "incorrect";
 
-      if (classToApply === 'correct') {
-        score++;
-        scoreText.innerText = String(score);
-      } else {
-        const rightAnswer = document.querySelector(
-          '.hidden-correct'
-        ) as HTMLDivElement;
-        rightAnswer.classList.remove('hidden-correct');
-        rightAnswer.style.pointerEvents = 'none';
-        rightAnswer.style.transition = 'none';
+			if (classToApply === "correct") {
+				score++;
+				scoreText.innerText = String(score);
+			} else {
+				const rightAnswer = document.querySelector(
+					".hidden-correct",
+				) as HTMLDivElement;
+				rightAnswer.classList.remove("hidden-correct");
+				rightAnswer.style.pointerEvents = "none";
+				rightAnswer.style.transition = "none";
 
-        const rightAnswerText = rightAnswer.querySelector(
-          '.choice-text'
-        ) as HTMLParagraphElement;
-        rightAnswerText.style.transition = 'font-size 2s ease-in-out';
-        rightAnswerText.style.textAlign = 'center';
-        rightAnswerText.style.fontSize = '4rem';
-        rightAnswerText.scrollIntoView({ behavior: 'smooth' });
+				const rightAnswerText = rightAnswer.querySelector(
+					".choice-text",
+				) as HTMLParagraphElement;
+				rightAnswerText.style.transition = "font-size 2s ease-in-out";
+				rightAnswerText.style.textAlign = "center";
+				rightAnswerText.style.fontSize = "4rem";
+				rightAnswerText.scrollIntoView({ behavior: "smooth" });
 
-        const interval = setInterval(() => {
-          rightAnswer.classList.toggle('correct');
-        }, 200);
+				const interval = setInterval(() => {
+					rightAnswer.classList.toggle("correct");
+				}, 200);
 
-        setTimeout(() => {
-          clearInterval(interval);
-          rightAnswer.classList.add('correct');
-          rightAnswerText.scrollIntoView({ behavior: 'smooth' });
-        }, 2000);
-      }
+				setTimeout(() => {
+					clearInterval(interval);
+					rightAnswer.classList.add("correct");
+					rightAnswerText.scrollIntoView({ behavior: "smooth" });
+				}, 2000);
+			}
 
-      progressBarFull.style.width = `${
-        (questionCounter / MAX_QUESTIONS) * 100
-      }%`;
+			progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
-      selectedAnswer.parentElement!.classList.add(classToApply);
+			selectedAnswer.parentElement!.classList.add(classToApply);
 
-      setTimeout(
-        () => getNewQuestion(),
-        classToApply === 'correct' ? 1000 : 5000
-      );
-    });
-  });
+			setTimeout(() => getNewQuestion(), classToApply === "correct" ? 1000 : 5000);
+		});
+	});
 }
 
 function createChoiceHTML(
-  choice: string,
-  choiceIndex: number,
-  correct: boolean = false
+	choice: string,
+	choiceIndex: number,
+	correct: boolean = false,
 ): string {
-  const choicePrefix = String.fromCharCode(65 + choiceIndex);
-  return `
+	const choicePrefix = String.fromCharCode(65 + choiceIndex);
+	return `
     <div class="choice-container ${
-      correct ? 'hidden-correct' : ''
-    }" data-number="${choiceIndex + 1}">
+					correct ? "hidden-correct" : ""
+				}" data-number="${choiceIndex + 1}">
       <p class="choice-prefix">${choicePrefix}</p>
       <p class="choice-text">${choice}</p>
     </div>
@@ -146,23 +141,23 @@ function createChoiceHTML(
 }
 
 function shuffle<T extends string>(array: T[]): T[] {
-  const shuffledArray = array.slice();
+	const shuffledArray = array.slice();
 
-  // Shuffle the array
-  for (let i = shuffledArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
-  }
+	// Shuffle the array
+	for (let i = shuffledArray.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+	}
 
-  // Ensure 'True' is on top
-  const trueIndex = shuffledArray.indexOf('True' as T);
-  if (trueIndex !== 0 && trueIndex !== -1) {
-    const temp = shuffledArray[0];
-    shuffledArray[0] = shuffledArray[trueIndex];
-    shuffledArray[trueIndex] = temp;
-  }
+	// Ensure 'True' is on top
+	const trueIndex = shuffledArray.indexOf("True" as T);
+	if (trueIndex !== 0 && trueIndex !== -1) {
+		const temp = shuffledArray[0];
+		shuffledArray[0] = shuffledArray[trueIndex];
+		shuffledArray[trueIndex] = temp;
+	}
 
-  return shuffledArray;
+	return shuffledArray;
 }
 
-startGame();
+startexam();

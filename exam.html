@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="src/style.css" />
+		<link rel="stylesheet" href="src/exam.css" />
+		<title>الفرقة الثانية</title>
+	</head>
+	<body>
+		<div class="container">
+			<div id="exam" class="justify-center flex-column">
+				<div id="hud">
+					<div class="hug-item">
+						<p id="progressText" class="hud-prefix">سؤال</p>
+						<div id="progressBar">
+							<div id="progressBarFull"></div>
+						</div>
+					</div>
+					<div class="hud-item">
+						<p class="hud-prefix">نقاط</p>
+						<h1 class="hud-main-text" id="score">0</h1>
+					</div>
+				</div>
+				<h1 id="question">سؤال مهم جداً جداً</h1>
+				<div class="choices"></div>
+			</div>
+		</div>
+	</body>
+	<script type="module" src="src/main.ts"></script>
+</html>
