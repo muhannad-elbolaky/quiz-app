@@ -1,541 +1,1303 @@
 [
 	{
-		"question": "Presentations or talks both usually start out as points captured in ......",
-		"options": ["writing", "painting", "drawing", "teaching"]
-	},
-	{
-		"question": "In presentations or talks we may use ...... for your audience.",
-		"options": ["handouts", "books", "essays", "poems"]
-	},
-	{
-		"question": "Why do any of us give a presentation?",
+		"question": "النقود هي؟",
 		"options": [
-			"All of the above.",
-			"It will almost be for a clear business",
-			"It answers a formal request for proposal.",
-			"It can be the first step to attract customers."
+			"أي شيء مقبول بشكل عام في الدفع مقابل السلع والخدمات.",
+			"فقط العملات المعدنية.",
+			"فقط العملات الورقية.",
+			"فقط النقود الإلكترونية."
 		]
 	},
 	{
-		"question": "How can you benefit by being a non-native English presenter?",
+		"question": "من خصائص المقايضة؟",
 		"options": [
-			"Asking audience to stop you at any time to explain anything that you may not have made entirely clear.",
-			"Do not answer any explanation from your audience.",
-			"You should be hesitated.",
-			"you can write imperfect English handouts."
+			"توافق الرغبات المزدوجة.",
+			"سهولة التبادل.",
+			"تقليل تكاليف المعاملات.",
+			"زيادة الكفاءة الاقتصادية."
 		]
 	},
 	{
-		"question": "A slide contains a word audience ...... may not understand, may be a reason of distractions.",
-		"options": ["do not understand", "understand", "consider", "Believe in"]
-	},
-	{
-		"question": "A slide contains ...... may be a reason of distractions.",
+		"question": "ما هي النتيجة النهائية لاستخدام النقود في التبادل؟",
 		"options": [
-			"spelling or grammatical mistake",
-			"graphics",
-			"photos",
-			"visuals"
+			"انخفاض تكاليف المعاملات.",
+			"زيادة وقت التبادل.",
+			"صعوبة تقييم السلع.",
+			"تقليل حجم التبادل."
 		]
 	},
 	{
-		"question": "Presentations can be a new format for business ......",
-		"options": ["reports", "products", "accounts", "process"]
-	},
-	{
-		"question": "Explain any ...... and English acronyms that may be in your slides.",
-		"options": ["technical terms", "Tv show", "movement", "essay"]
-	},
-	{
-		"question": "Give your audience a clear written ...... through your presentation.",
-		"options": ["roadmap", "song", "verse", "rhyme"]
-	},
-	{
-		"question": "Writing must be ...... point of contact.",
-		"options": ["an effective", "useless", "inadequate", "weak"]
-	},
-	{
-		"question": "You can achieve an effective writing by looking at things as if you are the ...... about to make a purchase.",
-		"options": ["consumer", "manager", "leader", "foreman"]
-	},
-	{
-		"question": "Writing well is an opportunity to ...... to new customers.",
+		"question": "عند استخدام النقود الورقية في المجتمع، فإنها؟",
 		"options": [
-			"open the door",
-			"close the door",
-			"change the door",
-			"paint the door"
+			"تفقد قيمتها بمرور الوقت.",
+			"تحتفظ بقيمتها دائمًا.",
+			"تزداد قيمتها بمرور الوقت.",
+			"لا تتأثر بالقيمة الزمنية."
 		]
 	},
 	{
-		"question": "According to advertising and promotional literature for a global market, your words should be ......",
-		"options": ["to the point.", "out of the point.", "mislead.", "deceive."]
-	},
-	{
-		"question": "Trading internationally may require a totally ...... mindset.",
-		"options": ["different", "typical", "traditional", "outdated"]
-	},
-	{
-		"question": "Thank you for your recent ...... and please find our order attached.",
-		"options": ["quotation", "party", "celebration", "festival"]
-	},
-	{
-		"question": "Thank you for your provisional order. We enclose our ......",
-		"options": ["invoice", "essay", "employee", "test"]
-	},
-	{
-		"question": "We are pleased to confirm your order. All items are in ...... and we will advise you of the delivery date shortly.",
-		"options": ["stock", "home", "house", "school"]
-	},
-	{
-		"question": "Airfreight term means ......",
+		"question": "المقايضة تتطلب؟",
 		"options": [
-			"carrying goods by plane",
-			"carrying goods by train",
-			"carrying goods by bus",
-			"carrying goods by car"
+			"وجود توافق رغبات بين الأطراف المتبادلة.",
+			"سهولة التبادل التجاري.",
+			"وجود نقود ورقية.",
+			"وجود نظام اقتصادي حديث."
 		]
 	},
 	{
-		"question": "There are ...... steps help you communicate effectively",
-		"options": ["four", "three", "two", "five"]
+		"question": "في أي مكان ظهر أول نقود في العالم؟",
+		"options": ["بلاد ما بين النهرين", "مصر", "الصين", "الهند"]
 	},
 	{
-		"question": "...... is one of steps help you communicate effectively.",
+		"question": "ما هي عملية المقايضة؟",
 		"options": [
-			"Step1: You should be correct",
-			"Step1: you should be nervous",
-			"Step1: you should be worried",
-			"Step1: you should be incorrect"
+			"تبادل السلع والخدمات بدون نقود",
+			"استخدام النقود لشراء السلع",
+			"بيع السلع والخدمات",
+			"إيداع النقود في البنوك"
 		]
 	},
 	{
-		"question": "Your words should be ...... for reader and customer expectations",
-		"options": ["match", "vague", "obscure", "ambiguous"]
-	},
-	{
-		"question": "To communicate effectively you should be ......",
-		"options": ["clear", "redundant", "excessive", "exaggerated"]
-	},
-	{
-		"question": "Your writings should be edited so that your main points are ......",
+		"question": "ما هو الفرق بين النقود التقليدية والنقود الإلكترونية؟",
 		"options": [
-			"easily understood",
-			"difficultly understood",
-			"unexpected",
-			"not understood"
+			"لا يوجد فرق",
+			"النقود التقليدية في شكل ورقي والإلكترونية في شكل رقمي",
+			"النقود الإلكترونية لها قيمة أعلى",
+			"النقود التقليدية أكثر استخداماً"
 		]
 	},
 	{
-		"question": "Use ...... to present yourself and your company well.",
+		"question": "ما هي أحد مشاكل المقايضة؟",
 		"options": [
-			"the right style",
-			"complicated style",
-			"strange style",
-			"the right machine"
+			"عدم تحقق المصالح المتبادلة",
+			"سهولة التخزين",
+			"سهولة التبادل",
+			"تحديد قيمة السلع بسهولة"
 		]
 	},
 	{
-		"question": "...... is one of steps help you communicate effectively.",
+		"question": "أي نوع من أنواع النقود لا يعتبر نقوداً قانونية؟",
 		"options": [
-			"Step 4: You should focus on your customers",
-			"Step 4: You should ignore your customers",
-			"Step 4: You should focus on your career",
-			"Step 4: You should avoid your customers"
+			"الذهب",
+			"النقود الورقية",
+			"النقود المعدنية",
+			"النقود الإلكترونية"
 		]
 	},
 	{
-		"question": "Use ...... words where possible.",
-		"options": ["Positive", "negative", "harmful", "none of the above"]
-	},
-	{
-		"question": "Avoid words that ......",
+		"question": "ما هي فوائد النقود؟",
 		"options": [
-			"put up barriers",
-			"are clear",
-			"clarify your goal",
-			"are positive"
+			"تسهيل التبادل التجاري",
+			"زيادة الفقر",
+			"تحديد أسعار السلع بدقة",
+			"زيادة العرض والطلب"
 		]
 	},
 	{
-		"question": "Points you should identify before you write a report ......",
+		"question": "ما هي ميزة النقود من حيث القبول العام؟",
 		"options": [
-			"All of the above",
-			"Define the objectives of your writing and your readers.",
-			"Define the background of your readers.",
-			"Realize to how extent they need to use the report"
+			"قبولها من الجميع كوسيلة للتبادل",
+			"قدرتها على التخزين",
+			"سهولة حملها",
+			"تحديد قيمتها بدقة"
 		]
 	},
 	{
-		"question": "What must you do in the report: ......, persuade, anticipate problems, offer solutions?",
-		"options": ["inform", "buy", "sell", "reduce"]
+		"question": "ماذا يحدث للقيمة الزمنية للنقود عند زيادة معدل التضخم؟",
+		"options": ["تنخفض", "ترتفع", "تبقى ثابتة", "تزيد قيمتها"]
 	},
 	{
-		"question": "Write the report and ...... how to make the right impact.",
-		"options": ["evaluate", "draw", "avoid", "duck"]
+		"question": "في كل ما يتم استخدامه في اتمام المعاملات مقابل الحصول على السلع والخدمات وتستخدم في عمليات البيع والشراء.",
+		"options": ["النقود", "العملة", "الذهب", "الدينار"]
 	},
 	{
-		"question": "Check what you have written in your report for both sense and ......",
-		"options": ["logic", "religion", "belief", "faith"]
+		"question": "كل ما يحصل عليه الفرد من كسب نتيجة بيعه العوامل الانتاجية وتكون في شكل نقدي أو عيني.",
+		"options": ["الدخل", "الثروة", "المكسب", "الربح"]
 	},
 	{
-		"question": "Check your writing for mistakes in your English, including a ...... and grammar check.",
-		"options": ["spellcheck", "Mind check", "Check up", "self-check"]
+		"question": "كل ما يملكه الفرد من أصول ثابتة أو منقولة تكون لها قيمة محددة عند نقطة معينة من الزمن لكنها لا تستخدم في العمليات الانتاجية.",
+		"options": ["الثروة", "الدخل", "الأصول", "المدخرات"]
 	},
 	{
-		"question": "The agenda must be ...... to the meeting and results focused.",
-		"options": ["Specific", "general", "universal", "common"]
-	},
-	{
-		"question": "A meeting agenda should be distributed well in advance of the ......",
-		"options": ["meeting", "travel", "trip", "journey"]
-	},
-	{
-		"question": "To plan a good agenda, you should ...... with other parties to inform or gain external input.",
-		"options": ["communicate", "disturb", "distract", "interrupt"]
-	},
-	{
-		"question": "...... is managing profitable customer relationships.",
-		"options": ["Marketing", "Innovation", "Origination", "discount"]
-	},
-	{
-		"question": "The two goals of marketing are to ...... by promising superior quality and grow current customers by delivering satisfaction.",
+		"question": "ما هي الأصول الثابتة؟",
 		"options": [
-			"attract new customers",
-			"avoid new customers",
-			"avoid old customers",
-			"none of the above"
+			"الأصول التي لا تستخدم في العمليات الانتاجية",
+			"الأصول التي تتغير قيمتها بسرعة",
+			"الأصول التي تستخدم في الإنتاج",
+			"الأصول التي لا تمتلك قيمة محددة"
 		]
 	},
 	{
-		"question": "...... are often responsible for influencing the level, timing and composition of customer demand.",
+		"question": "ما هو أثر التضخم على قيمة النقود؟",
 		"options": [
-			"Marketing managers",
-			"Accounting managers",
-			"HR managers",
-			"Store managers"
+			"انخفاض القوة الشرائية للنقود",
+			"زيادة قيمة النقود",
+			"ثبات قيمة النقود",
+			"عدم تأثر النقود بالتضخم"
 		]
 	},
 	{
-		"question": "The role of a marketing manager can vary based on a ...... and corporate culture.",
-		"options": ["business size", "hall size", "flat size", "building size"]
-	},
-	{
-		"question": "The quality of the product or service being sold is ...... for customers.",
+		"question": "ما هي خصائص النقود؟",
 		"options": [
-			"an important force",
-			"An unimportant force",
-			"nonsense",
-			"meaninglessness"
+			"قبولها كوسيلة للتبادل",
+			"صعوبة النقل",
+			"عدم القدرة على التخزين",
+			"ثبات قيمتها مع مرور الزمن"
 		]
 	},
 	{
-		"question": "Companies usually prepare annual plans, long-range plans, and ......",
+		"question": "ما هي النقود القانونية؟",
 		"options": [
-			"strategic plans",
-			"Football plans",
-			"Building plans",
-			"Trip plans"
+			"النقود التي تصدرها الحكومة وتعتبرها وسيلة قانونية للدفع",
+			"النقود التي تصدرها البنوك الخاصة",
+			"الذهب والفضة",
+			"النقود التي لا تقبلها جميع الأطراف"
 		]
 	},
 	{
-		"question": "...... is the process of developing a strategic fit between the organization’s goals and capabilities and its changing marketing opportunities.",
+		"question": "ما هو السبب الأساسي لظهور النقود؟",
 		"options": [
-			"Strategic planning",
-			"annual planning",
-			"long-range planning",
-			"Short term planning"
+			"تسهيل عملية التبادل وتجاوز مشاكل المقايضة",
+			"تحديد قيمة السلع بدقة",
+			"زيادة العرض والطلب",
+			"تخزين الثروة"
 		]
 	},
 	{
-		"question": "Because the purpose of business is to create a customer, any business enterprise has two basic functions: marketing and ......",
-		"options": ["innovation", "planning", "preparation", "organization"]
-	},
-	{
-		"question": "...... is an Austrian management consultant, educator, and author, whose writings contributed the modern business corporation",
+		"question": "كيف تؤثر النقود على التجارة الدولية؟",
 		"options": [
-			"Peter Drucker",
-			"Henry S. Dennison",
-			"Willard Rockwell",
-			"Walker Lee"
+			"تسهيل التجارة بين الدول",
+			"زيادة العوائق التجارية",
+			"تقليل حجم التجارة الدولية",
+			"تثبيت أسعار الصرف"
 		]
 	},
 	{
-		"question": "The ...... model is the foundation of modern marketing and advertising practice.",
-		"options": ["AIDA", "OIDO", "AEDE", "TIDA"]
-	},
-	{
-		"question": "According to the AIDA model, ...... Hold the customer’s interest by providing information about the advantages of the product or service and its benefits to the customer.",
-		"options": ["INTEREST", "ATTENTION", "DESIRE", "ACTION"]
-	},
-	{
-		"question": "...... are how organizations make their product or service stand out from the competition.",
-		"options": ["Brands", "products", "goods", "properties"]
-	},
-	{
-		"question": "...... is a promotional activity which aims to sell a product or service to a target audience.",
-		"options": ["Advertising", "innovation", "freshness", "novelty"]
-	},
-	{
-		"question": "...... is an impact of advertising on behaviors and outcomes.",
+		"question": "أي من الآتي يعد من خصائص النقود؟",
 		"options": [
-			"announcing the existence of new good",
-			"revealing the disadvantages of the good.",
-			"connecting a cable to power.",
-			"set a specific brand in a box."
+			"قابلة للتجزئة",
+			"غير قابلة للحمل",
+			"ليست متجانسة",
+			"تفتقر إلى القيمة الذاتية"
 		]
 	},
 	{
-		"question": "The impact of advertising on behaviors and outcomes.",
+		"question": "ما هي أهم وظائف النقود؟",
+		"options": ["وسيط للتبادل", "تخزين القيمة", "وسيلة الدفع", "وحدة الحساب"]
+	},
+	{
+		"question": "لماذا لا يعتبر التقسيم إلى وحدات أصغر سبباً لفقد قيمة النقود؟",
 		"options": [
-			"It connects a good to a need.",
-			"It maintains a good.",
-			"It connects a cable to power.",
-			"It reveals the disadvantages of the good."
+			"النقود تحتفظ بقيمتها بغض النظر عن تقسيمها",
+			"تقسيم النقود يؤدي إلى فقدان قيمتها",
+			"النقود غير قابلة للتقسيم",
+			"تقسيم النقود يزيد من قيمتها"
 		]
 	},
 	{
-		"question": "While leadership is about vision, management is about process, planning, and ......",
-		"options": ["all of the above", "budgeting", "staffing", "structuring"]
-	},
-	{
-		"question": "There are three management roles: informational, interpersonal and ......",
-		"options": ["decisional", "divisional", "sectional", "educational"]
-	},
-	{
-		"question": "...... is about setting the agenda and empowering people to produce useful change.",
-		"options": ["Leadership", "Management", "marketing", "Accounting"]
-	},
-	{
-		"question": "Effective teams require ...... supervision and less direction than individuals.",
-		"options": ["less", "extra", "more", "widely"]
-	},
-	{
-		"question": "...... is an individual or organization that has employees.",
-		"options": ["An employer", "An accountant", "An administrator", "A manager"]
-	},
-	{
-		"question": "Employee ...... is one of Human Resource Management activities.",
-		"options": ["development", "production", "habits", "traditions"]
-	},
-	{
-		"question": "Employee ...... is one of Human Resource Management activities.",
-		"options": ["maintenance", "production", "traditions", "habits"]
-	},
-	{
-		"question": "Improve levels of employee performance is a principal objective of ...... management.",
-		"options": ["reward", "discount", "deduct", "subtract"]
-	},
-	{
-		"question": "...... is an individual reward.",
-		"options": ["Bonuses", "Profit sharing", "Team bonuses", "Share ownership"]
-	},
-	{
-		"question": "Commissions is ......",
+		"question": "من مزايا نظام المسكوكات الذهبية؟",
 		"options": [
-			"an individual reward.",
-			"a Team reward.",
-			"an Organizational reward.",
-			"a group reward."
+			"يحافظ على قيمة العملات المعدنية",
+			"يسمح بتداول النقود الأخرى",
+			"يقلل من حجم الكتلة النقدية المتداولة",
+			"يعمل على نقل عملية سك النقود إلى الداخل"
 		]
 	},
 	{
-		"question": "What Is Accounting?",
+		"question": "من عيوب نظام المسكوكات الذهبية؟",
 		"options": [
-			"Accounting is the language of business.",
-			"Accounting is the language of Art.",
-			"Accounting is a body language.",
-			"Accounting is a new Brand."
+			"أن عرض النقود يميل نحو الاحتكار والسيطرة",
+			"يعمل على استقرار الأسعار",
+			"يساعد في عملية الإنتاج والاستهلاك",
+			"يسمح بتداول النقود الأخرى"
 		]
 	},
 	{
-		"question": "...... is the process of recording, classifying, and summarizing economic events through certain documents or financial statements.",
-		"options": ["Accounting", "Advertising", "Education", "Engineering"]
-	},
-	{
-		"question": "Accountants supply information to people both inside and outside the firm by issuing formal reports that are called ......",
-		"options": ["financial statements.", "Tasks", "Charts", "Videos"]
-	},
-	{
-		"question": "The financial statements are usually issued at least ......",
+		"question": "أحد مميزات النظام النقدي المعدني؟",
 		"options": [
-			"once a year",
-			"Every two years",
-			"Every three years",
-			"Once a week"
+			"عدم تأثره بكمية النقود الورقية المطبوعة",
+			"استقرار القيمة السوقية للعملة",
+			"تثبيت أسعار الصرف",
+			"يتطلب وجود احتياطات ذهبية"
 		]
 	},
 	{
-		"question": "What Is an Employer?",
+		"question": "أحد عيوب نظام السبائك الذهبية؟",
 		"options": [
-			"It is an individual or organization that has employees.",
-			"It is a Worker.",
-			"It is an actor.",
-			"It is an audience."
+			"حصر تداول النقود في الداخل",
+			"زيادة الطلب على النقود",
+			"احتكار النقود من قبل الأغنياء",
+			"تقليل حجم الكتلة النقدية"
 		]
 	},
 	{
-		"question": "You can impress your audience with perfectly composed slides written in perfect English.",
-		"options": ["True", "False"]
+		"question": "من عيوب النظام النقدي الورقي الإلزامي؟",
+		"options": [
+			"تقلب قيمة العملة الوطنية",
+			"يحتاج إلى قاعدة ذهبية لضبط العملة",
+			"يجعل البلد يتبنى سياسات نقدية ثابتة",
+			"زيادة الطلب على النقود المعدنية"
+		]
 	},
 	{
-		"question": "According to presentation skills, you need to be hesitant in your ability from the start.",
-		"options": ["False", "True"]
+		"question": "في مرحلة (نظام) الصرف بالذهب، ماذا يمثل العامل الأساسي لاستقرار تداول الذهب؟",
+		"options": [
+			"ارتباط العملة المحلية بقيمة ثابتة من الذهب",
+			"زيادة إنتاجية الذهب",
+			"حرية تداول العملات الورقية",
+			"تقلبات الأسعار في السوق الدولية"
+		]
 	},
 	{
-		"question": "A presentation contains a flaw in logic, may be a reason of distractions.",
-		"options": ["True", "False"]
+		"question": "يتميز نظام الصرف بالذهب بوجود سعر صرف ثابت بين البلد المشارك والبلد المصدر، مما يؤدي إلى؟",
+		"options": [
+			"استقرار أسعار الصرف",
+			"زيادة التضخم",
+			"تقلص العرض النقدي",
+			"زيادة الطلب على العملات الورقية"
+		]
 	},
 	{
-		"question": "You should prepare your presentation well and plan your words with confidence.",
-		"options": ["True", "False"]
+		"question": "ما هي قاعدة النقد الأساسية التي كانت تستخدم في نظام المسكوكات الذهبية؟",
+		"options": [
+			"تثبيت قيمة العملة المعدنية بكمية محددة من الذهب",
+			"زيادة الكتلة النقدية",
+			"تحويل العملات الورقية إلى ذهب",
+			"عدم تدخل الدولة في إنتاج النقود"
+		]
 	},
 	{
-		"question": "You do not need to be ensure that your slides are in well-written English.",
-		"options": ["False", "True"]
+		"question": "أحد عيوب نظام الصرف بالذهب هو؟",
+		"options": [
+			"التقلبات في قيمة العملة الوطنية",
+			"الاستقرار الاقتصادي",
+			"حرية تداول النقود",
+			"ارتفاع قيمة الذهب"
+		]
 	},
 	{
-		"question": "It is preferred to try to create a dialogue in your slides and handouts that will continue after your talk.",
-		"options": ["True", "False"]
+		"question": "في النظام النقدي الورقي الإلزامي، يتم إصدار النقود بشكل كامل بواسطة؟",
+		"options": ["الدولة", "البنوك الخاصة", "الشركات التجارية", "الأفراد"]
 	},
 	{
-		"question": "Can you offer a volume discount?",
-		"options": ["True", "False"]
+		"question": "عندما تنخفض قيمة العملة الوطنية بسبب التضخم، فإن ذلك يعتبر من؟",
+		"options": [
+			"عيوب النظام النقدي الورقي",
+			"مزايا النظام النقدي المعدني",
+			"مزايا النظام النقدي الإلزامي",
+			"عيوب النظام النقدي المعدني"
+		]
 	},
 	{
-		"question": "Please confirm that we will not receive the delivery by mid-December.",
-		"options": ["False", "True"]
+		"question": "من خصائص نظام النقد الورقي الإلزامي؟",
+		"options": [
+			"يمكن الدولة من التحكم في عرض النقود",
+			"يقلل من التضخم",
+			"يحتاج إلى احتياطات ذهبية",
+			"يتطلب توافق بين الدول المشاركة"
+		]
 	},
 	{
-		"question": "On receipt of your payment, we will be pleased to deliver your order within seven days.",
-		"options": ["True", "False"]
+		"question": "مفهوم العرض النقدي يتضمن؟",
+		"options": [
+			"الكمية المتداولة في الاقتصاد من النقود",
+			"كمية الذهب المخزنة",
+			"قيمة الأصول العقارية",
+			"الكمية المتداولة من السلع"
+		]
 	},
 	{
-		"question": "We are pleasure that items 1 and 2 are currently out of stock.",
-		"options": ["False", "True"]
+		"question": "من مكونات العرض النقدي (M1)؟",
+		"options": [
+			"النقد القانوني المتداول",
+			"ودائع الحكومة",
+			"الأصول العقارية",
+			"الأصول التجارية"
+		]
 	},
 	{
-		"question": "Our prices are subject to currency fluctuations.",
-		"options": ["True", "False"]
+		"question": "المستوى الثاني من العرض النقدي (M2) يشمل؟",
+		"options": [
+			"الكتلة النقدية بالمفهوم الواسع",
+			"النقد القانوني فقط",
+			"الأصول الثابتة",
+			"الديون السيادية"
+		]
 	},
 	{
-		"question": "To communicate effectively you should use plain English and express facts as simply as possible.",
-		"options": ["True", "False"]
+		"question": "القانون الذي يمثل M3 هو؟",
+		"options": [
+			"السيولة الكلية للاقتصاد",
+			"النقد المتداول فقط",
+			"الأصول الثابتة",
+			"الديون السيادية"
+		]
 	},
 	{
-		"question": "Confused messages achieve your objectives.",
-		"options": ["False", "True"]
+		"question": "العامل الأساسي لاستقرار النظام النقدي الورقي الإلزامي هو؟",
+		"options": [
+			"السيطرة على التضخم",
+			"زيادة الكتلة النقدية",
+			"احتياطات الذهب",
+			"زيادة الديون الخارجية"
+		]
 	},
 	{
-		"question": "Use the right words and layout to get noticed for the right reasons.",
-		"options": ["True", "False"]
+		"question": "يؤثر العرض النقدي بشكل مباشر على؟",
+		"options": [
+			"حجم النمو ومستوى النشاط الاقتصادي",
+			"قيمة الذهب",
+			"الديون السيادية",
+			"الأصول الثابتة"
+		]
 	},
 	{
-		"question": "The wrong impact differentiates you from competitors and helps bring the replies you need.",
-		"options": ["False", "True"]
+		"question": "ما هو الهدف الأساسي للبنك المركزي في النظام النقدي الورقي الإلزامي؟",
+		"options": [
+			"تحقيق الاستقرار الاقتصادي",
+			"زيادة الكتلة النقدية",
+			"زيادة الديون الخارجية",
+			"زيادة الأصول الثابتة"
+		]
 	},
 	{
-		"question": "Write from your customer perspective.",
-		"options": ["True", "False"]
+		"question": "ما هو القانون الذي يمثل M1 في قياس العرض النقدي؟",
+		"options": [
+			"النقد القانوني المتداول + الودائع تحت الطلب",
+			"النقد المتداول + الأصول الثابتة",
+			"الكتلة النقدية بالمفهوم الواسع + الأصول التجارية",
+			"ودائع الحكومة + الديون السيادية"
+		]
 	},
 	{
-		"question": "Before writing a report, you should ask yourself: Are the audiences interested in the report or must you create that interest?",
-		"options": ["True", "False"]
+		"question": "ما هو القانون الذي يمثل M2 في قياس العرض النقدي؟",
+		"options": [
+			"النقد القانوني المتداول + الودائع تحت الطلب + الودائع لأجل والادخار",
+			"الكتلة النقدية بالمفهوم الواسع + الأصول الثابتة",
+			"النقد المتداول + الأصول التجارية",
+			"ودائع الحكومة + الديون السيادية"
+		]
 	},
 	{
-		"question": "You should not check the outcomes and the feedback after your audience has received your report.",
-		"options": ["False", "True"]
+		"question": "ما هو القانون الذي يمثل M3 في قياس العرض النقدي؟",
+		"options": [
+			"M2 + ودائع الحكومة (سندات واذونات)",
+			"النقد القانوني المتداول + الودائع تحت الطلب",
+			"الكتلة النقدية بالمفهوم الواسع + الأصول التجارية",
+			"النقد المتداول + الأصول الثابتة"
+		]
 	},
 	{
-		"question": "To plan for writing a report you should Check and set the relevant background.",
-		"options": ["True", "False"]
+		"question": "تشمل النظرية الكمية الحديثة ما يلي؟",
+		"options": [
+			"حجم المعاملات",
+			"الأجور والأسعار",
+			"الاقتصاد بميزان سلع حقيقي",
+			"الاقتصاد بميزان سلع اسمي"
+		]
 	},
 	{
-		"question": "You should prepare people for why the meeting is useless.",
-		"options": ["False", "True"]
+		"question": "يعتمد حجم المعاملات على؟",
+		"options": [
+			"النشاط الاقتصادي وعدد وحدات النقود المتداولة",
+			"حجم النقود في التداول فقط",
+			"مستوى الأسعار",
+			"عرض النقود"
+		]
 	},
 	{
-		"question": "You should consider and enable successful planning throughout the organization.",
-		"options": ["True", "False"]
+		"question": "من فروض النظرية الكمية؟",
+		"options": [
+			"استقرار الأجور والأسعار",
+			"تغير الأجور والأسعار",
+			"استقرار عرض النقود",
+			"زيادة عرض النقود"
+		]
 	},
 	{
-		"question": "Price must be consistently kept low for constant customer commitment.",
-		"options": ["True", "False"]
+		"question": "ما هي الانتقادات التي تواجه النظرية الكمية التقليدية؟",
+		"options": [
+			"عدم تحديد عوامل الطلب النقدي بشكل واضح",
+			"عدم ثبات سرعة دوران النقود",
+			"العلاقة بين التغير في مستوى الأسعار وتغير النقود غير دقيق",
+			"كل ما سبق"
+		]
 	},
 	{
-		"question": "Accounting is the link between production and profit, providing the best way for selling.",
-		"options": ["False", "True"]
+		"question": "ماذا تمثل المعادلة M = K P Y في نظرية كامبريدج؟",
+		"options": [
+			"الطلب على النقود",
+			"العرض النقدي",
+			"مستوى الأسعار",
+			"الإنتاج الوطني"
+		]
 	},
 	{
-		"question": "The annual and long-range plans deal with the company’s past businesses.",
-		"options": ["False", "True"]
+		"question": "ترتبط النظرية الكمية التقليدية بشكل رئيسي ب؟",
+		"options": ["فشر", "مارشال", "بيجو", "كامبريدج"]
 	},
 	{
-		"question": "EIDA outlines the four basic steps that can be used to persuade potential customers to make a purchase.",
-		"options": ["False", "True"]
+		"question": "النقود المحفوظة من قِبل الأفراد لأغراض المعاملات تسمى؟",
+		"options": [
+			"النقود النشطة",
+			"النقود الكامنة",
+			"النقود المخزنة",
+			"النقود الاحتياطية"
+		]
 	},
 	{
-		"question": "According to the AIDA model; ACTION, make it as easy as possible for the customer to make the purchase.",
-		"options": ["True", "False"]
+		"question": "التوازن الاقتصادي يعبر عن؟",
+		"options": [
+			"استقرار مستوى الأسعار بشكل كامل",
+			"استقرار عرض النقود",
+			"التوازن بين العرض والطلب",
+			"تغير مستوى الأسعار"
+		]
 	},
 	{
-		"question": "A brand is more than just a logo or attractive packaging.",
-		"options": ["True", "False"]
+		"question": "ما هو تأثير زيادة عرض النقود في النظرية الكينزية؟",
+		"options": [
+			"زيادة الطلب الكلي",
+			"زيادة الأسعار فقط",
+			"ثبات الأسعار",
+			"نقص الطلب الكلي"
+		]
 	},
 	{
-		"question": "Advertising is one of the oldest forms of marketing which attempts to influence the actions of its target audience.",
-		"options": ["True", "False"]
+		"question": "أي من العوامل التالية يُعتبر من أهم الفرضيات في النظرية الكينزية؟",
+		"options": [
+			"النقود ليست وسيلة للتبادل فقط",
+			"تؤدي زيادة النقود إلى زيادة النشاط الاقتصادي دون تغيير في الأسعار",
+			"تغير النقود ليس له تأثير على الاقتصاد",
+			"النقود لا تلعب دوراً في النشاط الاقتصادي"
+		]
 	},
 	{
-		"question": "Placing a specific brand in a box is one of advertising impacts.",
-		"options": ["False", "True"]
+		"question": "ما هي أهم مظاهر التضخم في النظرية الكينزية؟",
+		"options": ["زيادة الأسعار", "انخفاض الأسعار", "ثبات الأسعار", "تخزين النقود"]
 	},
 	{
-		"question": "Leaders develop a vision for the organization.",
-		"options": ["True", "False"]
+		"question": "كيف يمكن تفسير زيادة الأسعار في النظرية الكينزية؟",
+		"options": [
+			"زيادة الطلب على السلع والخدمات",
+			"زيادة عرض النقود فقط",
+			"نقص الطلب",
+			"زيادة التوفير"
+		]
 	},
 	{
-		"question": "Managers support change and new approaches that Leaders then implement to make a new, stable environment.",
-		"options": ["False", "True"]
+		"question": "ما هي الآثار الاقتصادية للتضخم وفقاً للنظرية الكينزية؟",
+		"options": [
+			"ارتفاع الأسعار وزيادة التكاليف",
+			"انخفاض الأسعار وزيادة الإنتاج",
+			"ثبات الأسعار وثبات الإنتاج",
+			"زيادة التوفير وانخفاض الاستهلاك"
+		]
 	},
 	{
-		"question": "Individuals perform better in teams; they are more productive and more innovative.",
-		"options": ["True", "False"]
+		"question": "كيف تفسر النظرية الكينزية ظاهرة التضخم؟",
+		"options": [
+			"زيادة الطلب الكلي على السلع والخدمات",
+			"زيادة عرض النقود فقط",
+			"تخزين النقود",
+			"انخفاض التكاليف"
+		]
 	},
 	{
-		"question": "Staffing is the obtaining of people with appropriate skills, abilities, knowledge and experience to fill jobs in the work organization.",
-		"options": ["True", "False"]
+		"question": "ما هو تأثير معدل التضخم المتوقع على المدخرات؟",
+		"options": [
+			"يقلل من قيمة المدخرات",
+			"يزيد من قيمة المدخرات",
+			"لا يؤثر على المدخرات",
+			"يعزز من قيمة المدخرات"
+		]
 	},
 	{
-		"question": "Attract suitable employees is a principal objective of reward management.",
-		"options": ["True", "False"]
+		"question": "ما هي العوامل التي تؤدي إلى تغير كمية النقود؟",
+		"options": [
+			"الطلب على السلع والخدمات",
+			"عرض النقود فقط",
+			"تغيرات في سعر الفائدة فقط",
+			"التغيرات في السياسات المالية"
+		]
 	},
 	{
-		"question": "Basic wage and overtime are a team rewards.",
-		"options": ["False", "True"]
+		"question": "وفقاً للنظرية الكمية الحديثة، ما هي المتغيرات التي تؤثر على الطلب على النقود؟",
+		"options": [
+			"الدخل والفائدة والتضخم",
+			"الدخل فقط",
+			"الفائدة فقط",
+			"التضخم فقط"
+		]
 	},
 	{
-		"question": "Employers must give their employees the tools, equipment and other things they need to do their work.",
-		"options": ["True", "False"]
+		"question": "ما هي أهم الانتقادات التي توجه إلى نظرية كينز؟",
+		"options": [
+			"تهتم بالطلب الكلي وتتجاهل العرض الكلي",
+			"تركز على العرض الكلي وتتجاهل الطلب الكلي",
+			"تؤكد على دور النقود كوسيلة للتبادل فقط",
+			"تهمل دور السياسات المالية"
+		]
 	},
 	{
-		"question": "Employers shouldn’t pay their employees the salary and benefits.",
-		"options": ["False", "True"]
+		"question": "في النظرية الكينزية، ما هو العامل الرئيسي الذي يؤثر على الطلب على النقود؟",
+		"options": ["الدخل", "سعر الفائدة", "معدل التضخم", "عرض النقود"]
 	},
 	{
-		"question": "Employers must make sure that working conditions protect their employees’ physical and psychological health and safety.",
-		"options": ["True", "False"]
+		"question": "ما هي أهم مكونات نموذج فريدمان في الطلب على النقود؟",
+		"options": [
+			"الدخل، الفائدة، التضخم",
+			"الدخل فقط",
+			"الفائدة فقط",
+			"التضخم فقط"
+		]
 	},
 	{
-		"question": "Employers must treat their employees with humiliation.",
-		"options": ["False", "True"]
+		"question": "ما هو دور السياسات المالية في النظرية الكينزية؟",
+		"options": [
+			"تحفيز الطلب الكلي",
+			"زيادة العرض الكلي",
+			"ثبات مستوى الأسعار",
+			"تقليل الطلب الكلي"
+		]
 	},
 	{
-		"question": "A meeting agenda should be clearly defined and well set out.",
-		"options": ["True", "False"]
+		"question": "ما هي مكونات دالة الطلب على النقود في نموذج فريدمان؟",
+		"options": [
+			"الدخل، سعر الفائدة، التضخم",
+			"الدخل فقط",
+			"سعر الفائدة فقط",
+			"التضخم فقط"
+		]
 	},
 	{
-		"question": "You should set the worst order possible for meeting agenda items.",
-		"options": ["False", "True"]
+		"question": "ما هو النظام المالي؟",
+		"options": [
+			"التعامل بين الأفراد والمؤسسات والإجراءات التنظيمية والتقنيات",
+			"التعامل بين الحكومات فقط",
+			"التعامل بين الأفراد فقط",
+			"التعامل بين الشركات فقط"
+		]
+	},
+	{
+		"question": "ما هي الوسيلة الرئيسية للدفع مقابل السلع والخدمات في الأسواق المالية؟",
+		"options": ["النقود", "الشيكات", "بطاقات الائتمان", "الذهب"]
+	},
+	{
+		"question": "ما هي وظيفة الأسواق المالية؟",
+		"options": [
+			"توجيه الفائض الاقتصادي في أي مجتمع إلى تمويل العجز المالي",
+			"توجيه العجز المالي إلى تمويل الفائض الاقتصادي",
+			"توزيع الأرباح فقط",
+			"تقليل المخاطر المالية فقط"
+		]
+	},
+	{
+		"question": "ما هو التمويل المباشر؟",
+		"options": [
+			"عملية تمويل يتم فيها التعامل بين وحدات العجز المالي ووحدات الفائض المالي بشكل مباشر",
+			"عملية تمويل تتم بواسطة وسطاء ماليين",
+			"عملية تمويل تتم بواسطة الحكومات",
+			"عملية تمويل تتم بواسطة البنوك فقط"
+		]
+	},
+	{
+		"question": "تتضمن الأسواق المالية ما يلي؟",
+		"options": [
+			"سوق رأس المال وسوق النقد",
+			"سوق الذهب فقط",
+			"سوق العقارات فقط",
+			"سوق السيارات فقط"
+		]
+	},
+	{
+		"question": "ما هي المصارف التجارية؟",
+		"options": [
+			"مؤسسات وسيطة تقوم بقبول الودائع وإعادة إقراضها",
+			"مؤسسات تقوم ببيع الأسهم فقط",
+			"مؤسسات تقوم ببيع السندات فقط",
+			"مؤسسات تقوم بتمويل الحكومات فقط"
+		]
+	},
+	{
+		"question": "ما هي الأسواق المالية؟",
+		"options": [
+			"أماكن يتم فيها بيع وشراء الوحدات الاقتصادية الفائضة والعجز",
+			"أماكن يتم فيها تخزين النقود",
+			"أماكن يتم فيها تحويل العملات فقط",
+			"أماكن يتم فيها تداول الذهب فقط"
+		]
+	},
+	{
+		"question": "من بين الأنواع الرئيسية للمؤسسات المالية؟",
+		"options": [
+			"المصارف التجارية، شركات التأمين، شركات التمويل",
+			"المصارف الحكومية فقط",
+			"الشركات العقارية فقط",
+			"الشركات الصناعية فقط"
+		]
+	},
+	{
+		"question": "من وظائف الأسواق المالية؟",
+		"options": [
+			"تخصيص الموارد المالية",
+			"جمع الضرائب",
+			"تخزين النقود",
+			"تحويل العملات فقط"
+		]
+	},
+	{
+		"question": "ما هي الأسواق المالية التي تتم فيها عمليات إصدار الأوراق المالية لأول مرة؟",
+		"options": [
+			"السوق الأولية",
+			"السوق الثانوية",
+			"السوق الحاضرة",
+			"السوق غير المنظمة"
+		]
+	},
+	{
+		"question": "ما هي الأدوات المالية التي تتداول في السوق الأولية؟",
+		"options": [
+			"إصدار الأسهم العادية",
+			"بيع الأسهم",
+			"شراء الأسهم",
+			"تداول السندات"
+		]
+	},
+	{
+		"question": "ما هي الأدوات قصيرة الأجل التي تصدرها المصارف التجارية لتلبية احتياجات التمويل المحلية؟",
+		"options": ["الأوراق التجارية", "السندات", "الأسهم", "العقارات"]
+	},
+	{
+		"question": "ما هي السوق التي يتم فيها إعادة شراء الأوراق المالية بين المستثمرين بعد إصدارها؟",
+		"options": [
+			"السوق الثانوية",
+			"السوق الأولية",
+			"السوق الحاضرة",
+			"السوق غير المنظمة"
+		]
+	},
+	{
+		"question": "ما هي الأسواق المالية التي تتم فيها عمليات بيع وشراء الأوراق المالية بناءً على الأسعار الفورية؟",
+		"options": [
+			"السوق الحاضرة",
+			"السوق الثانوية",
+			"السوق الأولية",
+			"السوق غير المنظمة"
+		]
+	},
+	{
+		"question": "ما هي الأوراق المالية التي تعطي لحاملها حقوق ملكية في صافي دخل وموجودات الشركات؟",
+		"options": ["الأسهم", "السندات", "الأوراق التجارية", "العقارات"]
+	},
+	{
+		"question": "ما هي السوق التي يتم فيها التداول بناءً على الأسعار الفورية والطلب والعرض؟",
+		"options": [
+			"السوق المنظمة",
+			"السوق الحاضرة",
+			"السوق الثانوية",
+			"السوق الأولية"
+		]
+	},
+	{
+		"question": "ما هي السوق التي يتم فيها التداول من خلال المزاد؟",
+		"options": [
+			"السوق المنظمة",
+			"السوق غير المنظمة",
+			"السوق الأولية",
+			"السوق الثانوية"
+		]
+	},
+	{
+		"question": "ما هي وظيفة البنك التجاري؟",
+		"options": [
+			"قبول الودائع بأنواعها المختلفة",
+			"جمع الضرائب",
+			"تخزين العملات فقط",
+			"تداول الأسهم فقط"
+		]
+	},
+	{
+		"question": "ما هو الهدف الرئيسي لإدارة الأصول في البنك التجاري؟",
+		"options": [
+			"تحقيق التوازن بين السيولة والربحية والأمان",
+			"تحقيق أعلى ربحية فقط",
+			"تحقيق أعلى سيولة فقط",
+			"تحقيق الأمان فقط"
+		]
+	},
+	{
+		"question": "ما هي مصادر زيادة الرصيد النقدي للبنك التجاري؟",
+		"options": [
+			"الودائع، القروض المستردة، بيع الأصول",
+			"جمع الضرائب، القروض المستردة",
+			"بيع الأسهم، جمع الضرائب",
+			"تداول السندات، القروض المستردة"
+		]
+	},
+	{
+		"question": "أي من التالي يعتبر جزءاً من أصول البنك التجاري؟",
+		"options": ["النقد في الخزينة", "الودائع", "القروض", "رأس المال المملوك"]
+	},
+	{
+		"question": "أي من التالي يعتبر جزءاً من التزامات البنك التجاري؟",
+		"options": ["الودائع", "النقد في الخزينة", "الاستثمارات", "رأس المال المملوك"]
+	},
+	{
+		"question": "ما هي المشكلات الرئيسية التي تواجه إدارة الأصول في البنك التجاري؟",
+		"options": [
+			"تحقيق التوازن بين السيولة والربحية والأمان",
+			"جمع الضرائب",
+			"تحقيق أعلى ربحية فقط",
+			"تحقيق أعلى سيولة فقط"
+		]
+	},
+	{
+		"question": "أي من الأدوات التالية يعتبر مثالاً على الأصول ذات السيولة المرتفعة؟",
+		"options": [
+			"النقد في الخزينة",
+			"الاستثمارات طويلة الأجل",
+			"القروض",
+			"رأس المال المملوك"
+		]
+	},
+	{
+		"question": "كيف يمكن للبنك التجاري زيادة رأس المال؟",
+		"options": [
+			"إصدار الأسهم، زيادة الودائع",
+			"جمع الضرائب، تداول السندات",
+			"بيع الأصول، جمع الضرائب",
+			"تداول الأسهم، القروض"
+		]
+	},
+	{
+		"question": "ما هي نسبة السيولة؟",
+		"options": [
+			"ودائع البنك لدى البنك المركزي + النقدية الحاضرة لديه + أصول أخرى",
+			"قروض البنك",
+			"إجمالي الودائع",
+			"ودائع العملاء"
+		]
+	},
+	{
+		"question": "ما هي استراتيجية نسبة القروض إلى الودائع؟",
+		"options": [
+			"نسبة القروض إلى الودائع = القروض / الودائع × 100",
+			"نسبة القروض إلى رأس المال",
+			"نسبة النقدية الحاضرة إلى القروض",
+			"نسبة الاحتياطي القانوني"
+		]
+	},
+	{
+		"question": "يجب أن تكون نسبة السيولة الإجمالية لدى البنك لا تقل عن؟",
+		"options": ["10%", "20%", "30%", "40%"]
+	},
+	{
+		"question": "من ضمن استراتيجيات تنمية الودائع هي؟",
+		"options": [
+			"فتح فروع جديدة",
+			"تخفيض الفوائد على القروض",
+			"زيادة الرسوم على الحسابات",
+			"تقليل الخدمات المصرفية"
+		]
+	},
+	{
+		"question": "تشمل الخدمات المصرفية المقدمة مع خلق النقود؟",
+		"options": [
+			"تمويل الشركات",
+			"إدارة النقدية",
+			"تقديم المشورة المالية",
+			"جميع ما ذكر"
+		]
+	},
+	{
+		"question": "مؤشر نسبة السيولة القانونية هو؟",
+		"options": [
+			"نسبة الاحتياطي القانوني / إجمالي الودائع × 100",
+			"نسبة الأصول إلى الالتزامات × 100",
+			"نسبة القروض إلى رأس المال × 100",
+			"نسبة الاحتياطي النقدي / إجمالي القروض × 100"
+		]
+	},
+	{
+		"question": "ما هي الشروط التي تعكس التوازن في جانبي الأصول والالتزامات؟",
+		"options": [
+			"وجود نسبة سيولة كافية",
+			"زيادة القروض على الودائع",
+			"نقص في النقدية",
+			"تخفيض الأصول"
+		]
+	},
+	{
+		"question": "ما هي نسبة الاحتياطي القانوني المحددة من البنك المركزي؟",
+		"options": ["25%", "10%", "50%", "75%"]
+	},
+	{
+		"question": "ما هو المبلغ الذي يقوم البنك بخصمه كنسبة احتياطي قانوني من مبلغ الوديعة الجديدة 1000 جنيه؟",
+		"options": ["250 جنيه", "100 جنيه", "500 جنيه", "750 جنيه"]
+	},
+	{
+		"question": "ما هو المبلغ الذي يودعه زكوردو في المصرف بعد خصم النسبة القانونية؟",
+		"options": ["750 جنيه", "500 جنيه", "1000 جنيه", "250 جنيه"]
+	},
+	{
+		"question": "ما هو المبلغ الذي يودعه ريوردو في المصرف بعد خصم النسبة القانونية؟",
+		"options": ["562.5 جنيه", "375 جنيه", "750 جنيه", "1000 جنيه"]
+	},
+	{
+		"question": "أي من الأشخاص التالية قام بإيداع مبلغ في المصرف؟",
+		"options": ["زكوردو", "جون", "مايكل", "هاري"]
+	},
+	{
+		"question": "كم مرة تضاعفت النقود من الوديعة الأولية بعد إتمام العمليات؟",
+		"options": ["4 مرات", "3 مرات", "5 مرات", "6 مرات"]
+	},
+	{
+		"question": "ما هي وظيفة البنك المركزي؟",
+		"options": [
+			"الإشراف على السوق النقدي",
+			"إدارة الحسابات الجارية",
+			"تقديم القروض",
+			"فتح الحسابات البنكية"
+		]
+	},
+	{
+		"question": "ما هي أدوات السياسة النقدية التي يستخدمها البنك المركزي للتحكم في الاقتصاد؟",
+		"options": [
+			"الوسائل الكمية",
+			"الوسائل النوعية",
+			"بيع وشراء السندات",
+			"جميع ما ذكر"
+		]
+	},
+	{
+		"question": "ما هو تأثير عمليات السوق المفتوحة التي يقوم بها البنك المركزي؟",
+		"options": [
+			"زيادة أو تقليل حجم النقود المتداولة",
+			"تخفيض سعر الفائدة",
+			"رفع قيمة العملة المحلية",
+			"زيادة الاستثمار الأجنبي"
+		]
+	},
+	{
+		"question": "ما هي الوسائل النوعية للسياسة النقدية؟",
+		"options": [
+			"توجيه الائتمان نحو قطاعات محددة",
+			"تحديد سعر الفائدة",
+			"رفع نسبة الاحتياطي القانوني",
+			"خفض سعر الفائدة"
+		]
+	},
+	{
+		"question": "من أهداف السياسة النقدية التي تحقق من خلال التحكم في السيولة؟",
+		"options": [
+			"استقرار الأسعار",
+			"زيادة التضخم",
+			"رفع سعر الصرف",
+			"تخفيض الواردات"
+		]
+	},
+	{
+		"question": "ما هو التأثير المتوقع لخفض نسبة الاحتياطي القانوني؟",
+		"options": [
+			"زيادة قدرة البنوك على الإقراض",
+			"تقليل حجم النقود المتداولة",
+			"رفع سعر الفائدة",
+			"تخفيض الطلب على القروض"
+		]
+	},
+	{
+		"question": "ما هي العناصر الأساسية التي تتكون منها خصوم البنك المركزي؟",
+		"options": [
+			"نقود وشيكات مصرفية",
+			"أوراق مالية أجنبية",
+			"أصول سائلة",
+			"قروض قصيرة الأجل"
+		]
+	},
+	{
+		"question": "البنك المركزي هو أهم مؤسسة نقدية تهيمن على السوق النقدي.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "تخضع أدوات السياسة النقدية للتحكم الكامل من قبل البنوك التجارية.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "تعد الوسائل الكمية من أهم أدوات السياسة النقدية.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "رفع سعر إعادة الخصم يؤدي إلى تقليل حجم النقود المتداولة.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "يقوم البنك المركزي بإصدار العملة.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "رفع نسبة الاحتياطي القانوني يزيد من قدرة البنوك على الإقراض.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "يبدأ (المصرف) بإيداع وديعة أولية في إحدى المصارف التجارية مقدارها 1000 جنيه.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "إذا كان معدل الاحتياطي القانوني المحدد من البنك المركزي 25%.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "يقوم البنك بخصم النسبة تحت الطلب لدى البنك المركزي بمقدار 250 جنيه.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "قام أحد الأشخاص (زكوردو) بإيداع مبلغ 750 جنيه في المصرف.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "قام (ريوردو) بإيداع مبلغ 562.5 جنيه في المصرف.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "نظرية خلق الودائع تطبق على الواقع العلمي.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "عند قيام البنك بعملية خلق النقود، يتم زيادة الودائع عنده مما يؤدي إلى زيادة القروض وبالتالي زيادة النقود المتداولة في الاقتصاد.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "نسبة الأصول إلى الالتزامات تعكس قدرة البنك في تحقيق الالتزامات المطلوبة منه.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "نسبة السيولة تعكس قدرة البنك على مواجهة التزاماته المالية في الوقت المحدد.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "الفرق بين ما يستقطع البنك خلقه من نقود من مجموع الودائع هو ما يتعلق بمجموع الودائع.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "البنك التجاري هو مجموعة من الوسطاء الماليين الذين يقومون بقبول ودائع لآجال محددة.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "من وظائف البنك التجاري قبول الودائع بأنواعها المختلفة.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "يمكن للبنك التجاري زيادة الرصيد النقدي من خلال إصدار الأسهم.",
+		"options": ["خطأ", "صح"]
+	},
+	{
+		"question": "تحقيق التوازن بين السيولة والربحية والأمان هو هدف رئيسي لإدارة الأصول في البنك التجاري.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "يمكن أن تكون الاستثمارات ذات سيولة مرتفعة وذات ربحية مرتفعة في نفس الوقت.",
+		"options": ["خطأ", "صح"]
+	},
+	{
+		"question": "الودائع هي جزء من التزامات البنك التجاري.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "النقد في الخزينة يعتبر من أصول البنك التجاري.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "القروض هي من التزامات البنك التجاري.",
+		"options": ["خطأ", "صح"]
+	},
+	{
+		"question": "السوق الأولية هي السوق التي يتم فيها إصدار الأوراق المالية لأول مرة.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "السوق الثانوية هي السوق التي يتم فيها تداول الأوراق المالية بين المستثمرين بعد إصدارها لأول مرة.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "الأوراق التجارية هي أدوات قصيرة الأجل تصدرها المصارف التجارية.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "القروض المصرفية هي ديون تمنحها المصارف للأفراد والشركات بناءً على اتفاقية عقد.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "الأسهم هي أوراق مالية تعطي لحاملها حقوق ملكية في صافي دخل وموجودات الشركات.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "إعادة شراء الأسهم هي وسيلة تستخدمها الشركات لزيادة عدد الأسهم المصدرة.",
+		"options": ["خطأ", "صح"]
+	},
+	{
+		"question": "السوق الحاضرة هي التي يتم فيها التداول بناءً على الأسعار الفورية.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "السوق المنظمة هي التي يتم فيها التداول خارج القوانين واللوائح.",
+		"options": ["خطأ", "صح"]
+	},
+	{
+		"question": "يمثل السوق المالي في مجمله السوق الذي يتم فيه التعامل على الوحدات الاقتصادية ذات العجز المالي",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "تعتبر المصارف التجارية جزءًا من المصارف المتخصصة.",
+		"options": ["خطأ", "صح"]
+	},
+	{
+		"question": "من بين الأنواع الرئيسية للمؤسسات المالية شركات التأمين.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "تقوم المؤسسات المالية بتوزيع المخاطر.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "يمكن أن تكون المؤسسات المالية متخصصة في إصدار الأدوات المالية فقط.",
+		"options": ["خطأ", "صح"]
+	},
+	{
+		"question": "معدل التضخم المتوقع هو بمثابة ضريبة.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "يمكن أن تعكس كمية النقود تغيرات في الطلب على النقود.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "أحد عوامل التضخم هو زيادة الطلب على السلع والخدمات.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "تهتم النظرية الكينزية الحديثة بدراسة الاقتصاد النقدي فقط.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "النظرية الكينزية تركز على العرض الكلي أكثر من الطلب الكلي.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "تعتبر الفائدة عامل مؤثر في الطلب على النقود.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "يهمل نموذج فريدمان تغير الطلب على النقود بناءً على التوقعات المستقبلية.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "تقوم النظرية الكمية الحديثة على تحديد دالة الطلب على النقود.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "النظرية الكمية تعتبر النقود ليست وسيلة للتبادل فقط.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "تلعب النقود عامل محايد في النشاط الاقتصادي.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "زيادة كمية النقود تؤدي إلى زيادة النشاط الاقتصادي دون تغيير في الأسعار.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "من مظاهر التضخم أن النقود تكون قيمتها الحقيقية ثابتة.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "النظرية الكينزية تركز على الطلب وليس العرض في الاقتصاد.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "الادخار يعني تخزين النقود فقط.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "يمكن تفسير التضخم فقط بزيادة كمية النقود المتداولة.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "تعتبر النظرية الكمية من النظريات التقليدية.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "تعتمد النظرية الكمية على بعض الفروض من أهمها: الطلب النقدي.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "معادلة التبادل لفشر (Fisher) تعتمد على العلاقة Mv = Pt.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "تنص النظرية الكمية على أن النقود وسيلة للتبادل.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "يقوم النظام النقدي الورقي الإلزامي على مبدأ عدم الحاجة لاحتياطات الذهب.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "يشمل مفهوم العرض النقدي الكتلة النقدية المتداولة في الاقتصاد فقط.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "الكتلة النقدية بالمفهوم الواسع (M2) تتضمن النقد القانوني المتداول والودائع لأجل.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "من عيوب النظام الورقي الإلزامي أنه يتطلب توافق بين الدول المشاركة.",
+		"options": ["خطأ", "صح"]
+	},
+	{
+		"question": "السيولة الكلية للاقتصاد (M3) تتضمن النقد المتداول وودائع الحكومة.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "يؤدي العرض النقدي إلى تأثير مباشر على قيمة الذهب المخزن في البنك المركزي.",
+		"options": ["خطأ", "صح"]
+	},
+	{
+		"question": "يمكن البنك المركزي من السيطرة على التضخم من خلال التحكم في العرض النقدي.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "يوجد سعر صرف ثابت بين البلد المشارك والبلد المصدر في نظام الصرف بالذهب.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "النظام النقدي الإلزامي يتميز بأنه يعتمد على قيمة الذهب.",
+		"options": ["خطأ", "صح"]
+	},
+	{
+		"question": "استخدام النظام النقدي الورقي الإلزامي يقلل من حجم الكتلة النقدية.",
+		"options": ["خطأ", "صح"]
+	},
+	{
+		"question": "تتحكم الدولة في إصدار النقود في النظام النقدي الورقي الإلزامي.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "في النظام النقدي الورقي الإلزامي، تتأثر قيمة العملة الوطنية بكمية الذهب المتوفرة في الدولة.",
+		"options": ["خطأ", "صح"]
+	},
+	{
+		"question": "النظام النقدي الورقي الإلزامي يتسبب في زيادة التضخم.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "النظام النقدي المعدني يحتاج إلى قاعدة ذهبية لضبط العملة.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "من مميزات نظام المسكوكات الذهبية أنه يسمح بتداول النقود الأخرى.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "من عيوب نظام المسكوكات الذهبية أنه يعمل على احتكار النقود والسيطرة على السوق.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "التضخم في النظام النقدي الورقي يمكن أن يؤثر على قيمة النقود المعدنية.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "تطبيق نظام السبائك الذهبية يحتاج إلى توفر احتياطات ذهبية لدى البنوك المركزية.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "أول مكان ظهر فيه النقود في العالم كان بين التدوين.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "لا يمكن تحديد وظائف النقود بشكل قاطع فهي تختلف من مجتمع إلى آخر.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "في النظام الاقتصادي القديم، كان التبادل يتم بدون نقود بواسطة عملية المقايضة.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "يسهل استخدام النقود عملية التبادل التجاري في المجتمعات الحديثة.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "تؤدي المقايضة إلى توسيع دائرة التبادل وزيادة عدد المعاملات الاقتصادية.",
+		"options": ["خطأ", "صح"]
+	},
+	{
+		"question": "أول مكان ظهر فيه النقود في العالم في بلاد ما بين النهرين",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "النقود تسهل عملية التبادل التجاري",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "المقايضة تعتبر شكلاً من أشكال الدفع الحديث",
+		"options": ["خطأ", "صح"]
+	},
+	{
+		"question": "النقود الإلكترونية لها نفس القيمة مثل النقود الورقية",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "عملية المقايضة تمنع عملية التخزين",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "تؤدي النقود إلى زيادة الطلب على السلع والخدمات",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "لا توجد مشاكل في عملية المقايضة",
+		"options": ["خطأ", "صح"]
+	},
+	{
+		"question": "النقود تعتبر مخزناً للقيمة",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "زيادة الدول عدد السلع والخدمات تعني ظهور النقود",
+		"options": ["خطأ", "صح"]
+	},
+
+	{
+		"question": "تمثل النقود وحدة للحساب (وحدة القياس) لقياس القيمة الاقتصادية.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "هل يمكن للنقود أن تفقد قيمتها في ظل نظام المقايضة بسبب تقسيمها إلى وحدات صغيرة؟",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "يتطلب التبادل في ظل نظام المقايضة تواجد علاقة مشتركة بين البائع والمشتري.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "تسبب صعوبة التخزين في نظام المقايضة مشاكل في توفير وتوزيع الموارد.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "تؤدي النقود إلى تحسين كفاءة العمليات الاقتصادية في استغلال موارد المجتمع.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "هل النظام المقايضة مناسب جداً في بعض الأحيان رغم صعوبة تنفيذه من جهد وتكلفة وإهدار للوقت؟",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "تتأثر بعض الدول بتغير قيمة العملة المحلية مما يؤثر على اقتصادها بشكل كبير.",
+		"options": ["صح", "خطأ"]
+	},
+	{
+		"question": "يمكن أن تتأثر المشاريع التجارية بتغير قيمة العملة وتأثيرها على الأطراف المشتركة فيها.",
+		"options": ["صح", "خطأ"]
 	}
 ]
