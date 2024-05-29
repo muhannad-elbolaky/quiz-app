@@ -2,5 +2,246 @@
 	{
 		"question": "Capital generally refers to the amount invested in an enterprise by its owners.",
 		"options": ["True", "False"]
+	},
+	{
+		"question": "An agreement is not necessary to form a partnership.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "A list of all account names used to record transactions of a company is referred to as a T-account.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "For a business partnership there must be a written agreement between two or more legally competent persons.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "A partnership must be operated for the purpose of earning a profit.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "There are certain tax advantages to a partnership primarily because a partnership is taxed as a separate entity.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "A corporation is considered a separate taxable entity, so its income is taxed to the corporation and again to the stockholders when distributed by the corporation.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "A transaction is an event which can be expressed in terms of money and which brings change in the financial position of a business enterprise.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Revenue, expense, and withdrawals accounts are called nominal accounts.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "A limited partnership exists when one or more of the partners have limited their liability for partnership debts to the amount of assets they have contributed to the partnership.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Once a transaction is recorded in the journal, it is necessary to post it immediately in the ledger accounts.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "A limited partner may not participate in the management of the business.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Posting is the process of recording journal entries in the journal.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "In a limited partnership, one or more of the partners must be a limited partner.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Normally, every partner act as an agent for the partnership and for every other partner.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Unlimited liability means that, every partner can act as an agent for every other partner.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Financial accounting serves external decision-makers, such as stockholders, suppliers, banks and government agencies.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "A partnership is easier and less costly to establish than a corporation.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "A capital interest in a partnership is a personal asset of the individual partner that cannot be sold or disposed of.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "It may be more difficult for a corporation to raise capital than it is for a partnership.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Each partner's withdrawal account is credited to record the withdrawal of assets or the payment of personal expenses.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "The non-cash assets and liabilities are recorded at their fair value.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "The use of book value provides a more equitable measure of the amount invested by each partner.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Partnerships are most common in comparatively small businesses.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Existing partners can prevent the sale of a partnership interest by one partner to another individual.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "The capital account of each partner is debited when assets are invested in the partnership by that person.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Accounting does not provide information that is useful in making decisions that have economic consequences.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Withdrawals are recorded as a decrease in a company's owner's equity",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Balance sheet is a financial statement summarizing the revenues, expenses, and net income (or net loss) of a company for its accounting period.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Cash basis considers the revenue as realized when the goods are produced.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Journal entry means recording the business transactions in journal.",
+		"options": ["True", "False"]
+	},
+
+	{
+		"question": "The capital account of each partner is debited when assets are invested in the partnership by that person.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Accounting does not provide information that is useful in making decisions that have economic consequences.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Withdrawals are recorded as a decrease in a company’s owner’s equity.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Balance sheet is a financial statement summarizing the revenues, expenses, and net income (or net loss) of a company for its accounting period.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Cash basis considers the revenue as realized when the goods are produced.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Journal means recording the business transactions in the journal.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Expense accounts increase with a debit and decrease with a credit.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Depreciation is charged on all fixed assets except buildings.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Temporary accounts because they are used only to compute the net income for the accounting period.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Capital at the end — net profit + drawings = Capital in the beginning.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "If a profit agreement is made but a loss agreement is not, a loss is allocated in the same way as a profit.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Withdrawals are the amounts of assets withdrawn from a sole proprietorship by its owner during an accounting period.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "The term cost refers to the amount at which a transaction is recorded.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "If a transaction causes total asset of the company to increase by $2,000, then liabilities plus stockholders’ equity also increases by $2,000.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Liability accounts increase with a debit and decrease with a credit.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Balance Sheet is a statement of the financial position of an enterprise at a given date.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "A cost is recorded as an expense when the company acquires an economic resource providing future benefits.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "The accounts relating to income, expenses, losses and gains are classified as nominal accounts.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Depreciation is the Decrease in the value of current assets.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Expenses are the prices charged to a company’s customers for goods or services provided during a particular time period.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Depreciation is charged on all fixed assets except buildings.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "In cash basis accounting, revenue and expense transactions are recorded in the accounting period when the goods or services are provided, regardless of whether cash is received or paid by the company.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "A Ledger provides a chronological record of all transactions affecting a firm.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Journal is the first book of original entry in which all transactions are recorded.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "All liabilities which become due for payment in one year are classified as long term liabilities.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "An accounting period is the period of time for which the revenues and expenses of a company are computed.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Paying employees' salaries for the current period is recorded with a debit to Salaries Expense.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Providing services to customers on account causes assets to increase and owner' equity to increase.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "A partnership is an association of one or more persons to carry on as co-owners a business for profit.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Assets and owner's equity are presented on the right side of the balance sheet.",
+		"options": ["False", "True"]
 	}
 ]
