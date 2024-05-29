@@ -112,7 +112,7 @@
 	{
 		"question": "Which financial statement covers a period of time?",
 		"options": [
-			"Both B and C",
+			"Income statement and Statement of cash flow",
 			"Income statement",
 			"Statement of cash flow",
 			"Balance sheet"
@@ -153,7 +153,7 @@
 	{
 		"question": "Net income appears on which financial statement(s)?",
 		"options": [
-			"Both A and B",
+			"Income statement and Balance sheet",
 			"Income statement",
 			"Statement of retained earnings",
 			"Balance sheet"
