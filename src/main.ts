@@ -150,7 +150,7 @@ function shuffle<T extends string>(array: T[]): T[] {
 	}
 
 	// Ensure 'True' is on top
-	const trueIndex = shuffledArray.indexOf(("صح" || "True") as T);
+	const trueIndex = shuffledArray.indexOf("True" as T);
 	if (trueIndex !== 0 && trueIndex !== -1) {
 		const temp = shuffledArray[0];
 		shuffledArray[0] = shuffledArray[trueIndex];
