@@ -10,7 +10,7 @@ export default defineConfig({
 			input: {
 				main: "index.html",
 				exam: "exam.html",
-				end: "end.html",
+				study: "study.html",
 			},
 		},
 	},

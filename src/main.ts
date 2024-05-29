@@ -33,7 +33,7 @@ function getNewQuestion() {
 	if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
 		progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 		localStorage.setItem("currentScore", score.toString());
-		return window.location.assign("/end.html");
+		return window.location.assign("/");
 	}
 
 	questionCounter++;
