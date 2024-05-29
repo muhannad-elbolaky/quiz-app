@@ -1,11 +1,3 @@
-:root {
-	--text: #ededee;
-	--background: #0b0b0e;
-	--primary: #b0adcf;
-	--secondary: #3a3575;
-	--accent: #6c65ca;
-}
-
 .choice-container {
 	display: flex;
 	margin-bottom: 0.8rem;
