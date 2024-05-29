@@ -74,7 +74,7 @@
 		"options": [
 			"Balance sheet in the current assets section",
 			"Income statement in the expenses sections",
-			"Balance sheet in the stockholders' equity section",
+			"Balance sheet in the stockholder's equity section",
 			"Statement of cash flows"
 		]
 	},
@@ -121,10 +121,10 @@
 	{
 		"question": "Which of the following statements is false?",
 		"options": [
-			"If you decrease an asset account, you may increase an owners' equity account",
+			"If you decrease an asset account, you may increase an owner's equity account",
 			"If you increase an asset account, you may decrease a liability account",
 			"If you increase an asset account, you may decrease an asset account",
-			"If you decrease an asset account, you may decrease owners' equity account"
+			"If you decrease an asset account, you may decrease owner's equity account"
 		]
 	},
 	{
@@ -646,7 +646,7 @@
 		"options": ["True", "False"]
 	},
 	{
-		"question": "Paying employees' salaries for the current period is recorded with a debit to Salaries Expense.",
+		"question": "Paying employee's salaries for the current period is recorded with a debit to Salaries Expense.",
 		"options": ["True", "False"]
 	},
 	{
@@ -670,7 +670,7 @@
 		"options": ["True", "False"]
 	},
 	{
-		"question": "After recording each transaction, total assets must equal total liabilities plus stockholders' equity.",
+		"question": "After recording each transaction, total assets must equal total liabilities plus stockholder's equity.",
 		"options": ["True", "False"]
 	},
 	{
@@ -694,7 +694,7 @@
 		"options": ["True", "False"]
 	},
 	{
-		"question": "Providing services to customers for cash causes stockholders' equity to increase.",
+		"question": "Providing services to customers for cash causes stockholder's equity to increase.",
 		"options": ["True", "False"]
 	},
 	{
@@ -742,7 +742,7 @@
 		"options": ["False", "True"]
 	},
 	{
-		"question": "Paying employees' salaries for the current month causes no change to stockholders' equity.",
+		"question": "Paying employee's salaries for the current month causes no change to stockholder's equity.",
 		"options": ["False", "True"]
 	},
 	{
@@ -842,7 +842,7 @@
 		"options": ["False", "True"]
 	},
 	{
-		"question": "Paying rent expense for the current month causes no change to stockholders' equity.",
+		"question": "Paying rent expense for the current month causes no change to stockholder's equity.",
 		"options": ["False", "True"]
 	},
 	{
@@ -926,7 +926,7 @@
 		"options": ["False", "True"]
 	},
 	{
-		"question": "If a transaction causes total asset of the company to increase by $5,000 and total liabilities to increase by $3,000, then stockholders' equity increases by $2,000.",
+		"question": "If a transaction causes total asset of the company to increase by $5,000 and total liabilities to increase by $3,000, then stockholder's equity increases by $2,000.",
 		"options": ["True", "False"]
 	},
 	{
