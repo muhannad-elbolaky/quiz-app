@@ -243,5 +243,185 @@
 	{
 		"question": "Assets and owner's equity are presented on the right side of the balance sheet.",
 		"options": ["False", "True"]
+	},
+	{
+		"question": "It is sometimes difficult to determine if a partnership does in fact exist.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Corporations are the most important form of business ownership because they conduct the vast majority of business.",
+		"options": ["TRUE", "FALSE"]
+	},
+	{
+		"question": "After recording each transaction, total assets must equal total liabilities plus stockholders' equity.",
+		"options": ["TRUE", "FALSE"]
+	},
+	{
+		"question": "The partners of a partnership may be able to operate with more flexibility because they are not subject to the control of a board of directors.",
+		"options": ["TRUE", "FALSE"]
+	},
+	{
+		"question": "Internal transactions are events that affect the financial position of the company but do not include an exchange with a separate economic entity. Examples are using supplies on hand and earning revenues after having received cash in advance from a customer.",
+		"options": ["TRUE", "FALSE"]
+	},
+	{
+		"question": "There may be certain tax advantages to a partnership, because a partnership is taxed as a separate entity.",
+		"options": ["FALSE", "TRUE"]
+	},
+	{
+		"question": "Borrowing cash from the bank causes assets to increase and liabilities to increase.",
+		"options": ["TRUE", "FALSE"]
+	},
+	{
+		"question": "A loan from a financial institution will increase assets and increase liabilities.",
+		"options": ["TRUE", "FALSE"]
+	},
+	{
+		"question": "Providing services to customers for cash causes stockholders' equity to increase.",
+		"options": ["TRUE", "FALSE"]
+	},
+	{
+		"question": "For each transaction, the total debit amounts must equal the total credit amounts.",
+		"options": ["TRUE", "FALSE"]
+	},
+	{
+		"question": "Purchasing office supplies on account causes assets to increase and liabilities to increase.",
+		"options": ["TRUE", "FALSE"]
+	},
+	{
+		"question": "An audit is an examination of transactions and financial statements.",
+		"options": ["TRUE", "FALSE"]
+	},
+	{
+		"question": "Receiving cash in advance from a customer for services to be provided in the future causes assets to increase and owner's equity to increase.",
+		"options": ["FALSE", "TRUE"]
+	},
+	{
+		"question": "Amounts owed from customers are recorded in the Accounts Receivable account.",
+		"options": ["TRUE", "FALSE"]
+	},
+	{
+		"question": "If expenses are more than revenues, the resulting negative amount is called net loss, instead of net income.",
+		"options": ["TRUE", "FALSE"]
+	},
+	{
+		"question": "Matching principle states that expenses of an accounting period are subtracted from the revenues earned during that period to determine net income.",
+		"options": ["TRUE", "FALSE"]
+	},
+	{
+		"question": "For financial accounting, a company usually uses a calendar year as its accounting period.",
+		"options": ["TRUE", "FALSE"]
+	},
+	{
+		"question": "An account is a summary record of the changes in a particular asset, liability, or owners' equity.",
+		"options": ["TRUE", "FALSE"]
+	},
+	{
+		"question": "A credit to an account balance always results in the balance decreasing.",
+		"options": ["FALSE", "TRUE"]
+	},
+	{
+		"question": "A capital interest in a partnership can't be sold or disposed of in any way.",
+		"options": ["FALSE", "TRUE"]
+	},
+	{
+		"question": "Paying employees' salaries for the current month causes no change to stockholders' equity.",
+		"options": ["FALSE", "TRUE"]
+	},
+	{
+		"question": "Liability accounts increase with a credit and decrease with a debit.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "A balance sheet is dated for a period of time, such as \"for the year ended December 31, 2020\".",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "For each transaction, there must be at least one debit amount and one credit amount.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Borrowing cash from the bank is recorded with a debit to cash.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "The general ledger includes all accounts used to record the company's transactions.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "After posting transactions to the general ledger accounts, the sum of the accounts with debit balances should equal the sum of the accounts with credit balances.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "If total debits equal total credits in the trial balance, then all balances are correct.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "A sole proprietorship is an accounting entity, even though it has only a single owner.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Examples of assets include cash, inventory, and capital stock issued to investors.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Expenses are the costs of providing the goods or services during the time period.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Expense accounts are decreased by debit entries and increased by credit entries.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Purchasing supplies on account increases the balance of the Accounts Receivable account.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "A debit to an account balance always results in the balance increasing.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Managerial accounting serves external users while financial accounting serves internal users.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Revenue accounts are increased by debit entries and decreased by credit entries.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "The balance sheet equation is assets = liabilities - owner's equity.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Buying or selling on credit creates an accounts payable or receivable.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Net income = Assets - Liabilities.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Net Profit: The excess of expenses over revenue during a particular accounting period.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "A journal provides a chronological record of all transactions affecting a firm.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "External transactions are transactions the firm conducts with a separate economic entity, such as selling products to a customer, purchasing supplies from a vendor, paying salaries to an employee, and borrowing money from a bank.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "A cost is recorded as an asset if it results from providing goods or services to customers.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Purchasing equipment using cash causes assets to increase.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Revenue accounts increase with a debit and decrease with a credit.",
+		"options": ["False", "True"]
 	}
 ]
