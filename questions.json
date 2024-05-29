@@ -70,15 +70,6 @@
 		]
 	},
 	{
-		"question": "Ghanem company in question 44 had net income (or net loss) of",
-		"options": [
-			"Net income of $60,000",
-			"Net income of $100,000",
-			"Net income of $57,000",
-			"Net loss of $40,000"
-		]
-	},
-	{
 		"question": "The amount a company expects to collect from customers appears on the",
 		"options": [
 			"Balance sheet in the current assets section",
@@ -116,15 +107,6 @@
 			"Statement of retained earnings",
 			"Statement of cash flows",
 			"Balance sheet"
-		]
-	},
-	{
-		"question": "The company wrote a cheque to repay a loan owing to Ghanem, the entries would be:",
-		"options": [
-			"Debit loan account, and credit Bank account",
-			"Debit Bank account, and credit loan account",
-			"Debit loan interest, and credit Bank account",
-			"None of the above"
 		]
 	},
 	{
