@@ -87,6 +87,12 @@ p {
 	transition: box-shadow 200ms ease-in-out, translate 200ms ease-in-out;
 }
 
+.secondary {
+	border: 0.1rem solid var(--primary);
+	background-color: transparent;
+	color: var(--primary);
+}
+
 .btn:hover {
 	cursor: pointer;
 	box-shadow: 0.4rem 0.4rem var(--secondary);
