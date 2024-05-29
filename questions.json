@@ -1,5 +1,564 @@
 [
 	{
+		"question": "An entity",
+		"options": [
+			"is a separate economic unit.",
+			"allows a section of an organization to be a separate economic unit.",
+			"helps accountants relate events to a defined area of accounting.",
+			"All of the above.",
+			"None of the above."
+		]
+	},
+	{
+		"question": "Which step in the process of measuring external transactions involves assessing the equality of total debits and total credits for the period?",
+		"options": [
+			"Prepare a trial balance.",
+			"Use source documents to determine accounts affected by the transaction.",
+			"Analyze the impact of the transaction on the accounting equation.",
+			"Post the transaction to the T-account in the general ledger."
+		]
+	},
+	{
+		"question": "The credibility of the financial statements is the responsibility of the",
+		"options": [
+			"management.",
+			"external auditors.",
+			"stockholders.",
+			"staff accountants."
+		]
+	},
+	{
+		"question": "How would net income be most likely to affect the accounting equation?",
+		"options": [
+			"Increase assets and increase stockholders' equity.",
+			"Increase liabilities and decrease stockholders' equity.",
+			"Increase assets and increase liabilities.",
+			"Decrease assets and decrease liabilities."
+		]
+	},
+	{
+		"question": "Which of the following shows the values of assets, liabilities, and owner's equity at a point in time?",
+		"options": [
+			"Balance sheet.",
+			"Income statement.",
+			"Statement of cash flows.",
+			"Statement of owner's equity."
+		]
+	},
+	{
+		"question": "All of the following statements are true except one. Which statement is false?",
+		"options": [
+			"A proprietorship is a business with several owners.",
+			"Bookkeeping is only a part of accounting.",
+			"Professional accountants are held to a high standard of ethical conduct.",
+			"The organization that formulates generally accepted accounting principles (GAAP) is the Financial Accounting Standards Board."
+		]
+	},
+	{
+		"question": "Current assets and liabilities are generally expected to be used or paid within the next:",
+		"options": [
+			"Twelve months.",
+			"a quarter.",
+			"six months.",
+			"Twenty-four months."
+		]
+	},
+	{
+		"question": "Which financial statement covers a period of time?",
+		"options": [
+			"Both B and C.",
+			"Balance sheet",
+			"Income statement",
+			"Statement of cash flow"
+		]
+	},
+	{
+		"question": "Which of the following statements is false?",
+		"options": [
+			"If you decrease an asset account, you may increase an owner's equity account.",
+			"If you increase an asset account, you may increase a liability account.",
+			"If you increase an asset account, you may decrease an asset account.",
+			"If you decrease an asset account, you may decrease owner's equity account."
+		]
+	},
+	{
+		"question": "Baldwin Corporation began the year with cash of $35,000 and a computer that cost $20,000. During the year Baldwin earned sales revenue of $140,000 and had the following expenses: salaries, $59,000; rent, $8,000; and utilities, $3,000. At year end Baldwin's cash balance was down to $16,000. How much net income (or net loss) did Baldwin experience for the year?",
+		"options": ["$70,000.", "$19,000", "$107,000", "$140,000"]
+	},
+	{
+		"question": "Kindra Novelties acquired equipment costing $3,000 on account. The effect of this transaction on Kindra Novelties would",
+		"options": [
+			"increase equipment by $3,000 and increase accounts payable by $3,000.",
+			"increase equipment by $3,000 and decrease capital by $3,000.",
+			"increase equipment by $3,000 and increase capital by $3,000.",
+			"increase equipment by $3,000 and decrease accounts payable by $3,000.",
+			"No transaction is recorded since no cash has been paid."
+		]
+	},
+	{
+		"question": "Which of the following forms of business organizations protect the personal assets of the owners from creditors of the business?",
+		"options": [
+			"Corporations.",
+			"Partnerships",
+			"Proprietorships",
+			"Partnerships and corporations",
+			"Partnerships and proprietorships"
+		]
+	},
+	{
+		"question": "Net income appears on which financial statement(s)?",
+		"options": [
+			"Both A and B.",
+			"Income statement",
+			"Statement of retained earnings",
+			"Balance sheet"
+		]
+	},
+	{
+		"question": "Which is the correct sequence for recording transactions and preparing financial statements:",
+		"options": [
+			"Journal, ledger, trial balance, financial statements.",
+			"Ledger, trial balance, journal, financial statement",
+			"Financial statement, trial balance, ledger, journal",
+			"Ledger, journal, trial balance, financial statement"
+		]
+	},
+	{
+		"question": "An entity",
+		"options": [
+			"is a separate economic unit",
+			"allows a section of an organization to be a separate economic unit",
+			"helps accountants relate events to a defined area of accounting",
+			"All of the above",
+			"None of the above"
+		]
+	},
+	{
+		"question": "Which step in the process of measuring external transactions involves assessing the equality of total debits and total credits for the period?",
+		"options": [
+			"Prepare a trial balance",
+			"Use source documents to determine accounts affected by the transaction",
+			"Analyze the impact of the transaction on the accounting equation",
+			"Post the transaction to the T-account in the general ledger"
+		]
+	},
+	{
+		"question": "The credibility of the financial statements is the responsibility of the",
+		"options": [
+			"management",
+			"external auditors",
+			"stockholders",
+			"staff accountants",
+			"external auditors and the staff accountants"
+		]
+	},
+	{
+		"question": "How would net income be most likely to affect the accounting equation?",
+		"options": [
+			"Increase assets and increase stockholders’ equity",
+			"Increase liabilities and decrease stockholders’ equity",
+			"Increase assets and increase liabilities",
+			"Decrease assets and decrease liabilities"
+		]
+	},
+	{
+		"question": "Which of the following shows the values of assets, liabilities, and owner's equity at a point in time?",
+		"options": [
+			"Balance sheet",
+			"Income statement",
+			"Statement of cash flows",
+			"Statement of owner's equity"
+		]
+	},
+	{
+		"question": "All of the following statements are true except one. Which statement is false?",
+		"options": [
+			"A proprietorship is a business with several owners",
+			"Bookkeeping is only a part of accounting",
+			"Professional accountants are held a high standard of ethical conduct",
+			"The organization that formulates generally accepted accounting principles (GAAP) is the Financial Accounting Standards Board"
+		]
+	},
+	{
+		"question": "Current assets and liabilities are generally expected to be used or paid within the next:",
+		"options": ["Twelve months", "quarter", "six months", "Twenty-four months"]
+	},
+	{
+		"question": "Patrick's Party Supplies acquired 60 tables from a manufacturer at a cost of $100 per table and purchased the tables on account. The effect of this transaction on Patrick's Party Supplies would be to",
+		"options": [
+			"increase inventory by $6,000 and increase accounts payable by $6,000",
+			"increase inventory by $6,000 and increase capital by $6,000",
+			"increase inventory by $6,000 and decrease capital by $6,000",
+			"increase inventory by $6,000 and decrease cash by $6,000",
+			"increase inventory by $6,000 and decrease accounts payable by $6,000"
+		]
+	},
+	{
+		"question": "Ghanem company in question 44 had net income (or net loss) of",
+		"options": [
+			"Net income of $60,000",
+			"Net income of $100,000",
+			"Net income of $57,000",
+			"Net loss of $40,000"
+		]
+	},
+	{
+		"question": "The amount a company expects to collect from customers appears on the",
+		"options": [
+			"Balance sheet in the current assets section",
+			"Income statement in the expenses sections",
+			"Balance sheet in the stockholders' equity section",
+			"Statement of cash flows"
+		]
+	},
+	{
+		"question": "The basic summery device of accounting is the:",
+		"options": ["account", "ledger", "journal", "trial balance"]
+	},
+	{
+		"question": "Revenues are",
+		"options": [
+			"Increase in retained earnings resulting from selling products or performing services",
+			"Increases in paid-in capital resulting from the owner investing in the business",
+			"Decreases in liabilities resulting from paying off loans",
+			"All of the above"
+		]
+	},
+	{
+		"question": "Another name for the balance sheet is the",
+		"options": [
+			"Statement of financial position",
+			"Statement of operations",
+			"Statement of profit and loss",
+			"Statement of earnings"
+		]
+	},
+	{
+		"question": "The financial statement that reports revenues and expenses is called the",
+		"options": [
+			"Income statement",
+			"Statement of retained earnings",
+			"Statement of cash flows",
+			"Balance sheet"
+		]
+	},
+	{
+		"question": "The company wrote a cheque to repay a loan owing to Ghanem, the entries would be:",
+		"options": [
+			"Debit loan account, and credit Bank account",
+			"Debit Bank account, and credit loan account",
+			"Debit loan interest, and credit Bank account",
+			"None of the above"
+		]
+	},
+	{
+		"question": "Which financial statement covers a period of time?",
+		"options": [
+			"Both B and C",
+			"Income statement",
+			"Statement of cash flow",
+			"Balance sheet"
+		]
+	},
+	{
+		"question": "Which of the following statements is false?",
+		"options": [
+			"If you decrease an asset account, you may increase an owners' equity account",
+			"If you increase an asset account, you may decrease a liability account",
+			"If you increase an asset account, you may decrease an asset account",
+			"If you decrease an asset account, you may decrease owners' equity account"
+		]
+	},
+	{
+		"question": "Baldwin Corporation began the year with cash of $35,000 and a computer that cost $20,000. During the year Baldwin earned sales revenue of $140,000 and had the following expenses: salaries, $59,000; rent, $8,000; and utilities, $3,000. At year end Baldwin's cash balance was down to $16,000. How much net income (or net loss) did Baldwin experience for the year?",
+		"options": ["$70,000", "($19,000)", "$107,000", "$140,000"]
+	},
+	{
+		"question": "Kindra Novelties acquired equipment costing $3,000 on account. The effect of this transaction on Kindra Novelties would be to",
+		"options": [
+			"increase equipment by $3,000 and increase accounts payable by $3,000",
+			"increase equipment by $3,000 and decrease capital by $3,000",
+			"increase equipment by $3,000 and increase capital by $3,000",
+			"increase equipment by $3,000 and decrease accounts payable by $3,000",
+			"No transaction is recorded since no cash has been paid"
+		]
+	},
+	{
+		"question": "Which of the following forms of business organizations protect the personal assets of the owners from creditors of the business?",
+		"options": [
+			"Corporations",
+			"Partnerships",
+			"Proprietorships",
+			"Partnerships and corporations"
+		]
+	},
+	{
+		"question": "Net income appears on which financial statement(s)?",
+		"options": [
+			"Both A and B",
+			"Income statement",
+			"Statement of retained earnings",
+			"Balance sheet"
+		]
+	},
+	{
+		"question": "Which is the correct sequence for recording transactions and preparing financial statements:",
+		"options": [
+			"Journal, ledger, trial balance, financial statements",
+			"Ledger, trial balance, journal, financial statement",
+			"Financial statement, trial balance, ledger, journal",
+			"Ledger, journal, trial balance, financial statement"
+		]
+	},
+	{
+		"question": "Ghanem, a sole proprietor paid a creditor Mr. A from his own money outside the firm. The entry to record the transaction would be:",
+		"options": [
+			"Debit Mr. A, and Credit Capital.",
+			"Debit Cash, and Credit Bank.",
+			"Debit Creditor, and Credit Cash.",
+			"None of the above."
+		]
+	},
+	{
+		"question": "The partners may agree to any allocation of profit or loss that they consider:",
+		"options": ["Appropriate", "Equitable (fair)", "Accepted", "All of the above"]
+	},
+	{
+		"question": "In the absence of an agreement or if the partners are unable to reach an agreement, the law provides that profits are to be divided:",
+		"options": [
+			"Equally",
+			"According to fixed ratio",
+			"According to the capital of each partner",
+			"None of the above"
+		]
+	},
+	{
+		"question": "In establishing an equitable way to allocate partnership profit and loss, the partners should consider:",
+		"options": [
+			"All of the above",
+			"The return for the personal services performed by the partners.",
+			"The return on the capital provided by the partners.",
+			"The return for the business risks assumed by the partners."
+		]
+	},
+	{
+		"question": "Salaries authorized for each partner and interest on capital investments are:",
+		"options": [
+			"Reported as expenses nad Recognized as an allocation of net income.",
+			"Reported as expenses.",
+			"Not reported as expenses.",
+			"Recognized as an allocation of net income."
+		]
+	},
+	{
+		"question": "Business is distinct from the owner. This concept is called:",
+		"options": [
+			"Business entity",
+			"Money measurement concept",
+			"Going concern",
+			"Cost Concept"
+		]
+	},
+	{
+		"question": "Which of the following steps in the accounting process is done after analyzing business transactions?",
+		"options": [
+			"Entering transactions in a journal",
+			"Preparing the financial statements",
+			"Preparing a trial balance",
+			"Posting journal entries"
+		]
+	},
+	{
+		"question": "All the following are current assets except:",
+		"options": ["Software", "Cash", "Accounts receivable", "Inventory"]
+	},
+	{
+		"question": "Which of the following is the external user of financial statements?",
+		"options": [
+			"Creditor of the business",
+			"Manager of the business",
+			"CEO of the business",
+			"Controller of the business"
+		]
+	},
+	{
+		"question": "Which of the following accounts is increased with a debit?",
+		"options": ["Land", "Service Revenue", "Interest Payable", "Common stock"]
+	},
+	{
+		"question": "Which of the following is not a characteristic of a partnership?",
+		"options": [
+			"Taxable entity",
+			"Limited life",
+			"Mutual agency",
+			"Co - ownership of property"
+		]
+	},
+	{
+		"question": "Accrued revenues are considered as :",
+		"options": ["Asset", "Liability", "Equity", "Income"]
+	},
+	{
+		"question": "On July 1,2023, shireman Enterprises received Cash $1,400 For services rendered. The entry to record this transaction will include a:",
+		"options": [
+			"debit to Cash of $1400",
+			"debit to service Revenue of $1400",
+			"credit to Accounts Receivable of $1400",
+			"credit to Accounts Payable of $1400"
+		]
+	},
+	{
+		"question": "Identify the asset from the following",
+		"options": [
+			"Cash and cash equivalent",
+			"Creditors",
+			"Notes payable",
+			"Bank loan"
+		]
+	},
+	{
+		"question": "Partnership Firm Agreement is Known as?",
+		"options": [
+			"Partnership Deed",
+			"Partnership contract",
+			"Partnership Act",
+			"Agreement"
+		]
+	},
+	{
+		"question": "Long term assets without any physical existence but, possessing a value are called :",
+		"options": [
+			"Intangible assets",
+			"Current assets",
+			"Fixed assets",
+			"Tangible assets"
+		]
+	},
+	{
+		"question": "What is the disadvantage of being a sole proprietorship firm owner?",
+		"options": [
+			"Unlimited Liability",
+			"Personal control",
+			"Easy Formation",
+			"Faster Decision Making"
+		]
+	},
+	{
+		"question": "Agreement in which form is required in a partnership Firm?",
+		"options": ["A or B", "written", "Oral", "None of the above"]
+	},
+	{
+		"question": "Fixed assets are held by a business for:",
+		"options": [
+			"Generating revenues",
+			"Converting into cash",
+			"Resale",
+			"All of the above"
+		]
+	},
+	{
+		"question": "A revenue account:",
+		"options": [
+			"None of the above",
+			"is increased by debits",
+			"is decreased by credits",
+			"has a normal balance of a debit"
+		]
+	},
+	{
+		"question": "What increases the Assets & Equity?",
+		"options": [
+			"Fresh Capital",
+			"Revenues",
+			"Debts paid off",
+			"None of the above"
+		]
+	},
+	{
+		"question": "Under the accrual method of accounting, expenses are recorded:",
+		"options": [
+			"When they are incurred",
+			"When they are paid",
+			"When invoices for expense items are received",
+			"None of the above"
+		]
+	},
+	{
+		"question": "Examining of financial information refers to?",
+		"options": ["Auditing", "Analysis", "Recording", "Controlling"]
+	},
+	{
+		"question": "Double entry implies that:",
+		"options": [
+			"Recording two aspects of every transaction",
+			"Recording entries in journal",
+			"Recording entries in ledger account",
+			"Recording every transaction in books"
+		]
+	},
+	{
+		"question": "Upon formation of a partnership, each partner’s initial investment of assets should be recorded at their:",
+		"options": ["fair values", "book values", "cost", "appraised values"]
+	},
+	{
+		"question": "Cash paid to purchase a building appears on the statement of cash flows among the",
+		"options": [
+			"Investing activities",
+			"Operating activities",
+			"Financial activities",
+			"Stockholders’ equity"
+		]
+	},
+	{
+		"question": "During January, assets increased by $20,000 and liabilities increased by $4,000. Stockholders’ equity must have",
+		"options": [
+			"Increased by $16,000",
+			"Increased by $26,000",
+			"Decreased by $16,000",
+			"Decreased by $26,000"
+		]
+	},
+	{
+		"question": "withdrawals are recorded as a decrease in a company’s owner's equity.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Revenue accounts are increased by debit entries and decreased by credit entries.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Managerial accounting activities focus on reports for internal and external users.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "purchasing supplies on account increases the balance of the Accounts payable account.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "the general journal includes all accounts used to record the company’s transactions.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Revenues, Owner investments and retained earnings increase the equity of a company.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "Limited liability is not a characteristic of a partnership firm as the partners involved have unlimited liability.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "to record an increase in any given asset account, that account must be credited.",
+		"options": ["False", "True"]
+	},
+	{
+		"question": "Borrowing cash from the bank causes assets to increase and liabilities to increase.",
+		"options": ["True", "False"]
+	},
+	{
+		"question": "An accounting period is the period of time for which the revenues and expenses of a company are computed.",
+		"options": ["True", "False"]
+	},
+	{
 		"question": "Capital generally refers to the amount invested in an enterprise by its owners.",
 		"options": ["True", "False"]
 	},
@@ -250,83 +809,83 @@
 	},
 	{
 		"question": "Corporations are the most important form of business ownership because they conduct the vast majority of business.",
-		"options": ["TRUE", "FALSE"]
+		"options": ["True", "False"]
 	},
 	{
 		"question": "After recording each transaction, total assets must equal total liabilities plus stockholders' equity.",
-		"options": ["TRUE", "FALSE"]
+		"options": ["True", "False"]
 	},
 	{
 		"question": "The partners of a partnership may be able to operate with more flexibility because they are not subject to the control of a board of directors.",
-		"options": ["TRUE", "FALSE"]
+		"options": ["True", "False"]
 	},
 	{
 		"question": "Internal transactions are events that affect the financial position of the company but do not include an exchange with a separate economic entity. Examples are using supplies on hand and earning revenues after having received cash in advance from a customer.",
-		"options": ["TRUE", "FALSE"]
+		"options": ["True", "False"]
 	},
 	{
 		"question": "There may be certain tax advantages to a partnership, because a partnership is taxed as a separate entity.",
-		"options": ["FALSE", "TRUE"]
+		"options": ["False", "True"]
 	},
 	{
 		"question": "Borrowing cash from the bank causes assets to increase and liabilities to increase.",
-		"options": ["TRUE", "FALSE"]
+		"options": ["True", "False"]
 	},
 	{
 		"question": "A loan from a financial institution will increase assets and increase liabilities.",
-		"options": ["TRUE", "FALSE"]
+		"options": ["True", "False"]
 	},
 	{
 		"question": "Providing services to customers for cash causes stockholders' equity to increase.",
-		"options": ["TRUE", "FALSE"]
+		"options": ["True", "False"]
 	},
 	{
 		"question": "For each transaction, the total debit amounts must equal the total credit amounts.",
-		"options": ["TRUE", "FALSE"]
+		"options": ["True", "False"]
 	},
 	{
 		"question": "Purchasing office supplies on account causes assets to increase and liabilities to increase.",
-		"options": ["TRUE", "FALSE"]
+		"options": ["True", "False"]
 	},
 	{
 		"question": "An audit is an examination of transactions and financial statements.",
-		"options": ["TRUE", "FALSE"]
+		"options": ["True", "False"]
 	},
 	{
 		"question": "Receiving cash in advance from a customer for services to be provided in the future causes assets to increase and owner's equity to increase.",
-		"options": ["FALSE", "TRUE"]
+		"options": ["False", "True"]
 	},
 	{
 		"question": "Amounts owed from customers are recorded in the Accounts Receivable account.",
-		"options": ["TRUE", "FALSE"]
+		"options": ["True", "False"]
 	},
 	{
 		"question": "If expenses are more than revenues, the resulting negative amount is called net loss, instead of net income.",
-		"options": ["TRUE", "FALSE"]
+		"options": ["True", "False"]
 	},
 	{
 		"question": "Matching principle states that expenses of an accounting period are subtracted from the revenues earned during that period to determine net income.",
-		"options": ["TRUE", "FALSE"]
+		"options": ["True", "False"]
 	},
 	{
 		"question": "For financial accounting, a company usually uses a calendar year as its accounting period.",
-		"options": ["TRUE", "FALSE"]
+		"options": ["True", "False"]
 	},
 	{
-		"question": "An account is a summary record of the changes in a particular asset, liability, or owners' equity.",
-		"options": ["TRUE", "FALSE"]
+		"question": "An account is a summary record of the changes in a particular asset, liability, or owner's equity.",
+		"options": ["True", "False"]
 	},
 	{
 		"question": "A credit to an account balance always results in the balance decreasing.",
-		"options": ["FALSE", "TRUE"]
+		"options": ["False", "True"]
 	},
 	{
 		"question": "A capital interest in a partnership can't be sold or disposed of in any way.",
-		"options": ["FALSE", "TRUE"]
+		"options": ["False", "True"]
 	},
 	{
 		"question": "Paying employees' salaries for the current month causes no change to stockholders' equity.",
-		"options": ["FALSE", "TRUE"]
+		"options": ["False", "True"]
 	},
 	{
 		"question": "Liability accounts increase with a credit and decrease with a debit.",

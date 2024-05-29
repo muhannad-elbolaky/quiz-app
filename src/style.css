@@ -38,7 +38,7 @@ h2 {
 span,
 p {
 	font-size: 2.4rem;
-	text-align: right;
+	text-align: auto;
 }
 
 .container {
