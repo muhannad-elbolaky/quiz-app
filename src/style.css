@@ -2,11 +2,11 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap'); */
 
 :root {
-	--text: #ededee;
-	--background: #1a1a22;
-	--primary: #b0adcf;
-	--secondary: #3a3575;
-	--accent: #6c65ca;
+	--text: #e4e6ea;
+	--background: #0d1118;
+	--primary: #9cb3db;
+	--secondary: #1f4689;
+	--accent: #3376e9;
 
 	background-color: var(--background);
 	color: var(--text);
@@ -112,7 +112,7 @@ p {
 	padding: 2rem 1rem;
 	bottom: 0;
 	width: 100%;
-	background-color: #00000040;
+	background-color: var(--secondary);
 }
 
 .author-link > a {
@@ -120,6 +120,16 @@ p {
 	font-size: 1.7rem;
 	font-weight: bold;
 	text-decoration: wavy underline;
+}
+
+.results {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 3rem;
+}
+
+#stats {
+	width: 100%;
 }
 
 @media screen and (max-width: 600px) {

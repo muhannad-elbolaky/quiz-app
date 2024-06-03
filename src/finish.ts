@@ -1,26 +1,59 @@
 import questions from "../questions.json";
 
 const stats = document.querySelector("#stats") as HTMLHeadingElement;
-const mostRecentScore = localStorage.getItem("mostRecentScore") ?? 0;
-const currentScore = localStorage.getItem("currentScore") ?? 0;
+const mostRecentScore = localStorage.getItem("mostRecentScore") ?? "0";
+const currentScore = localStorage.getItem("currentScore") ?? "0";
 
 localStorage.setItem("mostRecentScore", currentScore.toString());
 
 const currentScoreNumber = Number(currentScore);
-const isPassed = currentScoreNumber >= Math.round(questions.length / 2);
-const percentage = `${Math.round(
+const percentageNumber = Math.round(
 	(currentScoreNumber / questions.length) * 100,
-)}%`;
+);
+const percentage = `${percentageNumber}%`;
+
+function renderRating(percentage: number): string {
+	let rating = "";
+
+	if (percentage >= 50 && percentage <= 100) {
+		// At 50%, show one star
+		rating = "⭐";
+		// For percentages above 50%, calculate the number of additional stars
+		const additionalStars = Math.floor((percentage - 50) / 10);
+		// Ensure it doesn't exceed 5 stars
+		const starsToShow = Math.min(additionalStars, 4);
+		rating += "⭐".repeat(starsToShow);
+	} else if (percentage >= 0 && percentage < 50) {
+		// Calculate the number of bagels based on the percentage
+		const bagels = Math.ceil((50 - percentage) / 10);
+		rating = "🍪".repeat(bagels);
+	} else {
+		rating = "Invalid percentage";
+	}
+
+	return rating;
+}
+
+const rating = renderRating(percentageNumber);
+
+console.log(currentScoreNumber);
 
 stats.innerHTML = `\
   ${
-			isPassed
-				? '<h1 class="text-center" style="color: #199827; margin-bottom: 3rem;">نجحت</h1>'
-				: mostRecentScore === "0"
-				? '<h1 dir="auto">🩶🩷🩵</h1>'
-				: '<h1 class="text-center" style="color: #c70000; margin-bottom: 3rem;">رسبت</h1>'
+			currentScoreNumber != null
+				? `<h2 class="text-center">${rating}</h2>`
+				: `<h2 class="text-center">بصل</h2>`
 		}
-  <p>نتيجتك: <span style="color: yellow;">${currentScore}</span></p>
-  <p>النتيجة السابقة: <span style="color: yellow;">${mostRecentScore}</span></p>
-  <p style="margin-bottom: 4.2rem;">النسبة: <span style="color: yellow;">${percentage}</span></p>
+  <div class="results">
+    <p>نتيجتك:</p>
+    <span style="color: yellow">${currentScore}</span>
+  </div>
+  <div class="results">
+    <p>النتيجة السابقة:</p>
+    <span style="color: yellow">${mostRecentScore}</span>
+  </div>
+  <div class="results">
+    <p style="margin-bottom: 4.2rem">النسبة:</p>
+    <span style="color: yellow">${percentage}</span>
+  </div>
 `;
