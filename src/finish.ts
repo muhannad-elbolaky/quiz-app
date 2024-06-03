@@ -42,7 +42,7 @@ stats.innerHTML = `\
   ${
 			currentScoreNumber == null
 				? `<h2 class="text-center">${rating}</h2>`
-				: `<h2 class="text-center">بصل</h2>`
+				: `<h2 class="text-center">ملحوظة: العيد عيد لمحة</h2>`
 		}
   <div class="results">
     <p>نتيجتك:</p>
