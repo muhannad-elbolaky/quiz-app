@@ -12,6 +12,7 @@ type Question = {
 	options: string[];
 };
 
+import { highlight } from "utils/highlight";
 import questions from "../questions.json";
 
 let currentQuestion: Question;
@@ -44,7 +45,7 @@ function getNewQuestion() {
 
 	if (currentQuestion.question.length > 90) question.style.fontSize = "3rem";
 
-	question.innerText = currentQuestion.question;
+	question.innerHTML = highlight(currentQuestion.question);
 
 	const choicesContainer = document.querySelector(".choices") as HTMLDivElement;
 
