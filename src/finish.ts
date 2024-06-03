@@ -40,7 +40,7 @@ console.log(currentScoreNumber);
 
 stats.innerHTML = `\
   ${
-			currentScoreNumber != null
+			currentScoreNumber == null
 				? `<h2 class="text-center">${rating}</h2>`
 				: `<h2 class="text-center">بصل</h2>`
 		}
