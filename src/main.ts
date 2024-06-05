@@ -12,7 +12,6 @@ type Question = {
 	options: string[];
 };
 
-import { highlight } from "utils/highlight";
 import questions from "../questions.json";
 
 let currentQuestion: Question;
@@ -45,7 +44,7 @@ function getNewQuestion() {
 
 	if (currentQuestion.question.length > 90) question.style.fontSize = "3rem";
 
-	question.innerHTML = highlight(currentQuestion.question);
+	question.innerHTML = currentQuestion.question;
 
 	const choicesContainer = document.querySelector(".choices") as HTMLDivElement;
 
@@ -102,7 +101,7 @@ function getNewQuestion() {
 				) as HTMLParagraphElement;
 				rightAnswerText.style.transition = "font-size 2s ease-in-out";
 				rightAnswerText.style.textAlign = "center";
-				rightAnswerText.style.fontSize = "4rem";
+				// rightAnswerText.style.fontSize = "4rem";
 				rightAnswerText.scrollIntoView({ behavior: "smooth" });
 
 				const interval = setInterval(() => {
