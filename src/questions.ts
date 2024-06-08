@@ -32,7 +32,7 @@ for (let index = 0; index < questions.length; index++) {
 
 	const question = document.createElement("p");
 	question.classList.add("question-page");
-	question.id = `question${index + 1}`;
+	question.id = `${index + 1}`;
 	question.innerText = rawQuestion.question;
 	container.appendChild(question);
 
