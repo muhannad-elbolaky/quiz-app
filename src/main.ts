@@ -20,7 +20,7 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions: Question[] = [];
 
-const MAX_QUESTIONS = questions.length;
+const MAX_QUESTIONS = questions.length > 75 ? 75 : questions.length;
 
 function startexam() {
 	questionCounter = 0;

@@ -36,13 +36,11 @@ function renderRating(percentage: number): string {
 
 const rating = renderRating(percentageNumber);
 
-console.log(currentScoreNumber);
-
 stats.innerHTML = `\
   ${
-			currentScoreNumber == null
-				? `<h2 class="text-center">${rating}</h2>`
-				: `<h2 class="text-center">ملحوظة: العيد عيد لحمة</h2>`
+			currentScoreNumber == 0
+				? `<h2 class="text-center">ملحوظة: العيد عيد لحمة</h2>`
+				: `<h2 class="text-center">${rating}</h2>`
 		}
   <div class="results">
     <p>نتيجتك:</p>
