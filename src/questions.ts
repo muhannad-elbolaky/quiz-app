@@ -26,8 +26,8 @@ for (let index = 0; index < questions.length; index++) {
 	const newUrl = url.origin + url.pathname + url.search;
 
 	questionNumber.addEventListener("click", () => {
-		navigator.clipboard.writeText(`${newUrl}#question${index + 1}`);
-		window.location.assign(`${newUrl}#question${index + 1}`);
+		navigator.clipboard.writeText(`${newUrl}#${index + 1}`);
+		window.location.assign(`${newUrl}#${index + 1}`);
 	});
 
 	const question = document.createElement("p");
