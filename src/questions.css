@@ -54,3 +54,7 @@ p {
 	border-radius: 0.6rem;
 	background: linear-gradient(45deg, #199827 0%, #023b17 100%);
 }
+
+.margin {
+	margin-top: 9rem;
+}
