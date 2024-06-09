@@ -6,7 +6,7 @@ const currentScore = localStorage.getItem("currentScore") ?? "0";
 
 localStorage.setItem("mostRecentScore", currentScore.toString());
 
-const MAX_QUESTIONS = questions.length > 30 ? 30 : questions.length;
+const MAX_QUESTIONS = questions.length > 25 ? 25 : questions.length;
 
 const currentScoreNumber = Number(currentScore);
 const percentageNumber = Math.round((currentScoreNumber / MAX_QUESTIONS) * 100);
@@ -39,7 +39,7 @@ const rating = renderRating(percentageNumber);
 stats.innerHTML = `\
   ${
 			currentScoreNumber == 0
-				? `<h2 class="text-center">ملحوظة: العيد عيد لحمة</h2>`
+				? `<h2 class="text-center">25 سؤال لكل اختبار!</h2>`
 				: `<h2 class="text-center">${rating}</h2>`
 		}
   <div class="results">
