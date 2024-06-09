@@ -6,10 +6,10 @@ const currentScore = localStorage.getItem("currentScore") ?? "0";
 
 localStorage.setItem("mostRecentScore", currentScore.toString());
 
+const MAX_QUESTIONS = questions.length > 30 ? 30 : questions.length;
+
 const currentScoreNumber = Number(currentScore);
-const percentageNumber = Math.round(
-	(currentScoreNumber / questions.length) * 100,
-);
+const percentageNumber = Math.round((currentScoreNumber / MAX_QUESTIONS) * 100);
 const percentage = `${percentageNumber}%`;
 
 function renderRating(percentage: number): string {

@@ -5,8 +5,6 @@ if (questionElement == null) throw new Error("Question element not found");
 
 import questions from "../questions.json";
 
-questions;
-
 for (let index = 0; index < questions.length; index++) {
 	const rawQuestion = questions[index];
 
