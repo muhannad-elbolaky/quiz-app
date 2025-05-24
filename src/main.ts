@@ -69,17 +69,21 @@ function getNewQuestion() {
             if (correct) {
                 score++;
                 scoreText.innerText = String(score);
-            } else {
-                if (currentQuestion.correction) {
-                    const rawCorr = currentQuestion.correction;
-                    const highlightedCorr = rawCorr.replace(/{{\s*(.+?)\s*}}/g, (_, inner) =>
-                        `<span class="highlight">${inner}</span>`
-                    );
-                    questionEl.innerHTML =
-                        `<span class="correction-label">تصحيح: </span>` +
-                        highlightedCorr;
-                }
+            }
 
+            // Show correction if available, regardless of answer correctness
+            if (currentQuestion.correction) {
+                const rawCorr = currentQuestion.correction;
+                const highlightedCorr = rawCorr.replace(/{{\s*(.+?)\s*}}/g, (_, inner) =>
+                    `<span class="highlight">${inner}</span>`
+                );
+                questionEl.innerHTML =
+                    `<span class="correction-label">تصحيح: </span>` +
+                    highlightedCorr;
+            }
+
+            // Highlight the correct answer for incorrect selections
+            if (!correct) {
                 const right = document.querySelector(".hidden-correct") as HTMLDivElement;
                 right.classList.remove("hidden-correct");
                 right.style.pointerEvents = "none";
@@ -88,19 +92,20 @@ function getNewQuestion() {
                 const rightText = right.querySelector(".choice-text") as HTMLParagraphElement;
                 rightText.style.transition = "font-size 2s ease-in-out";
                 rightText.style.textAlign = "center";
-                rightText.scrollIntoView({behavior: "smooth"});
+                rightText.scrollIntoView({ behavior: "smooth" });
 
                 const blink = setInterval(() => right.classList.toggle("correct"), 200);
                 setTimeout(() => {
                     clearInterval(blink);
                     right.classList.add("correct");
-                    rightText.scrollIntoView({behavior: "smooth"});
+                    rightText.scrollIntoView({ behavior: "smooth" });
                 }, 2000);
             }
 
             progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
             selectedDiv.classList.add(classToApply);
 
+            // Delay for correct answers is 1s, for incorrect answers is 5s
             setTimeout(() => getNewQuestion(), correct ? 1000 : 5000);
         });
     });
