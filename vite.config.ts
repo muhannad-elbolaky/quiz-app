@@ -11,6 +11,7 @@ export default defineConfig({
 				main: "index.html",
 				exam: "exam.html",
 				questions: "questions.html",
+				generator: "generator.html",
 			},
 		},
 	},
