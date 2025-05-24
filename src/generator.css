@@ -172,3 +172,8 @@ code {
 .question-item:last-child {
     border-bottom: none;
 }
+
+.red-btn {
+    background-color: #ff3232;
+    color: #fff;
+}

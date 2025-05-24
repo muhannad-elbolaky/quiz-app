@@ -1,60 +1,60 @@
 .tip {
-	margin: 10rem;
-	display: flex;
-	justify-content: center;
-	text-align: center;
+    margin: 10rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 p {
-	line-height: 1.2;
+    line-height: 1.2;
 }
 
 .question-container {
-	display: flex;
-	max-width: 80rem;
-	margin: 0 auto;
+    display: flex;
+    max-width: 80rem;
+    margin: 0 auto;
 }
 
 .question-page {
-	font-size: 2rem;
-	padding: 2rem 1rem;
-	margin: 2rem 1rem;
-	color: var(--background);
-	background-color: var(--primary);
-	border-radius: 0.6rem;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    margin: 2rem 1rem;
+    color: var(--background);
+    background-color: var(--primary);
+    border-radius: 0.6rem;
 }
 
 .question-number {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 2rem 1rem;
-	padding: 1rem 2rem;
-	border-radius: 0.6rem;
-	background-color: var(--secondary);
-	box-shadow: 0.4rem 0.4rem var(--primary);
-	transition: box-shadow 200ms ease-in-out, translate 200ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 1rem;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
+    background-color: var(--secondary);
+    box-shadow: 0.4rem 0.4rem var(--primary);
+    transition: box-shadow 200ms ease-in-out, translate 200ms ease-in-out;
 }
 
 .question-number:hover {
-	cursor: pointer;
-	background-color: var(--primary);
-	box-shadow: 0.4rem 0.4rem var(--secondary);
-	translate: -0.4rem -0.4rem;
-	transition: box-shadow 200ms ease-in-out, translate 200ms ease-in-out;
+    cursor: pointer;
+    background-color: var(--primary);
+    box-shadow: 0.4rem 0.4rem var(--secondary);
+    translate: -0.4rem -0.4rem;
+    transition: box-shadow 200ms ease-in-out, translate 200ms ease-in-out;
 }
 
 .answer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 2rem 1rem;
-	margin-right: auto;
-	padding: 1rem 2rem;
-	border-radius: 0.6rem;
-	background: linear-gradient(45deg, #199827 0%, #023b17 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 1rem;
+    margin-right: auto;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
+    background: linear-gradient(45deg, #199827 0%, #023b17 100%);
 }
 
 .margin {
-	margin-top: 9rem;
+    margin-top: 9rem;
 }

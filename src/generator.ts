@@ -20,10 +20,26 @@ const questionCount = document.getElementById('questionCount') as HTMLSpanElemen
 const viewQuestionsBtn = document.getElementById('viewQuestions') as HTMLButtonElement;
 const modalOverlay = document.getElementById('modalOverlay') as HTMLDivElement;
 const closeModalBtn = document.getElementById('closeModal') as HTMLButtonElement;
+const clearBtn = document.getElementById('clearQuestions') as HTMLButtonElement;
 
 let optionTexts: string[] = [''];
 const questions: Question[] = [];
 let isCorrectionEdited = false;
+
+// Load questions from localStorage on page load
+const savedQuestions = localStorage.getItem('questions');
+if (savedQuestions) {
+    try {
+        const parsed = JSON.parse(savedQuestions);
+        if (Array.isArray(parsed)) {
+            questions.push(...parsed);
+        }
+    } catch (e) {
+        console.error('Error parsing saved questions:', e);
+    }
+}
+renderQuestionsList();
+generateJSON();
 
 // Mirror question to correction until user modifies correction
 questionInput.addEventListener('input', () => {
@@ -128,6 +144,17 @@ questionsListDiv.addEventListener('click', (e) => {
     if (target.classList.contains('delete-button')) {
         const index = parseInt(target.getAttribute('data-index') || '0', 10);
         questions.splice(index, 1);
+        try {
+            localStorage.setItem('questions', JSON.stringify(questions));
+            addQuestionBtn.disabled = false; // Re-enable button as space is freed
+        } catch (e: any) {
+            if (e.name === 'QuotaExceededError') {
+                showMessage('لا يمكن حفظ الأسئلة. يرجى مسح السجل.');
+                addQuestionBtn.disabled = true;
+            } else {
+                console.error('Error saving to localStorage:', e);
+            }
+        }
         renderQuestionsList();
         generateJSON();
     }
@@ -245,20 +272,46 @@ function addQuestion() {
         questionObj.correction = corr;
     }
 
-    questions.push(questionObj);
-    questionInput.value = '';
-    correctionInput.value = '';
-    isCorrectionEdited = false;
-    optionTexts = [''];
-    renderOptions();
-    renderQuestionsList();
-    generateJSON();
-    showMessage('تم إضافة السؤال');
+    const newQuestions = [...questions, questionObj];
+    try {
+        localStorage.setItem('questions', JSON.stringify(newQuestions));
+        questions.push(questionObj);
+        questionInput.value = '';
+        correctionInput.value = '';
+        isCorrectionEdited = false;
+        optionTexts = [''];
+        renderOptions();
+        renderQuestionsList();
+        generateJSON();
+        showMessage('تم إضافة السؤال');
+    } catch (e: any) {
+        if (e.name === 'QuotaExceededError') {
+            showMessage('لا يمكن إضافة المزيد من الأسئلة. يرجى مسح السجل.');
+            addQuestionBtn.disabled = true;
+        } else {
+            console.error('Error saving to localStorage:', e);
+            showMessage('حدث خطأ أثناء حفظ السؤال');
+        }
+    }
 }
 
 function generateJSON() {
     codeBlock.textContent = JSON.stringify(questions, null, 2);
 }
+
+// Clear all questions and localStorage with confirmation
+clearBtn.onclick = () => {
+    if (confirm("هل أنت متأكد من أنك تريد مسح جميع الأسئلة؟ هذا الإجراء لا يمكن التراجع عنه.")) {
+        questions.length = 0;
+        localStorage.removeItem('questions');
+        renderQuestionsList();
+        generateJSON();
+        addQuestionBtn.disabled = false;
+        showMessage('تم مسح جميع الأسئلة');
+    } else {
+        showMessage('تم إلغاء العملية');
+    }
+};
 
 // Initialize
 renderOptions();
@@ -277,3 +330,19 @@ generateBtn.onclick = () => {
         showMessage('حدث خطأ أثناء نسخ JSON');
     });
 };
+
+generateBtn.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    let content = '';
+    if (questions.length > 0) {
+        const jsonData = JSON.stringify(questions, null, 2);
+        const lines = jsonData.split('\n');
+        content = lines.slice(1, -1).join('\n').trim();
+    }
+    navigator.clipboard.writeText(content).then(() => {
+        showMessage('تم نسخ محتويات المصفوفة إلى الحافظة');
+    }).catch(err => {
+        console.error('Error copying to clipboard:', err);
+        showMessage('حدث خطأ أثناء النسخ');
+    });
+});
