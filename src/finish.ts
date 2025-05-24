@@ -13,7 +13,7 @@ const percentageNumber = Math.round((currentScoreNumber / MAX_QUESTIONS) * 100);
 const percentage = `${percentageNumber}%`;
 
 function renderRating(percentage: number): string {
-	let rating = "";
+	let rating: string;
 
 	if (percentage >= 50 && percentage <= 100) {
 		// At 50%, show one star

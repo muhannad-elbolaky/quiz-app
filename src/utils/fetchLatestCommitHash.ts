@@ -1,28 +1,23 @@
-const repositoryUrl: string = "muhannad-elbolaky/quiz-app";
-const branch: string = "master";
+const repositoryUrl = "muhannad-elbolaky/quiz-app";
+const branch = "master";
 
-export const fetchLatestCommitHash = async (): Promise<string> => {
-	try {
-		const response = await fetch(
-			`https://api.github.com/repos/${repositoryUrl}/commits/${branch}`,
-			{
-				headers: {
-					"User-Agent": "Mozilla/5.0", // GitHub API requires a User-Agent header
-					Accept: "application/vnd.github.v3+json", // GitHub API version
-				},
-			},
-		);
+export async function fetchLatestCommitHash(): Promise<string> {
+    const response = await fetch(
+        `https://api.github.com/repos/${repositoryUrl}/commits/${branch}`,
+        {
+            headers: {
+                "User-Agent": "Mozilla/5.0",
+                Accept: "application/vnd.github.v3+json",
+            },
+        }
+    );
 
-		if (!response.ok) {
-			throw new Error(
-				`Failed to fetch commit hash: ${response.status} ${response.statusText}`,
-			);
-		}
+    if (!response.ok) {
+        throw new Error(
+            `Failed to fetch commit hash: ${response.status} ${response.statusText}`
+        );
+    }
 
-		const commitInfo = await response.json();
-		const commitHash = commitInfo.sha;
-		return commitHash;
-	} catch (error) {
-		throw new Error(`Error fetching commit hash: ${error}`);
-	}
-};
+    const {sha} = await response.json();
+    return sha;
+}
