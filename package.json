@@ -13,5 +13,8 @@
     "typescript": "^5.2.2",
     "vite": "^6.3.4",
     "vite-tsconfig-paths": "^4.2.3"
+  },
+  "dependencies": {
+    "highlight.js": "^11.11.1"
   }
 }
