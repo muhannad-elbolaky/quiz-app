@@ -84,6 +84,27 @@ function showMessage(text: string) {
     setTimeout(() => (messageDiv.textContent = ''), 3000);
 }
 
+function stripPunctuation(word: string): string {
+    return word.replace(/[^\p{L}\p{N}]/gu, '');
+}
+
+function wrapDifferences(question: string, correction: string): string {
+    const qWords = new Set((question.match(/\S+/g) || []).map(stripPunctuation));
+    const cParts = correction.match(/(\s+|\S+)/g) || [];
+    return cParts.map(part => {
+        if (/\s+/.test(part)) {
+            return part;
+        } else {
+            const stripped = stripPunctuation(part);
+            if (!qWords.has(stripped)) {
+                return `{{${part}}}`;
+            } else {
+                return part;
+            }
+        }
+    }).join('');
+}
+
 function toggleBracesAroundSelection() {
     const el = correctionInput;
     const val = el.value;
@@ -242,6 +263,19 @@ function addHandlers() {
         if (e.key === 'Escape' && modalOverlay.style.display === 'flex') {
             modalOverlay.style.display = 'none';
         }
+    });
+
+    const toggleBracesBtn = document.getElementById('toggleBraces') as HTMLButtonElement;
+    toggleBracesBtn.addEventListener('click', () => {
+        const correction = correctionInput.value;
+        if (correction.includes('{{')) {
+            correctionInput.value = correction.replace(/{{|}}/g, '');
+        } else {
+            const question = questionInput.value;
+            correctionInput.value = wrapDifferences(question, correction);
+        }
+        isCorrectionEdited = true;
+        generateJSON();
     });
 }
 
