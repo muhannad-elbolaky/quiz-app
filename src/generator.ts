@@ -144,45 +144,32 @@ function updateLocalStorage() {
     }
 }
 
-async function sendToWebhook() {
+async function sendToEmail() {
     if (questions.length === 0) {
         showMessage('لا توجد أسئلة لإرسالها');
         return;
     }
 
-    const contributorName = localStorage.getItem('username') || "Anonymous";
-
     sendJsonBtn.disabled = true;
     sendJsonBtn.textContent = 'جاري الإرسال...';
 
-    const jsonData = JSON.stringify(questions, null, 2);
-    const content = '```json\n' + jsonData + '\n```';
+    const prettyJson = JSON.stringify(questions, null, 2);
 
-    const payload = {
-        username: contributorName,
-        content
-    };
+    const formData = new FormData();
+    formData.append('questions', prettyJson);
 
     try {
-        const webhookUrl =
-            'https://discord.com/api/webhooks/1256614713379520563/F_nQ6j3YAlydPhM5jJSBxkhCU2rhO3hNObtpoqsITMYdOx8RALfqfXl-FLwiQ7d_V4PG';
-        const proxy = 'https://thingproxy.freeboard.io/fetch/';
-
-        const response = await fetch(
-            proxy + encodeURIComponent(webhookUrl + '?wait=true'),
-            {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                mode: 'cors',
-                body: JSON.stringify(payload)
+        const response = await fetch('https://formspree.io/f/movdgngv', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
             }
-        );
+        });
 
         if (response.ok) {
-            showMessage('تم إرسال الكود بنجاح');
-            if (
-                confirm('تم الإرسال بنجاح. هل تريد حذف الأسئلة لبدء جديد؟')
-            ) {
+            showMessage('تم إرسال JSON بنجاح');
+            if (confirm('تم الإرسال بنجاح. مسح الأسئلة؟')) {
                 questions.length = 0;
                 localStorage.removeItem('test-questions');
                 renderQuestionsList();
@@ -191,15 +178,13 @@ async function sendToWebhook() {
                 showMessage('تم مسح جميع الأسئلة');
             }
         } else {
-            const errText = await response.text();
-            console.error('Webhook error:', errText);
-            showMessage(`حدث خطأ أثناء الإرسال: ${response.status}`);
+            const err = await response.json();
+            console.error('Formspree error:', err);
+            showMessage(`حدث خطأ أثناء الإرسال: ${err.error || response.status}`);
         }
-    } catch (err) {
-        console.error('Error sending to webhook:', err);
-        showMessage(
-            'حدث خطأ أثناء الإرسال. قد يكون خادم البروكسي غير متاح'
-        );
+    } catch (e) {
+        console.error('Error sending to Formspree:', e);
+        showMessage('حدث خطأ أثناء الإرسال. تحقق من اتصالك بالإنترنت');
     } finally {
         sendJsonBtn.disabled = false;
         sendJsonBtn.textContent = '📤 ارسل للمراجعة';
@@ -328,7 +313,7 @@ generateBtn.onclick = () => {
         .then(() => showMessage('تم نسخ JSON إلى الحافظة'))
         .catch(() => showMessage('حدث خطأ أثناء النسخ'));
 };
-sendJsonBtn.onclick = sendToWebhook;
+sendJsonBtn.onclick = sendToEmail;
 
 const takeQuizBtn = document.getElementById('takeQuiz') as HTMLButtonElement;
 takeQuizBtn.onclick = () => {
