@@ -1,7 +1,8 @@
 interface Question {
     question: string;
-    options: string[];
     correction?: string;
+    options: string[];
+    contributor: string;
 }
 
 const questionInput = document.getElementById('submit-question') as HTMLInputElement;
@@ -11,9 +12,6 @@ const addOptionBtn = document.getElementById('addOption') as HTMLButtonElement;
 const addQuestionBtn = document.getElementById('addQuestion') as HTMLButtonElement;
 const generateBtn = document.getElementById('generateJson') as HTMLButtonElement;
 const messageDiv = document.getElementById('message') as HTMLDivElement;
-const customMenu = document.getElementById('customMenu') as HTMLDivElement;
-const menuWrap = document.getElementById('menuWrap') as HTMLLIElement;
-const menuRemoveAll = document.getElementById('menuRemoveAll') as HTMLLIElement;
 const codeBlock = document.getElementById('jsonCode') as HTMLElement;
 const questionsListDiv = document.getElementById('questionsList') as HTMLDivElement;
 const questionCount = document.getElementById('questionCount') as HTMLSpanElement;
@@ -21,27 +19,47 @@ const viewQuestionsBtn = document.getElementById('viewQuestions') as HTMLButtonE
 const modalOverlay = document.getElementById('modalOverlay') as HTMLDivElement;
 const closeModalBtn = document.getElementById('closeModal') as HTMLButtonElement;
 const clearBtn = document.getElementById('clearQuestions') as HTMLButtonElement;
+const usernameContainer = document.getElementById('usernameContainer') as HTMLDivElement;
+const usernameInputWrapper = document.getElementById('usernameInputWrapper') as HTMLDivElement;
+const usernameDisplay = document.getElementById('usernameDisplay') as HTMLDivElement;
+const usernameInput = document.getElementById('username') as HTMLInputElement;
+const saveUsernameBtn = document.getElementById('saveUsername') as HTMLButtonElement;
+const usernameText = document.getElementById('usernameText') as HTMLSpanElement;
+const editUsernameBtn = document.getElementById('editUsername') as HTMLButtonElement;
+const takeQuizBtn = document.getElementById('takeQuiz') as HTMLButtonElement;
 
 let optionTexts: string[] = [''];
 const questions: Question[] = [];
+let currentUsername: string | null = localStorage.getItem('username');
 let isCorrectionEdited = false;
 
-// Load questions from localStorage on page load
-const savedQuestions = localStorage.getItem('questions');
+// **1. Changed localStorage key to 'test-questions'**
+const savedQuestions = localStorage.getItem('test-questions');
 if (savedQuestions) {
     try {
         const parsed = JSON.parse(savedQuestions);
-        if (Array.isArray(parsed)) {
-            questions.push(...parsed);
-        }
+        if (Array.isArray(parsed)) questions.push(...parsed);
     } catch (e) {
         console.error('Error parsing saved questions:', e);
     }
 }
-renderQuestionsList();
-generateJSON();
 
-// Mirror question to correction until user modifies correction
+// **5. Check question limit on page load**
+if (questions.length >= 25) {
+    addQuestionBtn.disabled = true;
+}
+
+// Initialize username display
+if (currentUsername) {
+    usernameText.textContent = currentUsername;
+    usernameInputWrapper.style.display = 'none';
+    usernameDisplay.style.display = 'block';
+} else {
+    usernameInputWrapper.style.display = 'block';
+    usernameDisplay.style.display = 'none';
+}
+
+// Auto-fill correction field
 questionInput.addEventListener('input', () => {
     if (!isCorrectionEdited) correctionInput.value = questionInput.value;
 });
@@ -54,7 +72,6 @@ function renderOptions() {
     optionTexts.forEach((opt, idx) => {
         const div = document.createElement('div');
         div.className = 'option';
-
         const input = document.createElement('input');
         input.type = 'text';
         input.spellcheck = true;
@@ -62,11 +79,10 @@ function renderOptions() {
         input.placeholder = idx === 0 ? 'إجابة صحيحة' : 'نص الخيار';
         input.oninput = e => (optionTexts[idx] = (e.target as HTMLInputElement).value);
         div.append(input);
-
         if (idx > 0) {
             const btn = document.createElement('button');
             btn.textContent = 'حذف';
-            btn.className = 'btn delete-button';
+            btn.className = 'btn delete-button'; // **4. Delete buttons use red styling**
             btn.onclick = () => {
                 optionTexts.splice(idx, 1);
                 renderOptions();
@@ -74,7 +90,6 @@ function renderOptions() {
             };
             div.append(btn);
         }
-
         optionsContainer.append(div);
     });
 }
@@ -84,79 +99,33 @@ function showMessage(text: string) {
     setTimeout(() => (messageDiv.textContent = ''), 3000);
 }
 
-function stripPunctuation(word: string): string {
-    return word.replace(/[^\p{L}\p{N}]/gu, '');
+function normalizeWord(word: string): string {
+    return word.toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
 }
 
-function wrapDifferences(question: string, correction: string): string {
-    const qWords = new Set((question.match(/\S+/g) || []).map(stripPunctuation));
+function highlightDifferences(question: string, correction: string): string {
+    const qWords = new Set((question.match(/\S+/g) || []).map(normalizeWord));
     const cParts = correction.match(/(\s+|\S+)/g) || [];
     return cParts.map(part => {
-        if (/\s+/.test(part)) {
-            return part;
-        } else {
-            const stripped = stripPunctuation(part);
-            if (!qWords.has(stripped)) {
-                return `{{${part}}}`;
-            } else {
-                return part;
-            }
-        }
+        if (/\s+/.test(part)) return part;
+        const normalized = normalizeWord(part);
+        return qWords.has(normalized) ? part : `{{${part}}}`;
     }).join('');
 }
 
-function toggleBracesAroundSelection() {
-    const el = correctionInput;
-    const val = el.value;
-    let start = el.selectionStart || 0;
-    let end = el.selectionEnd || 0;
-
-    if (start === end) {
-        const left = val.lastIndexOf(' ', start - 1) + 1;
-        const rightSpace = val.indexOf(' ', start);
-        end = rightSpace === -1 ? val.length : rightSpace;
-        start = left;
-    }
-
-    const before = val.slice(0, start);
-    const sel = val.slice(start, end);
-    const after = val.slice(end);
-    const beforeTwo = before.slice(-2);
-    const afterTwo = after.slice(0, 2);
-
-    if (beforeTwo === '{{' && afterTwo === '}}') {
-        el.value = before.slice(0, -2) + sel + after.slice(2);
-        el.setSelectionRange(start - 2, start - 2 + sel.length);
-    } else if (sel.includes('{{') || sel.includes('}}')) {
-        const clean = sel.replace(/{{|}}/g, '');
-        el.value = before + clean + after;
-        el.setSelectionRange(before.length, before.length + clean.length);
-    } else {
-        el.value = before + '{{' + sel + '}}' + after;
-        el.setSelectionRange(before.length + 2, before.length + 2 + sel.length);
-    }
-}
-
-function removeAllBracesFromCorrection() {
-    correctionInput.value = correctionInput.value.replace(/{{|}}/g, '');
-    correctionInput.setSelectionRange(0, correctionInput.value.length);
-}
-
 function renderQuestionsList() {
-    if (questions.length === 0) {
-        questionsListDiv.innerHTML = '<p>لم تتم إضافة أي أسئلة بعد</p>';
-    } else {
-        questionsListDiv.innerHTML = '';
-        questions.forEach((q, index) => {
-            const questionDiv = document.createElement('div');
-            questionDiv.className = 'question-item';
-            questionDiv.innerHTML = `
-                <p>${q.question}</p>
-                <button class="btn delete-button" data-index="${index}">حذف</button>
-            `;
-            questionsListDiv.appendChild(questionDiv);
-        });
-    }
+    questionsListDiv.innerHTML = questions.length === 0
+        ? '<p>لم تتم إضافة أي أسئلة بعد</p>'
+        : '';
+    questions.forEach((q, index) => {
+        const questionDiv = document.createElement('div');
+        questionDiv.className = 'question-item';
+        questionDiv.innerHTML = `
+            <p>${q.question}</p>
+            <button class="btn delete-button" data-index="${index}">حذف</button>
+        `;
+        questionsListDiv.appendChild(questionDiv);
+    });
     questionCount.textContent = `(${questions.length})`;
 }
 
@@ -165,82 +134,59 @@ questionsListDiv.addEventListener('click', (e) => {
     if (target.classList.contains('delete-button')) {
         const index = parseInt(target.getAttribute('data-index') || '0', 10);
         questions.splice(index, 1);
-        try {
-            localStorage.setItem('questions', JSON.stringify(questions));
-            addQuestionBtn.disabled = false; // Re-enable button as space is freed
-        } catch (e: any) {
-            if (e.name === 'QuotaExceededError') {
-                showMessage('لا يمكن حفظ الأسئلة. يرجى مسح السجل.');
-                addQuestionBtn.disabled = true;
-            } else {
-                console.error('Error saving to localStorage:', e);
-            }
-        }
+        updateLocalStorage();
         renderQuestionsList();
         generateJSON();
     }
 });
 
+// **1 & 5. Updated localStorage to use 'test-questions' and enforce 25-question limit**
+function updateLocalStorage() {
+    try {
+        localStorage.setItem('test-questions', JSON.stringify(questions));
+        if (questions.length >= 25) {
+            addQuestionBtn.disabled = true;
+            showMessage('لقد وصلت إلى الحد الأقصى من 25 سؤالاً. يرجى إرسال الأسئلة إلى البريد الإلكتروني kite-mutual-vibes@duck.com ثم حذف الأسئلة لإضافة المزيد.');
+        } else {
+            addQuestionBtn.disabled = false;
+        }
+    } catch (e: any) {
+        if (e.name === 'QuotaExceededError') {
+            showMessage('لا يمكن حفظ الأسئلة. يرجى مسح السجل.');
+            addQuestionBtn.disabled = true;
+        } else {
+            console.error('Error saving to localStorage:', e);
+        }
+    }
+}
+
 function addHandlers() {
-    correctionInput.addEventListener('contextmenu', e => {
-        e.preventDefault();
-        customMenu.style.top = `${e.clientY}px`;
-        customMenu.style.left = `${e.clientX}px`;
-        customMenu.style.display = 'block';
-    });
-
-    document.addEventListener('click', e => {
-        if (!(e.target as HTMLElement).closest('#customMenu')) {
-            customMenu.style.display = 'none';
+    saveUsernameBtn.onclick = () => {
+        const username = usernameInput.value.trim();
+        if (username) {
+            currentUsername = username;
+            localStorage.setItem('username', username);
+            usernameText.textContent = username;
+            usernameInputWrapper.style.display = 'none';
+            usernameDisplay.style.display = 'block';
+        } else {
+            showMessage('يرجى إدخال اسم المستخدم');
         }
-    });
-
-    correctionInput.addEventListener('keydown', e => {
-        if (e.ctrlKey && e.code === 'KeyB') {
-            e.preventDefault();
-            toggleBracesAroundSelection();
-            generateJSON();
-        }
-    });
-
-    menuWrap.onclick = () => {
-        toggleBracesAroundSelection();
-        customMenu.style.display = 'none';
-        generateJSON();
     };
-    menuRemoveAll.onclick = () => {
-        removeAllBracesFromCorrection();
-        customMenu.style.display = 'none';
-        generateJSON();
+
+    editUsernameBtn.onclick = () => {
+        usernameInput.value = currentUsername || '';
+        usernameInputWrapper.style.display = 'block';
+        usernameDisplay.style.display = 'none';
     };
 
     optionsContainer.addEventListener('keydown', (e) => {
-        if (e.target instanceof HTMLInputElement) {
-            if (e.key === 'Tab' && !e.shiftKey) {
-                const inputs = optionsContainer.querySelectorAll('.option input');
-                if (e.target === inputs[inputs.length - 1]) {
-                    e.preventDefault();
-                    addNewOption();
-                }
-            } else if (e.ctrlKey && e.key === 'Delete') {
+        if (e.target instanceof HTMLInputElement && e.key === 'Tab' && !e.shiftKey) {
+            const inputs = optionsContainer.querySelectorAll('.option input');
+            if (e.target === inputs[inputs.length - 1]) {
                 e.preventDefault();
-                const inputs = optionsContainer.querySelectorAll('.option input');
-                const index = Array.from(inputs).indexOf(e.target);
-                if (index > 0) {
-                    optionTexts.splice(index, 1);
-                    renderOptions();
-                    generateJSON();
-                } else {
-                    showMessage('لا يمكن حذف الإجابة الصحيحة');
-                }
+                addNewOption();
             }
-        }
-    });
-
-    document.addEventListener('keydown', (e) => {
-        if (e.ctrlKey && e.key === 'Enter') {
-            e.preventDefault();
-            addQuestion();
         }
     });
 
@@ -249,101 +195,86 @@ function addHandlers() {
         modalOverlay.style.display = 'flex';
     };
 
-    closeModalBtn.onclick = () => {
-        modalOverlay.style.display = 'none';
-    };
-
+    closeModalBtn.onclick = () => modalOverlay.style.display = 'none';
     modalOverlay.addEventListener('click', (e) => {
-        if (e.target === modalOverlay) {
-            modalOverlay.style.display = 'none';
-        }
-    });
-
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modalOverlay.style.display === 'flex') {
-            modalOverlay.style.display = 'none';
-        }
-    });
-
-    const toggleBracesBtn = document.getElementById('toggleBraces') as HTMLButtonElement;
-    toggleBracesBtn.addEventListener('click', () => {
-        const correction = correctionInput.value;
-        if (correction.includes('{{')) {
-            correctionInput.value = correction.replace(/{{|}}/g, '');
-        } else {
-            const question = questionInput.value;
-            correctionInput.value = wrapDifferences(question, correction);
-        }
-        isCorrectionEdited = true;
-        generateJSON();
+        if (e.target === modalOverlay) modalOverlay.style.display = 'none';
     });
 }
 
 function addNewOption() {
     optionTexts.push('');
     renderOptions();
-    setTimeout(() => {
-        const newInput = optionsContainer.querySelector('.option:last-child input') as HTMLInputElement;
-        if (newInput) newInput.focus();
-    }, 0);
+    const newInput = optionsContainer.querySelector('.option:last-child input') as HTMLInputElement;
+    if (newInput) newInput.focus();
 }
 
+// **5. Added check for 25-question limit**
 function addQuestion() {
+    if (questions.length >= 25) {
+        showMessage('لقد وصلت إلى الحد الأقصى من 25 سؤالاً.');
+        return;
+    }
     const q = questionInput.value.trim();
     if (!q) {
         showMessage('يرجى إدخال سؤال');
         return;
     }
+    if (!currentUsername) {
+        showMessage('يرجى حفظ اسم المستخدم أولاً');
+        return;
+    }
     const opts = optionTexts.map(o => o.trim()).filter(o => o);
-    if (opts.length < 1 || !optionTexts[0].trim()) {
-        showMessage('يجب تحديد إجابة صحيحة على الأقل');
+    if (opts.length < 2 || !optionTexts[0].trim()) {
+        showMessage('يجب تحديد إجابة صحيحة وخيار واحد على الأقل');
         return;
     }
 
-    const questionObj: Question = { question: q, options: opts };
     const corr = correctionInput.value.trim();
-    if (isCorrectionEdited && corr && corr !== q) {
-        questionObj.correction = corr;
-    }
+    let correction: string | undefined;
+    if (corr && corr !== q) correction = highlightDifferences(q, corr);
 
-    const newQuestions = [...questions, questionObj];
-    try {
-        localStorage.setItem('questions', JSON.stringify(newQuestions));
-        questions.push(questionObj);
-        questionInput.value = '';
-        correctionInput.value = '';
-        isCorrectionEdited = false;
-        optionTexts = [''];
-        renderOptions();
-        renderQuestionsList();
-        generateJSON();
-        showMessage('تم إضافة السؤال');
-    } catch (e: any) {
-        if (e.name === 'QuotaExceededError') {
-            showMessage('لا يمكن إضافة المزيد من الأسئلة. يرجى مسح السجل.');
-            addQuestionBtn.disabled = true;
-        } else {
-            console.error('Error saving to localStorage:', e);
-            showMessage('حدث خطأ أثناء حفظ السؤال');
-        }
-    }
+    const questionObj: Question = {
+        question: q,
+        correction,
+        options: opts,
+        contributor: currentUsername
+    };
+
+    questions.push(questionObj);
+    updateLocalStorage();
+    questionInput.value = '';
+    correctionInput.value = '';
+    isCorrectionEdited = false;
+    optionTexts = [''];
+    renderOptions();
+    renderQuestionsList();
+    generateJSON();
+    showMessage('تم إضافة السؤال');
 }
 
 function generateJSON() {
     codeBlock.textContent = JSON.stringify(questions, null, 2);
 }
 
-// Clear all questions and localStorage with confirmation
+// **1. Updated to remove 'test-questions'**
 clearBtn.onclick = () => {
-    if (confirm("هل أنت متأكد من أنك تريد مسح جميع الأسئلة؟ هذا الإجراء لا يمكن التراجع عنه.")) {
+    if (confirm('هل أنت متأكد؟')) {
         questions.length = 0;
-        localStorage.removeItem('questions');
+        localStorage.removeItem('test-questions');
         renderQuestionsList();
         generateJSON();
         addQuestionBtn.disabled = false;
         showMessage('تم مسح جميع الأسئلة');
+    }
+};
+
+// **2 & 3. Added handler for 'Take Quiz' button**
+takeQuizBtn.onclick = () => {
+    if (questions.length > 0) {
+        localStorage.setItem('useTestQuestions', 'true'); // **2. Set flag in localStorage**
+        window.location.href = '/exam'; // **3. Redirect to /exam**
     } else {
-        showMessage('تم إلغاء العملية');
+        showMessage('لا توجد أسئلة لاختبارها');
     }
 };
 
@@ -351,32 +282,10 @@ clearBtn.onclick = () => {
 renderOptions();
 addHandlers();
 renderQuestionsList();
-addOptionBtn.onclick = () => {
-    addNewOption();
-};
+addOptionBtn.onclick = addNewOption;
 addQuestionBtn.onclick = addQuestion;
 generateBtn.onclick = () => {
-    const jsonData = JSON.stringify(questions, null, 2);
-    navigator.clipboard.writeText(jsonData).then(() => {
-        showMessage('تم نسخ JSON إلى الحافظة');
-    }).catch(err => {
-        console.error('Error copying to clipboard:', err);
-        showMessage('حدث خطأ أثناء نسخ JSON');
-    });
+    navigator.clipboard.writeText(JSON.stringify(questions, null, 2))
+        .then(() => showMessage('تم نسخ JSON إلى الحافظة'))
+        .catch(() => showMessage('حدث خطأ أثناء النسخ'));
 };
-
-generateBtn.addEventListener('contextmenu', (e) => {
-    e.preventDefault();
-    let content = '';
-    if (questions.length > 0) {
-        const jsonData = JSON.stringify(questions, null, 2);
-        const lines = jsonData.split('\n');
-        content = lines.slice(1, -1).join('\n').trim();
-    }
-    navigator.clipboard.writeText(content).then(() => {
-        showMessage('تم نسخ محتويات المصفوفة إلى الحافظة');
-    }).catch(err => {
-        console.error('Error copying to clipboard:', err);
-        showMessage('حدث خطأ أثناء النسخ');
-    });
-});
