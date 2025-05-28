@@ -9,13 +9,35 @@ type Question = {
     correction?: string;
 };
 
-import questions from "../questions.json";
+import defaultQuestions from "../questions.json";
 
 let currentQuestion: Question;
 let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions: Question[] = [];
+
+let questions: Question[];
+const params = new URLSearchParams(window.location.search);
+const source = params.get('source');
+
+if (source === 'generator') {
+    const savedQuestions = localStorage.getItem('test-questions');
+    if (savedQuestions) {
+        try {
+            questions = JSON.parse(savedQuestions);
+        } catch (e) {
+            console.error('Error parsing saved questions:', e);
+            questions = defaultQuestions;
+        }
+    } else {
+        questions = defaultQuestions;
+    }
+} else {
+    questions = defaultQuestions;
+}
+
+const isTestQuiz = source === 'generator';
 
 const MAX_QUESTIONS = questions.length > 25 ? 25 : questions.length;
 
@@ -29,8 +51,12 @@ function startexam() {
 function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
-        localStorage.setItem("currentScore", score.toString());
-        return window.location.assign("/");
+        if (!isTestQuiz) {
+            localStorage.setItem("currentScore", score.toString());
+            return window.location.assign("/");
+        } else {
+            return window.location.assign("generator.html");
+        }
     }
 
     questionCounter++;
@@ -39,7 +65,6 @@ function getNewQuestion() {
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
 
-    // Render the main question, highlighting {{…}}
     const rawQ = currentQuestion.question;
     questionEl.innerHTML = rawQ.replace(/{{\s*(.+?)\s*}}/g, (_, inner) =>
         `<span class="highlight">${inner}</span>`
@@ -48,7 +73,6 @@ function getNewQuestion() {
     const choicesContainer = document.querySelector(".choices") as HTMLDivElement;
     choicesContainer.innerHTML = "";
 
-    // Shuffle options and mark the true/correct one (assumes options[0] is correct)
     shuffle(currentQuestion.options).forEach((choice, index) => {
         const isCorrect = choice === currentQuestion.options[0];
         choicesContainer.innerHTML += createChoiceHTML(choice, index, isCorrect);
@@ -71,7 +95,6 @@ function getNewQuestion() {
                 scoreText.innerText = String(score);
             }
 
-            // Show correction if available, regardless of answer correctness
             if (currentQuestion.correction) {
                 const rawCorr = currentQuestion.correction;
                 const highlightedCorr = rawCorr.replace(/{{\s*(.+?)\s*}}/g, (_, inner) =>
@@ -92,13 +115,13 @@ function getNewQuestion() {
                 const rightText = right.querySelector(".choice-text") as HTMLParagraphElement;
                 rightText.style.transition = "font-size 2s ease-in-out";
                 rightText.style.textAlign = "center";
-                rightText.scrollIntoView({ behavior: "smooth" });
+                rightText.scrollIntoView({behavior: "smooth"});
 
                 const blink = setInterval(() => right.classList.toggle("correct"), 200);
                 setTimeout(() => {
                     clearInterval(blink);
                     right.classList.add("correct");
-                    rightText.scrollIntoView({ behavior: "smooth" });
+                    rightText.scrollIntoView({behavior: "smooth"});
                 }, 2000);
             }
 
@@ -131,9 +154,14 @@ function shuffle<T>(arr: T[]): T[] {
         const j = Math.floor(Math.random() * (i + 1));
         [a[i], a[j]] = [a[j], a[i]];
     }
-    // Ensure “صح” stays first if present
-    const ti = a.indexOf("صح" as any);
-    if (ti > 0) [a[0], a[ti]] = [a[ti], a[0]];
+
+    const ti = a.findIndex(
+        (item) => item === ("صح" as any) || item === ("true" as any)
+    );
+    if (ti > 0) {
+        [a[0], a[ti]] = [a[ti], a[0]];
+    }
+
     return a;
 }
 

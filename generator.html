@@ -12,9 +12,11 @@
     <div class="container">
         <form id="questionForm" class="flex-column">
             <h1>شارك ببناء الاختبار التمهيدي</h1>
+
             <div id="usernameContainer">
                 <div id="usernameInputWrapper">
-                    <input type="text" id="username" placeholder="اسم المستخدم"/>
+                    <label for="username">اسم المستخدم</label>
+                    <input id="username" placeholder="اسم المستخدم" type="text"/>
                     <button type="button" id="saveUsername" class="btn">حفظ</button>
                 </div>
                 <div id="usernameDisplay" style="display: none;">
@@ -22,21 +24,25 @@
                     <button type="button" id="editUsername" class="btn">تعديل</button>
                 </div>
             </div>
+
             <label for="submit-question">السؤال</label>
             <input type="text" id="submit-question" name="question" placeholder="من القاتل؟" required/>
+
             <label>الخيارات</label>
             <div id="optionsContainer"></div>
             <button type="button" id="addOption" class="btn secondary">إضافة خيار</button>
-            <label for="correction">التصحيح (اختياري)</label>
+
             <div class="flex-center">
-                <span class="correction-label">تصحيح:</span>
+                <label for="correction">التصحيح (دا اذا تكرمت يعني)</label>
                 <input type="text" id="correction" name="correction" placeholder="صيغة التصحيح إن وجدت..."
                        spellcheck="true"/>
             </div>
+
             <button type="button" id="addQuestion" class="btn secondary">إضافة السؤال للقائمة</button>
             <button type="button" id="viewQuestions" class="btn">عرض الأسئلة</button>
             <div id="message" aria-live="polite"></div>
         </form>
+
         <div id="modalOverlay" class="modal-overlay" style="display: none;">
             <div class="modal-content">
                 <h2>الأسئلة المضافة <span id="questionCount">(0)</span></h2>
@@ -44,14 +50,18 @@
                 <button type="button" id="closeModal" class="btn">إغلاق</button>
             </div>
         </div>
+
         <section aria-label="الكود الناتج" dir="ltr">
-            <pre><code id="jsonCode" class="language-json"></code></pre>
+            <div class="json-container">
+                <button id="generateJson" class="copy-btn">📋</button>
+                <pre class="json-preview"><code id="jsonCode" class="language-json"></code></pre>
+            </div>
         </section>
-        <button type="button" id="generateJson" class="btn">نسخ الكود</button>
+
         <button type="button" id="clearQuestions" class="btn red-btn">حذف جميع الاسئلة</button>
-        <!-- **3. Added 'Take Quiz' button** -->
-        <button type="button" id="takeQuiz" class="btn">اختبار الأسئلة</button>
-        <p>لو انت شخص بيحاول يساعد ابعت الكود على الايميل kite-mutual-vibes@duck.com</p>
+        <button type="button" id="takeQuiz" class="btn">اختبر اسئلتك</button>
+
+        <button type="button" id="sendJson" class="btn full-width green-btn">📤 ارسل للمراجعة</button>
     </div>
 </main>
 </body>

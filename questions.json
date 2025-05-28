@@ -1,8 +1,9 @@
 [
   {
     "question": "حليت كويس؟",
+    "contributor": "محمد",
     "options": [
-      "نعم",
+      "true",
       "لا"
     ]
   }

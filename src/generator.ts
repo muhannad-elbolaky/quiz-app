@@ -11,6 +11,7 @@ const optionsContainer = document.getElementById('optionsContainer') as HTMLDivE
 const addOptionBtn = document.getElementById('addOption') as HTMLButtonElement;
 const addQuestionBtn = document.getElementById('addQuestion') as HTMLButtonElement;
 const generateBtn = document.getElementById('generateJson') as HTMLButtonElement;
+const sendJsonBtn = document.getElementById('sendJson') as HTMLButtonElement;
 const messageDiv = document.getElementById('message') as HTMLDivElement;
 const codeBlock = document.getElementById('jsonCode') as HTMLElement;
 const questionsListDiv = document.getElementById('questionsList') as HTMLDivElement;
@@ -19,21 +20,18 @@ const viewQuestionsBtn = document.getElementById('viewQuestions') as HTMLButtonE
 const modalOverlay = document.getElementById('modalOverlay') as HTMLDivElement;
 const closeModalBtn = document.getElementById('closeModal') as HTMLButtonElement;
 const clearBtn = document.getElementById('clearQuestions') as HTMLButtonElement;
-const usernameContainer = document.getElementById('usernameContainer') as HTMLDivElement;
 const usernameInputWrapper = document.getElementById('usernameInputWrapper') as HTMLDivElement;
 const usernameDisplay = document.getElementById('usernameDisplay') as HTMLDivElement;
 const usernameInput = document.getElementById('username') as HTMLInputElement;
 const saveUsernameBtn = document.getElementById('saveUsername') as HTMLButtonElement;
 const usernameText = document.getElementById('usernameText') as HTMLSpanElement;
 const editUsernameBtn = document.getElementById('editUsername') as HTMLButtonElement;
-const takeQuizBtn = document.getElementById('takeQuiz') as HTMLButtonElement;
 
 let optionTexts: string[] = [''];
 const questions: Question[] = [];
 let currentUsername: string | null = localStorage.getItem('username');
 let isCorrectionEdited = false;
 
-// **1. Changed localStorage key to 'test-questions'**
 const savedQuestions = localStorage.getItem('test-questions');
 if (savedQuestions) {
     try {
@@ -44,12 +42,6 @@ if (savedQuestions) {
     }
 }
 
-// **5. Check question limit on page load**
-if (questions.length >= 25) {
-    addQuestionBtn.disabled = true;
-}
-
-// Initialize username display
 if (currentUsername) {
     usernameText.textContent = currentUsername;
     usernameInputWrapper.style.display = 'none';
@@ -59,10 +51,10 @@ if (currentUsername) {
     usernameDisplay.style.display = 'none';
 }
 
-// Auto-fill correction field
 questionInput.addEventListener('input', () => {
     if (!isCorrectionEdited) correctionInput.value = questionInput.value;
 });
+
 correctionInput.addEventListener('input', () => {
     isCorrectionEdited = true;
 });
@@ -82,7 +74,7 @@ function renderOptions() {
         if (idx > 0) {
             const btn = document.createElement('button');
             btn.textContent = 'حذف';
-            btn.className = 'btn delete-button'; // **4. Delete buttons use red styling**
+            btn.className = 'btn delete-button';
             btn.onclick = () => {
                 optionTexts.splice(idx, 1);
                 renderOptions();
@@ -114,9 +106,7 @@ function highlightDifferences(question: string, correction: string): string {
 }
 
 function renderQuestionsList() {
-    questionsListDiv.innerHTML = questions.length === 0
-        ? '<p>لم تتم إضافة أي أسئلة بعد</p>'
-        : '';
+    questionsListDiv.innerHTML = questions.length === 0 ? '<p>لم تتم إضافة أي أسئلة بعد</p>' : '';
     questions.forEach((q, index) => {
         const questionDiv = document.createElement('div');
         questionDiv.className = 'question-item';
@@ -140,16 +130,10 @@ questionsListDiv.addEventListener('click', (e) => {
     }
 });
 
-// **1 & 5. Updated localStorage to use 'test-questions' and enforce 25-question limit**
 function updateLocalStorage() {
     try {
         localStorage.setItem('test-questions', JSON.stringify(questions));
-        if (questions.length >= 25) {
-            addQuestionBtn.disabled = true;
-            showMessage('لقد وصلت إلى الحد الأقصى من 25 سؤالاً. يرجى إرسال الأسئلة إلى البريد الإلكتروني kite-mutual-vibes@duck.com ثم حذف الأسئلة لإضافة المزيد.');
-        } else {
-            addQuestionBtn.disabled = false;
-        }
+        addQuestionBtn.disabled = false;
     } catch (e: any) {
         if (e.name === 'QuotaExceededError') {
             showMessage('لا يمكن حفظ الأسئلة. يرجى مسح السجل.');
@@ -157,6 +141,68 @@ function updateLocalStorage() {
         } else {
             console.error('Error saving to localStorage:', e);
         }
+    }
+}
+
+async function sendToWebhook() {
+    if (questions.length === 0) {
+        showMessage('لا توجد أسئلة لإرسالها');
+        return;
+    }
+
+    const contributorName = localStorage.getItem('username') || "Anonymous";
+
+    sendJsonBtn.disabled = true;
+    sendJsonBtn.textContent = 'جاري الإرسال...';
+
+    const jsonData = JSON.stringify(questions, null, 2);
+    const content = '```json\n' + jsonData + '\n```';
+
+    const payload = {
+        username: contributorName,
+        content
+    };
+
+    try {
+        const webhookUrl =
+            'https://discord.com/api/webhooks/1256614713379520563/F_nQ6j3YAlydPhM5jJSBxkhCU2rhO3hNObtpoqsITMYdOx8RALfqfXl-FLwiQ7d_V4PG';
+        const proxy = 'https://thingproxy.freeboard.io/fetch/';
+
+        const response = await fetch(
+            proxy + encodeURIComponent(webhookUrl + '?wait=true'),
+            {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                mode: 'cors',
+                body: JSON.stringify(payload)
+            }
+        );
+
+        if (response.ok) {
+            showMessage('تم إرسال الكود بنجاح');
+            if (
+                confirm('تم الإرسال بنجاح. هل تريد حذف الأسئلة لبدء جديد؟')
+            ) {
+                questions.length = 0;
+                localStorage.removeItem('test-questions');
+                renderQuestionsList();
+                generateJSON();
+                addQuestionBtn.disabled = false;
+                showMessage('تم مسح جميع الأسئلة');
+            }
+        } else {
+            const errText = await response.text();
+            console.error('Webhook error:', errText);
+            showMessage(`حدث خطأ أثناء الإرسال: ${response.status}`);
+        }
+    } catch (err) {
+        console.error('Error sending to webhook:', err);
+        showMessage(
+            'حدث خطأ أثناء الإرسال. قد يكون خادم البروكسي غير متاح'
+        );
+    } finally {
+        sendJsonBtn.disabled = false;
+        sendJsonBtn.textContent = '📤 ارسل للمراجعة';
     }
 }
 
@@ -180,12 +226,19 @@ function addHandlers() {
         usernameDisplay.style.display = 'none';
     };
 
+    // Replace the existing optionsContainer keydown event listener with this:
     optionsContainer.addEventListener('keydown', (e) => {
-        if (e.target instanceof HTMLInputElement && e.key === 'Tab' && !e.shiftKey) {
+        if (e.target instanceof HTMLInputElement && e.key === 'Enter') {
+            e.preventDefault();
             const inputs = optionsContainer.querySelectorAll('.option input');
             if (e.target === inputs[inputs.length - 1]) {
-                e.preventDefault();
                 addNewOption();
+            } else {
+                // Move focus to next input
+                const currentIndex = Array.from(inputs).indexOf(e.target);
+                if (currentIndex < inputs.length - 1) {
+                    (inputs[currentIndex + 1] as HTMLInputElement).focus();
+                }
             }
         }
     });
@@ -196,6 +249,7 @@ function addHandlers() {
     };
 
     closeModalBtn.onclick = () => modalOverlay.style.display = 'none';
+
     modalOverlay.addEventListener('click', (e) => {
         if (e.target === modalOverlay) modalOverlay.style.display = 'none';
     });
@@ -208,12 +262,7 @@ function addNewOption() {
     if (newInput) newInput.focus();
 }
 
-// **5. Added check for 25-question limit**
 function addQuestion() {
-    if (questions.length >= 25) {
-        showMessage('لقد وصلت إلى الحد الأقصى من 25 سؤالاً.');
-        return;
-    }
     const q = questionInput.value.trim();
     if (!q) {
         showMessage('يرجى إدخال سؤال');
@@ -256,7 +305,6 @@ function generateJSON() {
     codeBlock.textContent = JSON.stringify(questions, null, 2);
 }
 
-// **1. Updated to remove 'test-questions'**
 clearBtn.onclick = () => {
     if (confirm('هل أنت متأكد؟')) {
         questions.length = 0;
@@ -268,24 +316,21 @@ clearBtn.onclick = () => {
     }
 };
 
-// **2 & 3. Added handler for 'Take Quiz' button**
-takeQuizBtn.onclick = () => {
-    if (questions.length > 0) {
-        localStorage.setItem('useTestQuestions', 'true'); // **2. Set flag in localStorage**
-        window.location.href = '/exam'; // **3. Redirect to /exam**
-    } else {
-        showMessage('لا توجد أسئلة لاختبارها');
-    }
-};
-
-// Initialize
 renderOptions();
 addHandlers();
 renderQuestionsList();
+generateJSON();
+
 addOptionBtn.onclick = addNewOption;
 addQuestionBtn.onclick = addQuestion;
 generateBtn.onclick = () => {
     navigator.clipboard.writeText(JSON.stringify(questions, null, 2))
         .then(() => showMessage('تم نسخ JSON إلى الحافظة'))
         .catch(() => showMessage('حدث خطأ أثناء النسخ'));
+};
+sendJsonBtn.onclick = sendToWebhook;
+
+const takeQuizBtn = document.getElementById('takeQuiz') as HTMLButtonElement;
+takeQuizBtn.onclick = () => {
+    window.location.href = 'exam.html?source=generator';
 };

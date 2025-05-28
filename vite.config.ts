@@ -12,6 +12,7 @@ export default defineConfig({
 				exam: "exam.html",
 				questions: "questions.html",
 				generator: "generator.html",
+				credits: "credits.html",
 			},
 		},
 	},

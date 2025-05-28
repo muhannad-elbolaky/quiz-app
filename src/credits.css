@@ -1,0 +1,36 @@
+#contributor-list {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.contributor-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.name {
+    font-size: 2rem;
+    margin: 0;
+    padding: 2rem 1rem;
+    color: var(--background);
+    background-color: var(--primary);
+    border-radius: 0.6rem;
+}
+
+.count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
+    background: linear-gradient(45deg, #199827 0%, #023b17 100%);
+}
