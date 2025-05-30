@@ -34,6 +34,11 @@ body {
     color: yellow;
 }
 
+.correction-label {
+    font-size: inherit;
+    color: #ff3333;
+}
+
 h1 {
     font-size: 5.4rem;
     margin-bottom: 5rem;
