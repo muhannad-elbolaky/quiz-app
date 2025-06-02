@@ -65,5 +65,86 @@
       "True"
     ],
     "contributor": "الثلاثي المرح"
+  },
+  {
+    "question": "Learning takes place in an ongoing series of processes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "contributor": "الثلاثي المرح"
+  },
+  {
+    "question": "After transform stage PACT learning cycle then continue and repeat",
+    "options": [
+      "True",
+      "False"
+    ],
+    "contributor": "الثلاثي المرح"
+  },
+  {
+    "question": "Use a combination of multiple learning styles solidify the learning takes place",
+    "options": [
+      "True",
+      "False"
+    ],
+    "contributor": "الثلاثي المرح"
+  },
+  {
+    "question": "Everyone is unique in the way they learn",
+    "options": [
+      "True",
+      "False"
+    ],
+    "contributor": "الثلاثي المرح"
+  },
+  {
+    "question": "Some topics select the appropriate learning style to study",
+    "options": [
+      "True",
+      "False"
+    ],
+    "contributor": "الثلاثي المرح"
+  },
+  {
+    "question": "All learning is immediately induced by a single event",
+    "correction": "{{Some}} learning is immediately induced by a single event",
+    "options": [
+      "False",
+      "True"
+    ],
+    "contributor": "الثلاثي المرح"
+  },
+  {
+    "question": "The change induced by learning often last a lifetime",
+    "options": [
+      "True",
+      "False"
+    ],
+    "contributor": "الثلاثي المرح"
+  },
+  {
+    "question": "Students must learn when they read their text and memorized facts",
+    "options": [
+      "False",
+      "True"
+    ],
+    "contributor": "الثلاثي المرح"
+  },
+  {
+    "question": "Human learning begins at birth and continues until death",
+    "options": [
+      "True",
+      "False"
+    ],
+    "contributor": "الثلاثي المرح"
+  },
+  {
+    "question": "One of the thinking skills is developing your memory using memory techniques",
+    "options": [
+      "True",
+      "False"
+    ],
+    "contributor": "الثلاثي المرح"
   }
 ]
