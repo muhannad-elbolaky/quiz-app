@@ -6,20 +6,21 @@ interface Question {
 
 const contributorCounts: { [key: string]: number } = {};
 
-questions.forEach((question: Question) => {
+for (let i = 0; i < questions.length; i++) {
+    const question: Question = questions[i];
     const contributor = question.contributor;
     if (contributor) {
         contributorCounts[contributor] = (contributorCounts[contributor] || 0) + 1;
     }
-});
+}
 
-const sortedContributors = Object.entries(contributorCounts).sort(
-    (a, b) => b[1] - a[1] || a[0].localeCompare(b[0])
+const {forEach} = Object.entries(contributorCounts).sort(
+    ([first, second], [first1, second1]) => second1 - second || first.localeCompare(first1)
 );
 
 const list = document.getElementById('contributor-list');
 if (list) {
-    sortedContributors.forEach(([contributor, count]) => {
+    forEach(([contributor, count]) => {
         const li = document.createElement('li');
         li.className = 'contributor-item';
 

@@ -69,7 +69,9 @@ function renderOptions() {
         input.spellcheck = true;
         input.value = opt;
         input.placeholder = idx === 0 ? 'إجابة صحيحة' : 'نص الخيار';
-        input.oninput = e => (optionTexts[idx] = (e.target as HTMLInputElement).value);
+        input.oninput = e => {
+            (optionTexts[idx] = (e.target as HTMLInputElement).value)
+        };
         div.append(input);
         if (idx > 0) {
             const btn = document.createElement('button');
@@ -88,7 +90,9 @@ function renderOptions() {
 
 function showMessage(text: string) {
     messageDiv.textContent = text;
-    setTimeout(() => (messageDiv.textContent = ''), 3000);
+    setTimeout(() => {
+        messageDiv.textContent = '';
+    }, 3000);
 }
 
 function normalizeWord(word: string): string {
@@ -122,7 +126,7 @@ function renderQuestionsList() {
 questionsListDiv.addEventListener('click', (e) => {
     const target = e.target as HTMLElement;
     if (target.classList.contains('delete-button')) {
-        const index = parseInt(target.getAttribute('data-index') || '0', 10);
+        const index = Number.parseInt(target.getAttribute('data-index') || '0', 10);
         questions.splice(index, 1);
         updateLocalStorage();
         renderQuestionsList();
@@ -134,8 +138,8 @@ function updateLocalStorage() {
     try {
         localStorage.setItem('test-questions', JSON.stringify(questions));
         addQuestionBtn.disabled = false;
-    } catch (e: any) {
-        if (e.name === 'QuotaExceededError') {
+    } catch (e: unknown) {
+        if (e instanceof DOMException && e.name === 'QuotaExceededError') {
             showMessage('لا يمكن حفظ الأسئلة. يرجى مسح السجل.');
             addQuestionBtn.disabled = true;
         } else {
@@ -233,7 +237,9 @@ function addHandlers() {
         modalOverlay.style.display = 'flex';
     };
 
-    closeModalBtn.onclick = () => modalOverlay.style.display = 'none';
+    closeModalBtn.onclick = () => {
+        modalOverlay.style.display = 'none'
+    };
 
     modalOverlay.addEventListener('click', (e) => {
         if (e.target === modalOverlay) modalOverlay.style.display = 'none';

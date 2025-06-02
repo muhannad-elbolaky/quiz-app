@@ -9,6 +9,14 @@ type Question = {
     correction?: string;
 };
 
+type SolvedQuestion = {
+    question: string;
+    options: string[];
+    correction?: string;
+    selectedAnswer: string;
+    wasCorrect: boolean;
+};
+
 import defaultQuestions from "../questions.json";
 
 let currentQuestion: Question;
@@ -16,6 +24,7 @@ let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions: Question[] = [];
+let lastSolvedQuestions: SolvedQuestion[] = [];
 
 let questions: Question[];
 const params = new URLSearchParams(window.location.search);
@@ -38,25 +47,27 @@ if (source === 'generator') {
 }
 
 const isTestQuiz = source === 'generator';
+const MAX_QUESTIONS = Math.min(questions.length, 25);
 
-const MAX_QUESTIONS = questions.length > 25 ? 25 : questions.length;
-
-function startexam() {
+function startexam(): void {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
+    lastSolvedQuestions = [];
     getNewQuestion();
 }
 
-function getNewQuestion() {
+function getNewQuestion(): void {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+        localStorage.setItem('last-solved-questions', JSON.stringify(lastSolvedQuestions));
         if (!isTestQuiz) {
             localStorage.setItem("currentScore", score.toString());
-            return window.location.assign("/");
+            window.location.assign("/end");
         } else {
-            return window.location.assign("generator.html");
+            window.location.assign("generator.html");
         }
+        return;
     }
 
     questionCounter++;
@@ -73,7 +84,8 @@ function getNewQuestion() {
     const choicesContainer = document.querySelector(".choices") as HTMLDivElement;
     choicesContainer.innerHTML = "";
 
-    shuffle(currentQuestion.options).forEach((choice, index) => {
+    const shuffledOptions = shuffle(currentQuestion.options);
+    shuffledOptions.forEach((choice, index) => {
         const isCorrect = choice === currentQuestion.options[0];
         choicesContainer.innerHTML += createChoiceHTML(choice, index, isCorrect);
     });
@@ -81,18 +93,36 @@ function getNewQuestion() {
     availableQuestions.splice(questionIndex, 1);
     acceptingAnswers = true;
 
-    document.querySelectorAll(".choice-container").forEach((choiceDiv) => {
-        choiceDiv.addEventListener("click", (e) => {
+    const choiceDivs = document.querySelectorAll<HTMLDivElement>(".choice-container");
+    for (const choiceDiv of choiceDivs) {
+        choiceDiv.addEventListener("click", (e: Event) => {
             if (!acceptingAnswers) return;
             acceptingAnswers = false;
 
             const selectedDiv = e.currentTarget as HTMLDivElement;
+            const choiceTextEl = selectedDiv.querySelector(".choice-text");
+            if (!choiceTextEl || choiceTextEl.textContent === null) {
+                return;
+            }
+            const selectedText = choiceTextEl.textContent;
             const correct = selectedDiv.dataset.correct === "true";
             const classToApply = correct ? "correct" : "incorrect";
 
+            lastSolvedQuestions.push({
+                question: currentQuestion.question,
+                options: [...currentQuestion.options],
+                correction: currentQuestion.correction,
+                selectedAnswer: selectedText,
+                wasCorrect: correct
+            });
+            localStorage.setItem(
+                "last-solved-questions",
+                JSON.stringify(lastSolvedQuestions)
+            );
+
             if (correct) {
                 score++;
-                scoreText.innerText = String(score);
+                scoreText.innerText = score.toString();
             }
 
             if (currentQuestion.correction) {
@@ -101,11 +131,9 @@ function getNewQuestion() {
                     `<span class="highlight">${inner}</span>`
                 );
                 questionEl.innerHTML =
-                    `<span class="correction-label">تصحيح: </span>` +
-                    highlightedCorr;
+                    `<span class="correction-label">Correction: </span>${highlightedCorr}`;
             }
 
-            // Highlight the correct answer for incorrect selections
             if (!correct) {
                 const right = document.querySelector(".hidden-correct") as HTMLDivElement;
                 right.classList.remove("hidden-correct");
@@ -128,13 +156,12 @@ function getNewQuestion() {
             progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
             selectedDiv.classList.add(classToApply);
 
-            // Delay for correct answers is 1s, for incorrect answers is 5s
             setTimeout(() => getNewQuestion(), correct ? 1000 : 5000);
         });
-    });
+    }
 }
 
-function createChoiceHTML(choice: string, idx: number, correct: boolean) {
+function createChoiceHTML(choice: string, idx: number, correct: boolean): string {
     const prefix = String.fromCharCode(65 + idx);
     return `
     <div
@@ -148,21 +175,21 @@ function createChoiceHTML(choice: string, idx: number, correct: boolean) {
   `;
 }
 
-function shuffle<T>(arr: T[]): T[] {
+function shuffle<T extends string>(arr: T[]): T[] {
     const a = arr.slice();
+
     for (let i = a.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [a[i], a[j]] = [a[j], a[i]];
     }
 
-    const ti = a.findIndex(
-        (item) => item === ("صح" as any) || item === ("true" as any)
-    );
+    const ti = a.findIndex((item) => item === "صح" || item.toLowerCase() === "true");
     if (ti > 0) {
         [a[0], a[ti]] = [a[ti], a[0]];
     }
 
     return a;
 }
+
 
 startexam();

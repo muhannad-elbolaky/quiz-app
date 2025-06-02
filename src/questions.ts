@@ -49,9 +49,12 @@ for (let index = 0; index < questions.length; index++) {
         const parts: string[] = [];
         const regex = /{{\s*(.+?)\s*}}/g;
         let m: RegExpExecArray | null;
-        while ((m = regex.exec(rawQuestion.correction)) !== null) {
+        while (true) {
+            m = regex.exec(rawQuestion.correction);
+            if (m === null) break;
             parts.push(m[1]);
         }
+
         if (parts.length) {
             displayAnswer += ` (${parts.join(", ")})`;
         }

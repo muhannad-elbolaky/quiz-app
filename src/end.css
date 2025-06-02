@@ -1,0 +1,48 @@
+#solved-questions > div {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+    user-select: text;
+}
+
+#solved-questions .correct {
+    border-color: #28a745;
+}
+
+#solved-questions .incorrect {
+    border-color: #dc3545;
+}
+
+#solved-questions h3 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+#solved-questions ul {
+    list-style: none;
+    padding: 0;
+}
+
+#solved-questions li {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+
+#solved-questions li.correct {
+    color: #28a745;
+}
+
+#solved-questions li.selected {
+    font-weight: bold;
+}
+
+#solved-questions li.selected:not(.correct) {
+    color: #dc3545;
+}
+
+#solved-questions p {
+    font-size: 2.4rem;
+    margin-top: 1rem;
+}
