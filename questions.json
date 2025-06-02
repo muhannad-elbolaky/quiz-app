@@ -1,10 +1,69 @@
 [
   {
-    "question": "The aural learning style includes recordings, music, and rhythms.",
+    "question": "The aural learning style includes recordings, music, and rhythms",
     "options": [
       "True",
       "False"
     ],
     "contributor": "Muhannad"
+  },
+  {
+    "question": "Working skills include (time management and communication)",
+    "options": [
+      "True",
+      "False"
+    ],
+    "contributor": "Muhannad"
+  },
+  {
+    "question": "A skilled person uses more time and resources to do the job and produces quality result",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correction": "A skilled person uses {{less}} time and resources to do the job and produces quality result",
+    "contributor": "Muhannad"
+  },
+  {
+    "question": "Learning skills include developing your memory",
+    "options": [
+      "True",
+      "False"
+    ],
+    "contributor": "Muhannad"
+  },
+  {
+    "question": "Hard skills are the qualifications required to do a job",
+    "options": [
+      "True",
+      "False"
+    ],
+    "contributor": "الثلاثي المرح"
+  },
+  {
+    "question": "Respecting diversity is considered a social skill",
+    "options": [
+      "True",
+      "False"
+    ],
+    "contributor": "الثلاثي المرح"
+  },
+  {
+    "question": "Using memory techniques is one of the working skills",
+    "correction": "Using memory techniques is one of the {{thinking}} skills",
+    "options": [
+      "False",
+      "True"
+    ],
+    "contributor": "الثلاثي المرح"
+  },
+  {
+    "question": "The PACT Learning Cycle has 7 stages",
+    "correction": "The PACT Learning Cycle has {{4}} stages",
+    "options": [
+      "False",
+      "True"
+    ],
+    "contributor": "الثلاثي المرح"
   }
 ]
