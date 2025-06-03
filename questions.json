@@ -128,5 +128,326 @@
       "True",
       "False"
     ]
+  },
+  {
+    "question": "Time management is one of working Skills",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Accessing and analyzing information is one of Social Skills",
+    "correction": "Accessing and analyzing information is one of {{Thinking}} Skills",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "Everyone is unique in the own way of learning",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "We are born with knowledge",
+    "correction": "We are born with {{the}} {{ability}} {{to}} {{learn}}",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "The list of critical competencies includes interpersonal and team skills",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "One of the critical competencies needed in employee is ability to change",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Intentional learners are integrative thinkers",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Intentional thinking refer to the process of creating new ideas",
+    "correction": "{{Critical}} thinking {{refers}} to the process of creating new ideas",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "Learning using role playing considered as an example of Visual Style",
+    "correction": "Learning using {{videos}} {{or}} {{slideshows}} considered as an example of Visual Style",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "Solitary means to learn in groups",
+    "correction": "Solitary means to learn {{alone}}",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "Some subjects choose the appropriate learning style to learn",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Negotiation considered as one of learning skills",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Learning is a consequence of ongoing interactions between person and environment",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "The evidence that learning has occurred is when behavior changes from complex to simple",
+    "correction": "The evidence that learning has occurred is when behavior changes from simple to complex",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "In our current instructional educational institutions Student focus on grades rather than learning",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "The new kind of education we need is to develop skills in communications, teamwork and lifelong learning",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "One of the disadvantages of our current instructional practice is that Students recognize the value of what they are learning",
+    "correction": "One of the disadvantages of our current instructional practice is that Students {{doesn't}} recognize the value of what they are learning",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "A solitary learner aims to work with others as much as possible",
+    "correction": "A solitary learner {{prefer}} to work {{alone}}",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "In PACT learning cycle P latter stands for the word processing",
+    "correction": "In PACT learning cycle P latter stands for the word {{Procure}}",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "In PACT learning cycle A latter stands for the word Accepted",
+    "correction": "In PACT learning cycle A latter stands for the word {{Apply}}",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "Learning takes place in a repetitive cycle",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Using mixture of learning styles makes you confuse",
+    "correction": "Using mixture of learning styles solidify the learning takes place",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "Solitary means to learn alone",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Aural means using pictures in learning",
+    "correction": "{{Visual}} means using pictures in learning",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "The skills that apply to every job called hard skills",
+    "correction": "The skills that apply to every job called {{soft}} skills",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "Use a combination of multiple learning styles solidify the learning takes place",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Self-knowledge is one of thinking skills",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "We classify learning styles into Six categories",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Logical learning is the learn by doing",
+    "correction": "{{Physical}} learning is the learn by doing",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "Logical learning who prefer to explain or understand concepts",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "To promote new kinds of learning we need to develop skills in Communication",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Creative thinking refer to the process of analyzing and evaluating",
+    "correction": "Creative thinking refer to the process of {{creating}} {{new}} {{ideas}}",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "Positive learner able to apply knowledge or skills in new situation",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Critical thinking refer to the process of producing new ideas or product",
+    "correction": "Critical thinking refer to the process of {{analyzing}} {{and}} {{evaluating}}",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "Practical learning occurs when foundational knowledge is applied",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "In PACT learning cycle, The theory is a acquired in second Stage",
+    "correction": "In PACT learning cycle, The theory is a acquired in {{first}} Stage",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "The verbal learner is someone who prefers using words just in writing",
+    "correction": "The verbal learner is someone who prefers using words, {{both}} in {{speech}} {{and}} writing",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "Role playing and using physical object considered as physical learning",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "People skills and computer skills are required in every job",
+    "correction": "People skills and {{Interpersonal}} skills are required in every job",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "Skilled person use more time, energy and resources and produces quality results",
+    "correction": "Skilled person use {{less}} time, energy and resources and produces quality results",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "Drawing Diagrams considered as an example on visual Style",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Human learning begins from birth and continues until death as interactions between person and environment",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "The changes induced by learning offer last a lifetime",
+    "options": [
+      "True",
+      "False"
+    ]
   }
 ]
