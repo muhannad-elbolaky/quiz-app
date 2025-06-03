@@ -9,27 +9,23 @@ type QA = {
     correction?: string;
 };
 
-interface FuseResult {
-    refIndex: number;
+function getFzfMatchScore(text: string, query: string): { span: number; firstIndex: number } | null {
+    let pos = -1;
+    const positions: number[] = [];
+
+    for (const ch of query) {
+        pos = text.indexOf(ch, pos + 1);
+        if (pos === -1) return null;
+        positions.push(pos);
+    }
+
+    const firstIndex = positions[0];
+    const lastIndex = positions[positions.length - 1];
+    return {span: lastIndex - firstIndex, firstIndex};
 }
 
-interface FuseInstance {
-    search(query: string): FuseResult[];
-}
-
-interface FuseConstructor {
-    new(list: QA[], options: { keys: string[]; threshold: number }): FuseInstance;
-}
-
-declare const Fuse: FuseConstructor;
-
-const fuse: FuseInstance = new Fuse(questions as QA[], {
-    keys: ["question"],
-    threshold: 0.5,
-});
-
-questionElement.style.display = 'flex';
-questionElement.style.flexDirection = 'column';
+questionElement.style.display = "flex";
+questionElement.style.flexDirection = "column";
 
 for (let index = 0; index < questions.length; index++) {
     const rawQuestion = questions[index] as QA;
@@ -62,19 +58,20 @@ for (let index = 0; index < questions.length; index++) {
     answer.classList.add("answer");
 
     let displayAnswer = rawQuestion.options[0];
-
     if (rawQuestion.correction) {
         const parts: string[] = [];
         const regex = /{{\s*(.+?)\s*}}/g;
-        for (let m: RegExpExecArray | null = regex.exec(rawQuestion.correction); m !== null; m = regex.exec(rawQuestion.correction)) {
+        for (
+            let m: RegExpExecArray | null = regex.exec(rawQuestion.correction);
+            m !== null;
+            m = regex.exec(rawQuestion.correction)
+        ) {
             parts.push(m[1]);
         }
-
         if (parts.length) {
             displayAnswer += ` (${parts.join(", ")})`;
         }
     }
-
     answer.innerText = displayAnswer;
     container.appendChild(answer);
 }
@@ -82,25 +79,46 @@ for (let index = 0; index < questions.length; index++) {
 const searchInput = document.getElementById("search-input") as HTMLInputElement;
 if (searchInput) {
     searchInput.addEventListener("input", () => {
-        const query = searchInput.value.trim();
-        const allContainers = document.querySelectorAll(".question-container") as NodeListOf<HTMLDivElement>;
+        const rawQuery = searchInput.value.trim().toLowerCase();
+        const allContainers = document.querySelectorAll(
+            ".question-container"
+        ) as NodeListOf<HTMLDivElement>;
 
-        if (query === "") {
+        if (rawQuery === "") {
             for (let i = 0; i < allContainers.length; i++) {
-                allContainers[i].style.display = '';
+                const c = allContainers[i];
+                c.style.display = "";
+                c.style.order = "";
             }
         } else {
-            const results = fuse.search(query);
+            const matches: { index: number; score: { span: number; firstIndex: number } }[] = [];
 
-            for (let i = 0; i < allContainers.length; i++) {
-                allContainers[i].style.display = 'none';
+            for (let i = 0; i < questions.length; i++) {
+                const questionText = questions[i].question.toLowerCase();
+                const score = getFzfMatchScore(questionText, rawQuery);
+                if (score !== null) {
+                    matches.push({index: i, score});
+                }
             }
 
-            for (let i = 0; i < results.length; i++) {
-                const result = results[i];
-                const container = allContainers[result.refIndex];
-                container.style.display = '';
-                container.style.order = i.toString();
+            matches.sort((a, b) => {
+                if (a.score.span !== b.score.span) {
+                    return a.score.span - b.score.span;
+                }
+                return a.score.firstIndex - b.score.firstIndex;
+            });
+
+            for (let i = 0; i < allContainers.length; i++) {
+                const c = allContainers[i];
+                c.style.display = "none";
+                c.style.order = "";
+            }
+
+            for (let rank = 0; rank < matches.length; rank++) {
+                const refIndex = matches[rank].index;
+                const container = allContainers[refIndex];
+                container.style.display = "";
+                container.style.order = rank.toString();
             }
         }
     });
