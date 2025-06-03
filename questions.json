@@ -938,7 +938,7 @@
     "question": "people that use their body to assist in there learning",
     "options": [
       "physical",
-      "visual",
+      "Visual",
       "Aural",
       "Verbal"
     ]
@@ -948,7 +948,7 @@
     "options": [
       "Solitary",
       "Social",
-      "visual",
+      "Visual",
       "Verbal"
     ]
   },
@@ -957,7 +957,7 @@
     "options": [
       "Social",
       "Solitary",
-      "visual",
+      "Visual",
       "Verbal"
     ]
   },
@@ -1029,7 +1029,7 @@
     "question": "people that use their body to assist in there learning",
     "options": [
       "physical",
-      "visual",
+      "Visual",
       "Aural",
       "Verbal"
     ]
@@ -1039,7 +1039,7 @@
     "options": [
       "Solitary",
       "Social",
-      "visual",
+      "Visual",
       "Verbal"
     ]
   },
@@ -1048,7 +1048,7 @@
     "options": [
       "Social",
       "Solitary",
-      "visual",
+      "Visual",
       "Verbal"
     ]
   },
@@ -1066,7 +1066,7 @@
     "options": [
       "Social",
       "physical",
-      "visual",
+      "Visual",
       "Verbal"
     ]
   },
@@ -1075,14 +1075,14 @@
     "options": [
       "Solitary",
       "Social",
-      "visual",
+      "Visual",
       "Verbal"
     ]
   },
   {
     "question": "people prefer to use pictures, images, diagrams, colors and mind maps",
     "options": [
-      "visual",
+      "Visual",
       "physical",
       "Aural",
       "Verbal"
@@ -1092,7 +1092,7 @@
     "question": "people who prefer using sound",
     "options": [
       "Aural",
-      "visual",
+      "Visual",
       "physical",
       "Verbal"
     ]
@@ -1100,7 +1100,7 @@
   {
     "question": "people prefer to use pictures, images, diagrams, colors and mind maps",
     "options": [
-      "visual",
+      "Visual",
       "physical",
       "Aural",
       "Verbal"
@@ -1110,7 +1110,7 @@
     "question": "people who prefer using sound",
     "options": [
       "Aural",
-      "visual",
+      "Visual",
       "physical",
       "Verbal"
     ]
@@ -1119,7 +1119,7 @@
     "question": "the ...... learner prefers using words speech and writing to assist in their learning",
     "options": [
       "Verbal",
-      "visual",
+      "Visual",
       "physical",
       "Aural"
     ]
@@ -1128,7 +1128,7 @@
     "question": "the ...... learner prefers using words speech and writing to assist in their learning",
     "options": [
       "Verbal",
-      "visual",
+      "Visual",
       "physical",
       "Aural"
     ]
@@ -1138,7 +1138,7 @@
     "options": [
       "Social",
       "physical",
-      "visual",
+      "Visual",
       "Verbal"
     ]
   },
@@ -1147,7 +1147,7 @@
     "options": [
       "Solitary",
       "Social",
-      "visual",
+      "Visual",
       "Verbal"
     ]
   },
