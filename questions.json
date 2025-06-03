@@ -709,7 +709,7 @@
     "question": "New knowledge or skill practiced this stage of pact learning cycle are :",
     "options": [
       "Apply",
-      "procure",
+      "Procure",
       "Consider",
       "Transform"
     ]
@@ -718,7 +718,7 @@
     "question": "Original knowledge or ability is modified this stage of pact learning cycle are",
     "options": [
       "Transform",
-      "procure",
+      "Procure",
       "Consider",
       "Apply"
     ]
@@ -727,7 +727,7 @@
     "question": "The results of practice are evaluated or assessed",
     "options": [
       "Consider",
-      "procure",
+      "Procure",
       "Apply",
       "Transform"
     ]
@@ -755,7 +755,7 @@
     "options": [
       "21st century skills",
       "Soft skill",
-      "life skill",
+      "Life skills",
       "All answers are correct"
     ]
   },
@@ -764,14 +764,14 @@
     "options": [
       "All answers are correct",
       "Soft skills",
-      "life skill",
+      "Life skills",
       "21st century skills"
     ]
   },
   {
     "question": "Problem solving is one of :",
     "options": [
-      "thinking skills",
+      "Thinking skills",
       "Working skill",
       "Social skill",
       "Learning skill"
@@ -789,7 +789,7 @@
   {
     "question": "PACT learning Cycle start with",
     "options": [
-      "procure",
+      "Procure",
       "Pact",
       "Process",
       "Practice"
@@ -816,10 +816,10 @@
   {
     "question": "PACT learning Cycle correct order is",
     "options": [
-      "Procure- Apply- consider - Transform",
-      "Procure- Apply- transform more",
-      "Procure- Apply- consider - Teach",
-      "Processing - Apply- consider - Transform"
+      "Procure Apply Consider Transform",
+      "Procure Apply transform more",
+      "Procure Apply consider Teach",
+      "Processing Apply consider Transform"
     ]
   },
   {
@@ -908,7 +908,7 @@
     ]
   },
   {
-    "question": "Are qualifications required to do the job",
+    "question": "...... are qualifications required to do the job",
     "options": [
       "Hard skills",
       "Life skills",
@@ -1209,16 +1209,16 @@
     "question": "All the following From the Approaches to E-Learning Services Except",
     "options": [
       "Computer-based Learning",
-      "Web- based learning",
+      "Web-based learning",
       "Computer-based Training",
-      "blended learning services"
+      "Blended learning services"
     ]
   },
   {
     "question": "...... is a style of education in which students learn via electronic and online media as well as traditional face-to-face teaching.",
     "options": [
-      "blended learning services",
-      "Web- based learning",
+      "Blended learning services",
+      "Web-based learning",
       "Computer-based Training",
       "Computer-based Learning"
     ]
@@ -1226,8 +1226,8 @@
   {
     "question": "...... is an approach to education that combines online educational materials and opportunities for interaction online with traditional place-based classroom methods.",
     "options": [
-      "blended learning services",
-      "Web- based learning",
+      "Blended learning services",
+      "Web-based learning",
       "Computer-based Training",
       "Computer-based Learning"
     ]
@@ -1236,9 +1236,9 @@
     "question": "...... is the use of computers as a key component of the educational environment.",
     "options": [
       "Computer-based Learning",
-      "Web- based learning",
+      "Web-based learning",
       "Computer-based Training",
-      "blended learning services"
+      "Blended learning services"
     ]
   },
   {
@@ -1272,7 +1272,7 @@
     "question": "E-learning Application and process include",
     "options": [
       "All answers are correct",
-      "web - based learning",
+      "web-based learning",
       "virtual classroom",
       "computer -based learning"
     ]
@@ -1335,8 +1335,8 @@
     "question": "...... are self-paced learning activities accessible via a computer or handheld device.",
     "options": [
       "Computer-based Training (CBT’s)",
-      "Web- based learning",
-      "blended learning services",
+      "Web-based learning",
+      "Blended learning services",
       "Computer-based Learning"
     ]
   },
@@ -1359,7 +1359,7 @@
     ]
   },
   {
-    "question": "Application and process include web - based learning, computer -based learning, virtual classroom",
+    "question": "Application and process include web-based learning, computer -based learning, virtual classroom",
     "options": [
       "E-learning",
       "blended Learning",
@@ -1368,7 +1368,7 @@
     ]
   },
   {
-    "question": "...... - a learner might complete a section of learning on-line then discuss key concepts via e-mail with the instructor or with classmates",
+    "question": "...... a learner might complete a section of learning on-line then discuss key concepts via e-mail with the instructor or with classmates",
     "options": [
       "Collaborative learning",
       "independent learning",
@@ -1398,7 +1398,7 @@
     "question": "E-learning applications and processes include",
     "options": [
       "All answers are correct",
-      "Web- based learning",
+      "Web-based learning",
       "virtual classrooms",
       "computer-based learning",
       "digital collaboration"
@@ -1427,7 +1427,7 @@
     "options": [
       "independent learning",
       "Collaborative learning",
-      "blended Learning",
+      "Blended Learning",
       "Service Learning"
     ]
   },
@@ -1447,6 +1447,106 @@
       "Traditional learning",
       "E-learning",
       "Service Learning"
+    ]
+  },
+  {
+    "question": "Market share is both a result and a cause of distribution",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Retailers have different assortment sizes and strategies. Stocked products enjoy enough turnover (market share) to satisfy stocking retailers",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "A major challenge for CPG marketers and retailers is to decide which SKUs to discontinue/delist and which to release/adopt to manage portfolios",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "The competitive landscape provides an overview of product competitors, their strengths and weaknesses",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "The sector used information Technologies (IT) to develop the delivery of a service, alter organizational processes, make changes to organizational culture",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Objective technology includes developments such as the internet and enacted technology pertains",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Technology’s role thus differs and is reliant on the particular company and what those working within the organization believe",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Famous research focuses on organizational change, organizational culture, and the new ways in which society deals with information and with contemporary demands for government services",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Digital marketing is not widely used to promote products or services and reach consumers through digital channels",
+    "correction": "Digital marketing is widely used to promote products or services and reach consumers through digital channels",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "The key advantages to digital marketing include increasing brand loyalty and driving online sales",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "No one recent study investigated brand of using digital marketing tools and the impact level of digital marketing tools in generating brand awareness in companies",
+    "correction": "{{Recently,}} no study {{has}} investigated the {{use}} of digital marketing tools and {{their}} impact {{on}} generating brand awareness in companies.",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "Digital marketing includes internet/online marketing and electronic marketing",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Digital marketing includes an array of other technologies, including SMSs, MMSs, mobile applications, and databases that can not be used without an Internet connection",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "Organizational change capability (OCC) is a multi-component formative construct that represents an organization's capability of implementing incessant change",
+    "options": [
+      "True",
+      "False"
     ]
   }
 ]
