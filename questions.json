@@ -449,5 +449,188 @@
       "True",
       "False"
     ]
+  },
+  {
+    "question": "Evidence that learning has occurred may be seen in changes in behavior from complex to simple and the changes last a lifetime",
+    "correction": "Evidence that learning has occurred may be seen in changes in behavior from simple to complex and the changes last a lifetime",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "Asynchronous learners experience the learning at the same time",
+    "correction": "{{Synchronous}} learners experience the learning at the same time",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "The primary difference between WBT and CBT being the Content",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "CBTs are typically delivered via CD-ROM, WBTs are delivered via the Internet using a web browser",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "CBL refers to the use of computers as a key component of the educational environment",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "E-Learning used by the educational Institutions to enhance and support the class room teaching and offering courses to a Small population of learners across the Globe",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "In Independent learning The learner learn without coach and the other learners",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "An Intranet are internal network inside a company",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Internet are more secure than intranet",
+    "correction": "Intranet are more secure than internet",
+    "options": [
+      "False",
+      "True"
+    ]
+  },
+  {
+    "question": "E-learning used to enhance classroom teaching",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Collaborative can be either asynchronous or synchronous.",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Independent learning is, by definition, asynchronous",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "In independent learning the learner does not have access to other resources such as a facilitator or coach",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "E-Learning includes media in the form of (Text, Image, Animation, Streaming and Audio)",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "An E-mail discussion with other learners considered as an example of collaborative learning",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "There are 3 Approaches to E-learning services",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Computer-based learning refers to a structured environment where computers are used for teaching purposes",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Computer-based learning, sometimes abbreviated to CBL",
+    "options": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "question": "Scientist consider (imagination, problem solving, analyzing information) as ...... skills",
+    "options": [
+      "Thinking",
+      "Working",
+      "Learning",
+      "Social"
+    ]
+  },
+  {
+    "question": "(creativity, problem solving, decision making, analyzing information) considered as ...... skills",
+    "options": [
+      "Thinking",
+      "Working",
+      "Learning",
+      "Social"
+    ]
+  },
+  {
+    "question": "(time management, organization, Negotiation) considered as ...... skills",
+    "options": [
+      "Working",
+      "Thinking",
+      "Learning",
+      "Social"
+    ]
+  },
+  {
+    "question": "Scientist consider (Citizenship, Social responsibility, Cultural awareness) as ...... skills",
+    "options": [
+      "Social",
+      "Thinking",
+      "Working",
+      "Learning"
+    ]
+  },
+  {
+    "question": "When knowledge is applied to answer questions, solve problems, or make decisions, that is referred to as ......",
+    "options": [
+      "Practical learning",
+      "Service learning",
+      "E-Learning",
+      "Blended learning"
+    ]
+  },
+  {
+    "question": "...... is the process of analyzing and evaluating",
+    "options": [
+      "Critical think",
+      "Practical Thinking",
+      "Creative thinking",
+      "None of the answers is correct"
+    ]
   }
 ]
