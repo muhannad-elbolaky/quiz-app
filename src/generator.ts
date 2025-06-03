@@ -2,7 +2,6 @@ interface Question {
     question: string;
     correction?: string;
     options: string[];
-    contributor: string;
 }
 
 const questionInput = document.getElementById('submit-question') as HTMLInputElement;
@@ -20,16 +19,9 @@ const viewQuestionsBtn = document.getElementById('viewQuestions') as HTMLButtonE
 const modalOverlay = document.getElementById('modalOverlay') as HTMLDivElement;
 const closeModalBtn = document.getElementById('closeModal') as HTMLButtonElement;
 const clearBtn = document.getElementById('clearQuestions') as HTMLButtonElement;
-const usernameInputWrapper = document.getElementById('usernameInputWrapper') as HTMLDivElement;
-const usernameDisplay = document.getElementById('usernameDisplay') as HTMLDivElement;
-const usernameInput = document.getElementById('username') as HTMLInputElement;
-const saveUsernameBtn = document.getElementById('saveUsername') as HTMLButtonElement;
-const usernameText = document.getElementById('usernameText') as HTMLSpanElement;
-const editUsernameBtn = document.getElementById('editUsername') as HTMLButtonElement;
 
 let optionTexts: string[] = [''];
 const questions: Question[] = [];
-let currentUsername: string | null = localStorage.getItem('username');
 let isCorrectionEdited = false;
 
 const savedQuestions = localStorage.getItem('test-questions');
@@ -40,15 +32,6 @@ if (savedQuestions) {
     } catch (e) {
         console.error('Error parsing saved questions:', e);
     }
-}
-
-if (currentUsername) {
-    usernameText.textContent = currentUsername;
-    usernameInputWrapper.style.display = 'none';
-    usernameDisplay.style.display = 'block';
-} else {
-    usernameInputWrapper.style.display = 'block';
-    usernameDisplay.style.display = 'none';
 }
 
 questionInput.addEventListener('input', () => {
@@ -196,28 +179,9 @@ async function sendToEmail() {
 }
 
 function addHandlers() {
-    saveUsernameBtn.onclick = () => {
-        const username = usernameInput.value.trim();
-        if (username) {
-            currentUsername = username;
-            localStorage.setItem('username', username);
-            usernameText.textContent = username;
-            usernameInputWrapper.style.display = 'none';
-            usernameDisplay.style.display = 'block';
-        } else {
-            showMessage('يرجى إدخال اسم المستخدم');
-        }
-    };
-
-    editUsernameBtn.onclick = () => {
-        usernameInput.value = currentUsername || '';
-        usernameInputWrapper.style.display = 'block';
-        usernameDisplay.style.display = 'none';
-    };
-
     // Replace the existing optionsContainer keydown event listener with this:
     optionsContainer.addEventListener('keydown', (e) => {
-        if (e.target instanceof HTMLInputElement && e.key === 'Enter') {
+        if (e.target instanceof HTMLInputElement && (e.key === 'Enter' || e.key === 'Tab')) {
             e.preventDefault();
             const inputs = optionsContainer.querySelectorAll('.option input');
             if (e.target === inputs[inputs.length - 1]) {
@@ -259,10 +223,6 @@ function addQuestion() {
         showMessage('يرجى إدخال سؤال');
         return;
     }
-    if (!currentUsername) {
-        showMessage('يرجى حفظ اسم المستخدم أولاً');
-        return;
-    }
     const opts = optionTexts.map(o => o.trim()).filter(o => o);
     if (opts.length < 2 || !optionTexts[0].trim()) {
         showMessage('يجب تحديد إجابة صحيحة وخيار واحد على الأقل');
@@ -277,7 +237,6 @@ function addQuestion() {
         question: q,
         correction,
         options: opts,
-        contributor: currentUsername
     };
 
     questions.push(questionObj);

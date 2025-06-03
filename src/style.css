@@ -20,6 +20,10 @@
     font-family: "Rubik", cursive;
 }
 
+button {
+    all: unset;
+}
+
 body {
     height: 100%;
 }

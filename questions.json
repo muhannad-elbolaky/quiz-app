@@ -4,16 +4,14 @@
     "options": [
       "True",
       "False"
-    ],
-    "contributor": "Muhannad"
+    ]
   },
   {
     "question": "Working skills include (time management and communication)",
     "options": [
       "True",
       "False"
-    ],
-    "contributor": "Muhannad"
+    ]
   },
   {
     "question": "A skilled person uses more time and resources to do the job and produces quality result",
@@ -21,32 +19,28 @@
       "False",
       "True"
     ],
-    "correction": "A skilled person uses {{less}} time and resources to do the job and produces quality result",
-    "contributor": "Muhannad"
+    "correction": "A skilled person uses {{less}} time and resources to do the job and produces quality result"
   },
   {
     "question": "Learning skills include developing your memory",
     "options": [
       "True",
       "False"
-    ],
-    "contributor": "Muhannad"
+    ]
   },
   {
     "question": "Hard skills are the qualifications required to do a job",
     "options": [
       "True",
       "False"
-    ],
-    "contributor": "الثلاثي المرح"
+    ]
   },
   {
     "question": "Respecting diversity is considered a social skill",
     "options": [
       "True",
       "False"
-    ],
-    "contributor": "الثلاثي المرح"
+    ]
   },
   {
     "question": "Using memory techniques is one of the working skills",
@@ -54,8 +48,7 @@
     "options": [
       "False",
       "True"
-    ],
-    "contributor": "الثلاثي المرح"
+    ]
   },
   {
     "question": "The PACT Learning Cycle has 7 stages",
@@ -63,48 +56,42 @@
     "options": [
       "False",
       "True"
-    ],
-    "contributor": "الثلاثي المرح"
+    ]
   },
   {
     "question": "Learning takes place in an ongoing series of processes",
     "options": [
       "True",
       "False"
-    ],
-    "contributor": "الثلاثي المرح"
+    ]
   },
   {
     "question": "After transform stage PACT learning cycle then continue and repeat",
     "options": [
       "True",
       "False"
-    ],
-    "contributor": "الثلاثي المرح"
+    ]
   },
   {
     "question": "Use a combination of multiple learning styles solidify the learning takes place",
     "options": [
       "True",
       "False"
-    ],
-    "contributor": "الثلاثي المرح"
+    ]
   },
   {
     "question": "Everyone is unique in the way they learn",
     "options": [
       "True",
       "False"
-    ],
-    "contributor": "الثلاثي المرح"
+    ]
   },
   {
     "question": "Some topics select the appropriate learning style to study",
     "options": [
       "True",
       "False"
-    ],
-    "contributor": "الثلاثي المرح"
+    ]
   },
   {
     "question": "All learning is immediately induced by a single event",
@@ -112,39 +99,34 @@
     "options": [
       "False",
       "True"
-    ],
-    "contributor": "الثلاثي المرح"
+    ]
   },
   {
     "question": "The change induced by learning often last a lifetime",
     "options": [
       "True",
       "False"
-    ],
-    "contributor": "الثلاثي المرح"
+    ]
   },
   {
     "question": "Students must learn when they read their text and memorized facts",
     "options": [
       "False",
       "True"
-    ],
-    "contributor": "الثلاثي المرح"
+    ]
   },
   {
     "question": "Human learning begins at birth and continues until death",
     "options": [
       "True",
       "False"
-    ],
-    "contributor": "الثلاثي المرح"
+    ]
   },
   {
     "question": "One of the thinking skills is developing your memory using memory techniques",
     "options": [
       "True",
       "False"
-    ],
-    "contributor": "الثلاثي المرح"
+    ]
   }
 ]
